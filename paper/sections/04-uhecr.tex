@@ -1,0 +1,319 @@
+\section{Ultra-high-energy cosmic rays as a probe of a cubic spacetime lattice}
+\label{sec:uhecr}
+
+This section covers the observational side of the proposal by Beane, Davoudi
+and Savage~\cite{Beane2014constraints}. It reviews what measurements of
+ultra-high-energy cosmic rays (UHECRs) say about their lattice scenario,
+separates what current data constrain from what they leave open, and ends with
+a specific analysis that could be run on public data. The lattice theory and
+the Lorentz-violation bounds are treated in Sec.~\ref{sec:lattice}.
+
+\subsection{The prediction and its premises}
+\label{sec:uhecr-prediction}
+
+Beane \emph{et al.} assume a simulation on a hyper-cubic space-time grid with
+spacing $b$, starting from an unimproved Wilson action~\cite{Beane2014constraints}.
+The lattice dispersion relations cap the energy at $E_{\max}\sim 1/b$ for
+fermions and bosons. Setting this cap equal to the Greisen--Zatsepin--Kuzmin
+(GZK) cutoff~\cite{Greisen1966end,Zatsepin1966upper} gives
+$b\sim10^{-12}$\,fm, that is $b^{-1}\sim10^{11}$\,GeV. The authors turn this into
+the bound $b^{-1}\gtrsim10^{11}$\,GeV, their most stringent
+one~\cite{Beane2014constraints}. They also argue that if the lattice itself
+supplies the cutoff, ``the angular distribution of the highest energy
+components would exhibit cubic symmetry in the rest frame of the lattice'',
+and that for smaller $b$ the cubic signal would fade while the GZK mechanism
+takes over~\cite{Beane2014constraints}. Their Eq.~(18) supports this at leading
+order. There the lattice shifts the $\Delta$-resonance threshold of
+proton--CMB-photon collisions in proportion to the combination
+$Y_4^0+\sqrt{5/14}\,(Y_4^4+Y_4^{-4})$, taking the lattice rest frame to be the
+CMB frame~\cite{Beane2014constraints}.
+
+The prediction has three limits that matter here.
+(i)~It is qualitative. The paper gives neither the size of the flux anisotropy
+as a function of $b$ nor a sky template.
+(ii)~It assumes that the observed steepening is the GZK cutoff, and it treats
+the primaries through single-particle dispersion relations. The paper does not
+discuss heavy nuclei as primaries~\cite{Beane2014constraints}. We add that a
+nucleus of mass number $A$ carries only about $E/A$ per nucleon, so identifying
+$E_{\max}$ with the observed endpoint depends on composition.
+(iii)~The arXiv version puts the GZK scale at ``$\sim6\times10^{20}$\,eV''
+\cite{Beane2014constraints}. That is ten times the threshold of
+$\sim6\times10^{19}$\,eV quoted by the experiments~\cite{HiRes2008first}, and
+we do not reproduce it.
+
+We checked numerically which spherical-harmonic degrees admit functions
+invariant under the full cubic group $O_h$ (48 elements). Up to $\ell=12$ they
+are $\ell=0,4,6,8,10$ and $12$ (two at $\ell=12$). The combination in Beane
+\emph{et al.}'s Eq.~(18) is the $\ell=4$ invariant, and
+$Y_6^0-\sqrt{7/2}\,(Y_6^4+Y_6^{-4})$ is the $\ell=6$ one. It follows that a
+lattice-aligned pattern has no dipole and no quadrupole: its leading content
+is at $\ell=4$ and $\ell=6$.
+
+\subsection{The flux suppression and the composition question}
+\label{sec:uhecr-spectrum}
+
+HiRes reported a suppression at $\log_{10}(E/\mathrm{eV})=19.75\pm0.04$. It
+observed 13 events above $10^{19.8}$\,eV where an unbroken spectrum predicted
+43.2, a Poisson deficit equivalent to 5.3 standard deviations
+\cite{HiRes2008first}. The Pierre Auger Observatory rejected a constant slope
+above $4\times10^{19}$\,eV at 6 standard deviations, while cautioning that
+identifying the cause would require knowledge of the mass
+composition~\cite{PierreAuger2008observation}. Auger's 2020 spectrum uses
+215{,}030 events and an exposure of $(60{,}400\pm1{,}810)$\,km$^2$\,sr\,yr
+\cite{PierreAuger2020measurement}. It places the suppression at
+$E_{34}=(46\pm3\pm6)\times10^{18}$\,eV with spectral index
+$\gamma_4=5.1\pm0.3\pm0.1$, and finds a new softening (the ``instep'') at
+$E_{23}=(13\pm1\pm2)\times10^{18}$\,eV~\cite{PierreAuger2020features}. The
+measured $E_{1/2}=(2.2\pm0.1\pm0.3)\times10^{19}$\,eV differs from the
+$5.3\times10^{19}$\,eV expected for uniformly distributed, proton-only sources,
+a scenario Auger describes as disfavored~\cite{PierreAuger2020features}.
+
+Mass composition decides how the endpoint should be read. In Auger's benchmark
+mixed-composition model, the steepening above $\approx5\times10^{19}$\,eV comes
+from the maximum acceleration energy of the heaviest nuclei combined with the
+GZK effect. Auger adds that a subdominant light component is not excluded and
+that other scenarios remain viable~\cite{PierreAuger2020features}. A combined
+fit of spectrum and composition prefers sources with a mixed composition, a
+hard spectrum and a low rigidity cutoff~\cite{PierreAuger2023constraining}.
+Auger has also inferred $X_{\max}$ event by event from surface-detector data up
+to 100\,EeV~\cite{PierreAuger2025inference}. That analysis finds a composition
+that becomes ``increasingly heavier and purer'' and is incompatible with a large
+light fraction between 50 and 100\,EeV. It concludes that the suppression
+``cannot be entirely ascribed to effects of extragalactic propagation''
+\cite{PierreAuger2025inference}. Telescope Array (TA) hybrid data are
+compatible with QGSJet\,II-04 protons at 95\% CL in all energy bins, after
+systematic shifts. At the highest energies, where statistics are sparse, other
+elements are also compatible~\cite{TelescopeArray2018depth}. In short, the
+premise that the observed endpoint is the GZK cutoff of a proton flux is
+disputed by current data. This weakens the inference from ``the spectrum ends
+near $10^{20}$\,eV'' to a statement about $b$, whether the end is attributed to
+the GZK effect or to a lattice.
+
+\subsection{Arrival directions at each angular scale}
+\label{sec:uhecr-anisotropy}
+
+\paragraph{Dipole.}
+Auger observed a dipole above 8\,EeV at more than $5.2\sigma$ (post-trial),
+using $3\times10^4$ events from an exposure of 76{,}800\,km$^2$\,sr\,yr. Its
+amplitude is $6.5^{+1.3}_{-0.9}\%$ towards $(\alpha,\delta)=(100\pm10^\circ,
+-24^{+12}_{-13}{}^\circ)$~\cite{PierreAuger2017observation}. With 19 years of data
+(49{,}678 events $\geq8$\,EeV), the right-ascension modulation reaches $6.8\sigma$.
+The 3D dipole is $7.4^{+1.0}_{-0.8}\%$ towards
+$(97\pm8^\circ,-38\pm9^\circ)$, and it does not vary in time: the rate of change
+is below 0.3\% per year at 95\% CL~\cite{PierreAuger2024large}. In the joint
+dipole-plus-quadrupole fit, the quadrupole amplitude for $E\geq32$\,EeV is
+$Q=0.13\pm0.06$, and the quadrupolar components are not
+significant~\cite{PierreAuger2024large}.
+
+\paragraph{Intermediate scales.}
+A starburst-galaxy sky model fits 5{,}514 Auger events above 20\,EeV better than
+isotropy at $4.0\sigma$~\cite{PierreAuger2018indication}. With the full Phase~1
+set of 2{,}635 events above 32\,EeV (exposure 122{,}000\,km$^2$\,sr\,yr), Auger
+finds evidence at the $4\sigma$ level for an excess on a $\sim15^\circ$
+(Gaussian) to $\sim25^\circ$ (top-hat) scale above $\sim40$\,EeV. The most
+significant blind excess lies in the Centaurus region, with $5.4\sigma$ local
+significance and a 3\% post-trial probability~\cite{PierreAuger2022arrival}. In
+the north, TA reported a hotspot above 57\,EeV with local significance
+$5.1\sigma$ and chance probability $3.7\times10^{-4}$ ($3.4\sigma$)
+\cite{TelescopeArray2014indications}. The joint Auger--TA update finds the
+starburst correlation to be the most significant, at $4.2\sigma$ post-trial
+\cite{PierreAugerTA2025new}. TA also recorded a single event of
+$244\pm29\,(\mathrm{stat})\,^{+51}_{-76}\,(\mathrm{syst})$\,EeV whose direction
+points back to a void~\cite{TelescopeArray2023extremely}.
+
+\paragraph{Higher multipoles, including $\ell=4$ and $\ell=6$.}
+Table~\ref{tab:uhecr-multipoles} lists the analyses that measured multipoles
+beyond the quadrupole. Auger observes only part of the sky, so it cannot
+estimate individual $a_{\ell m}$ with useful resolution once $\ell_{\max}>2$.
+It reconstructs $C_\ell$ instead, assuming the anisotropies are one
+realization of a statistically isotropic random
+process~\cite{PierreAuger2024large,PierreAuger2017multiresolution}. The 2024
+spectrum (with $\ell=1$--20 in each of four energy bins) shows no significant
+$\hat C_\ell$ apart from the dipole. Two excursions, $\hat C_{17}$ at 4--8\,EeV
+and $\hat C_8$ at 16--32\,EeV, have penalized chance probabilities of 3.3\% and
+26.5\%~\cite{PierreAuger2024large}. The 99\% CL upper limits on $C_\ell$ are
+shown only graphically; no numerical $C_4$ or $C_6$ limits are
+tabulated~\cite{PierreAuger2024large}. With full-sky Auger+TA data, the
+$a_{\ell m}$ have been estimated up to $\ell=20$ above $10^{19}$\,eV, with no
+evidence for anisotropy~\cite{PierreAugerTA2014searches}. A newer harmonic-space
+analysis over $\ell\le20$ with a scan in energy threshold finds the quadrupole
+to be the most significant multipole in every case. Its largest
+auto-correlation excursion is at $\ell=2$ above 41\,EeV (Auger energy scale),
+at $4.2\sigma$ pre-trial and $2.1\sigma$ post-trial~\cite{PierreAugerTA2025new}.
+An independent likelihood reanalysis of the public 2017 Auger events likewise
+finds nothing beyond the dipole~\cite{Ahlers2018searching}.
+
+\begin{table}[t]
+\centering
+\small
+\caption{Published analyses that measured UHECR multipoles beyond $\ell=2$,
+all of which therefore contain $\ell=4$ and $\ell=6$. None forms an
+$O_h$-invariant combination or scans lattice orientations.}
+\label{tab:uhecr-multipoles}
+\begin{tabular}{p{0.24\linewidth}p{0.2\linewidth}p{0.17\linewidth}p{0.29\linewidth}}
+\hline
+Analysis & Data, energy & $\ell$ range & Result beyond the dipole\\
+\hline
+Auger 2017~\cite{PierreAuger2017multiresolution} & Auger, 4--8 and $\geq8$\,EeV & $C_\ell$, $\ell\le64$ & no deviation from isotropy\\
+Auger 2024~\cite{PierreAuger2024large} & Auger, 4 bins $\geq4$\,EeV & $C_\ell$, $\ell\le20$ & $\hat C_{17}$, $\hat C_8$ not significant after penalty; 99\% UL graphical\\
+Auger+TA 2014~\cite{PierreAugerTA2014searches} & full sky, $>10$\,EeV & $a_{\ell m}$, $C_\ell$, $\ell\le20$ & no significant deviation\\
+Auger+TA 2025~\cite{PierreAugerTA2025new} & full sky, threshold scan & $C_\ell$ (auto, cross), $\ell\le20$ & $\ell=2$ most significant (2.1$\sigma$ post-trial)\\
+Ahlers 2018~\cite{Ahlers2018searching} & public Auger, $>8$\,EeV & pseudo-$C_\ell$ & consistent with isotropy\\
+\hline
+\end{tabular}
+\end{table}
+
+\subsection{Magnetic smearing}
+\label{sec:uhecr-gmf}
+
+Deflections scale with charge and with the integrated transverse field, and
+inversely with energy~\cite{PierreAuger2017observation}. At
+$E\approx10$\,EeV, estimates of the mean charge range from $Z=1.7$ to $5$, and
+typical Galactic deflections are a few tens of degrees at $E/Z=10$\,EeV
+\cite{PierreAuger2017observation}. In the Jansson--Farrar (JF12) model, a
+60\,EeV proton is deflected by $5.2^\circ$ on average. A quarter of the sky has
+deflections below $2.2^\circ$, and deflections in the south are about 60\%
+larger than in the north~\cite{Jansson2012new}. The UF23 ensemble of eight
+coherent-field models~\cite{Unger2024coherent} requires a rigidity of
+$R\geq20$\,EV for deflections below $20^\circ$ over half the sky in all models.
+If directions are corrected for the modelled field, the requirement falls to
+11\,EV; the authors call this estimate indicative because random fields are
+not included~\cite{Unger2024coherent}. The model-to-model spread is smaller than
+the deflections themselves over most of the sky~\cite{Unger2024coherent}.
+
+For iron-like charges near the suppression energy, these rigidities imply
+deflections of tens of degrees. That is comparable to the $\sim45^\circ$ angular
+scale of an $\ell=4$ pattern, so the Galactic field would distort a
+lattice-aligned pattern in a direction-dependent way. A search must therefore
+either forward-model the distortion or work at the highest rigidities, where
+the pattern survives.
+
+\subsection{What the existing data do and do not constrain}
+\label{sec:uhecr-status}
+
+$C_\ell$ does not change under rotations. A cubic pattern of \emph{any}
+orientation therefore adds power to $C_4$ and $C_6$, and the non-detections in
+Table~\ref{tab:uhecr-multipoles} already bound the size of such a pattern
+without any orientation scan. The bound is only implicit, for four reasons.
+(a)~No paper quotes numerical $C_4$ or $C_6$ limits above the suppression
+energy.
+(b)~The partial-sky $C_\ell$ reconstruction assumes statistical isotropy, which
+a fixed lattice-aligned sky violates~\cite{PierreAuger2017multiresolution}.
+(c)~$C_4$ and $C_6$ each spread their statistical weight over $2\ell+1=9$ and
+13 directions and ignore the fixed phase relation that a cubic pattern imposes
+between $\ell=4$ and $\ell=6$. Blind scans over many multipoles lose
+sensitivity: for a 5\% dipole in 14{,}000 simulated events, a blind
+$\ell\le64$ power-spectrum search detects it at 99\% CL in only 25\% of skies
+at $\delta=-30^\circ$~\cite{PierreAuger2017multiresolution}.
+(d)~Turning an amplitude limit into a limit on $b$ requires the anisotropy
+amplitude as a function of $b$ and rigidity, which Beane \emph{et al.} do not
+provide~\cite{Beane2014constraints}.
+
+\paragraph{Novelty check.}
+We searched for any analysis that tests UHECR (or other astroparticle) arrival
+directions for a lattice-aligned, cubic or $O_h$-symmetric anisotropy, or that
+confronts the ``numerical simulation'' hypothesis with such data. We checked
+every work that cites Ref.~\cite{Beane2014constraints} in INSPIRE (13 records)
+and Semantic Scholar (61 records), ran full-text queries in INSPIRE, and ran
+arXiv and general web searches. The full log is in the project repository. We
+found no such analysis. Citing works are theory, philosophy or popular
+accounts. Among them, Ref.~\cite{Vazza2025astrophysical} uses the UHECR energy
+only as a resolution requirement for a simulator, and
+Ref.~\cite{Mlodinow2025bounds} bounds a cubic-lattice quantum cellular
+automaton with photon timing and laboratory data. The closest data analyses test
+\emph{direction-dependent Lorentz violation}, not a cubic flux pattern:
+vacuum-Cherenkov bounds on anisotropic modified-Maxwell coefficients from the
+directions of UHECR events~\cite{Klinkhamer2008ultrahigh}, and a sidereal-modulation
+search in IceCube atmospheric neutrinos~\cite{IceCube2010search}. Auger's own
+Lorentz-violation study uses direction-independent dispersion
+relations~\cite{PierreAuger2022testing}. To our knowledge, no search for an
+$O_h$-symmetric UHECR anisotropy has been published. NASA ADS and Google Scholar
+could not be queried automatically, so this statement carries that caveat.
+
+\subsection{Public data}
+\label{sec:uhecr-data}
+
+Auger opened its Open Data Portal in February 2021 with 10\% of Phase~I data.
+The release now holds 81{,}121 showers, including 25{,}086 events from the
+1500\,m array: vertical above 2.5\,EeV and inclined ($60^\circ$--$80^\circ$)
+above 4\,EeV. The data come as JSON files per event and a CSV
+summary~\cite{PierreAuger2025pierre,PierreAuger2024pierre}. In June 2023 the
+collaboration approved raising the public fraction to 30\% of main-array events
+above 2.5\,EeV from 2004--2022 (about 24{,}000\,km$^2$\,sr\,yr), with release
+planned for late 2025~\cite{PierreAuger2025expanding}. When we checked the
+portal and Zenodo on 27 September 2026, the current version was still the 10\%
+release of March 2024~\cite{PierreAuger2024pierre}. Our count of the public
+summary files gives only 86 events above 40\,EeV. Much more useful for this
+problem is the \emph{complete} Phase~1 list of 2{,}635 events above 32\,EeV. It
+was published with Ref.~\cite{PierreAuger2022arrival} and gives, for each event,
+its time, local and equatorial coordinates, energy and cumulative
+exposure~\cite{PierreAuger2022material}. Our count of that file gives 1{,}387
+events at $E\geq40$\,EeV and 411 at $E\geq57$\,EeV. Northern coverage is thinner
+in public form: TA published the 72 events above 57\,EeV from its first five
+years~\cite{TelescopeArray2014indications}, and Auger catalogued its 100
+highest-energy events (78--166\,EeV)~\cite{PierreAuger2023catalog}. An external
+all-scale reanalysis of public Auger events has already been
+published~\cite{Ahlers2018searching}, so such work is practical.
+
+\subsection{A proposed search (not a result)}
+\label{sec:uhecr-proposal}
+
+The following analysis is feasible with the public data above and addresses
+points (b) and (c) of Sec.~\ref{sec:uhecr-status}. We present it as a proposal;
+it has not been carried out.
+
+\emph{Model.} The relative flux is written as
+$\Phi(\hat n)\propto\omega(\hat n)\,[1+\vec d\cdot\hat n+\epsilon\,
+K(R^{-1}\hat n)+\dots]$. Here $\omega$ is the directional exposure, $\vec d$ is a
+nuisance dipole (plus quadrupole) with priors from
+Refs.~\cite{PierreAuger2024large,PierreAuger2017observation}, and
+$K=\cos\chi\,\hat K_4+\sin\chi\,\hat K_6$ is a unit-normalized combination of
+the $\ell=4$ and $\ell=6$ $O_h$ invariants. The rotation $R\in SO(3)/O$ fixes
+the lattice orientation; the quotient is by the 24 proper rotations of the
+cube, since even-$\ell$ functions are automatically inversion-symmetric.
+
+\emph{Statistic.} The test statistic is the likelihood ratio
+$T=\max_{R,\chi}\,2\ln[\mathcal L(\epsilon,R,\chi,\vec d)/\mathcal L(0,\vec d)]$
+from an unbinned likelihood over events. For a template-free cross-check, the
+``cubicness'' of the measured $\ell=4$ multipole, $\max_R|\langle\hat K_4,
+D^{(4)}(R)\,a_4\rangle|^2/\sum_m|a_{4m}|^2$, equals 1 for an exactly cubic
+$\ell=4$ component and has a computable null distribution. The two degrees are
+tied together by sharing a single $R$, which is what distinguishes the test
+from separate $C_4$ and $C_6$ measurements.
+
+\emph{Look-elsewhere correction.} Isotropic-plus-dipole mock skies drawn with
+the actual exposure give the null distribution of $T$. This distribution already
+includes the three-parameter orientation scan and the $\chi$ scan. Energy
+thresholds (for example 32, 40 and 57\,EeV on the Auger scale) should be fixed
+in advance, or else penalized in the same simulations.
+
+\emph{Exposure and coverage.} With Auger data alone, the unobserved northern
+cap correlates the $a_{\ell m}$. The likelihood in pixel or event space handles
+this directly and avoids the statistical-isotropy assumption behind pseudo-$C_\ell$
+deconvolution. Adding the TA list~\cite{TelescopeArray2014indications} needs a
+cross-calibration of energy scales of the kind used in the joint
+analyses~\cite{PierreAugerTA2014searches,PierreAugerTA2025new}.
+
+\emph{Magnetic forward model.} Lattice templates defined outside the Galaxy
+should be propagated through each of the eight UF23 variants~\cite{Unger2024coherent}
+and JF12~\cite{Jansson2012new} for a grid of rigidities. The spread of results
+is a systematic uncertainty, and the unperturbed template is the
+high-rigidity limit.
+
+\emph{Validation.} Before touching the data, one should inject cubic patterns
+of known $(\epsilon,R,\chi)$ into mock skies that also contain the measured
+dipole and a Centaurus-like hotspot~\cite{PierreAuger2022arrival}. The checks
+are that the orientation is recovered, that the false-positive rate is correct,
+and what the detection power is as a function of $\epsilon$. An idealized
+estimate that we verified by Monte Carlo sets the scale: for $N$ events
+distributed isotropically with uniform full-sky exposure, the amplitude
+estimator of one unit-normalized harmonic has standard deviation
+$\sqrt{4\pi/N}$, about 0.095 for $N=1{,}387$. Partial coverage, the nuisance
+dipole and the orientation scan will increase the threshold for detection.
+
+\emph{Interpretation.} A null result would bound $\epsilon$ as a function of
+energy threshold and assumed rigidity. Relating $\epsilon$ to $b$ needs a
+calculation of the anisotropy amplitude that the literature does not yet
+contain (Sec.~\ref{sec:lattice}). The bound also does not apply to
+discretizations with other symmetries or with improved actions, which Beane
+\emph{et al.} themselves consider likely~\cite{Beane2014constraints}.

@@ -9,10 +9,12 @@ conflated:
 \begin{enumerate}
 \item[(T1)] \emph{Execution}: evolving a given initial state forward by the
   dynamical law, to some accuracy, for a finite time.
-\item[(T2)] \emph{Decision}: answering a question about a model that quantifies
-  over infinitely many times, sizes or instances, such as whether the system
-  ever halts, whether a spectral gap survives the thermodynamic limit, or
-  whether a ground state has energy below $E_0$.
+\item[(T2)] \emph{Decision}: answering a global question about a model or a
+  family of models, such as whether a ground state has energy below $E_0$,
+  whether a spectral gap survives the thermodynamic limit, or whether the
+  system ever halts. Such questions can be intractable for finite instances and
+  undecidable when they quantify over infinitely many times, sizes or
+  instances.
 \item[(T3)] \emph{Proof}: deriving every true sentence of a formal theory of
   the model from its axioms.
 \end{enumerate}
@@ -25,9 +27,8 @@ state that premise explicitly in each case.
 \label{sec:complexity:feynman}
 
 Feynman's keynote address concerned \emph{exact} simulation, in which ``the
-computer will do exactly the same as nature''. He explicitly set aside
-approximate numerical integration~\cite{Feynman1982simulating}. He imposed the
-efficiency rule that the number of computer elements should be proportional to
+computer will do exactly the same as nature'', and not approximate numerical
+integration~\cite{Feynman1982simulating}. He imposed the efficiency rule that the number of computer elements should be proportional to
 the simulated space-time volume. He was candid that this was a stipulation:
 ``I make up the rules, I'm allowed to do that''~\cite[p.~469]{Feynman1982simulating}.
 Under that rule, a classical machine that stores the general probability
@@ -82,8 +83,7 @@ and running time. It does not bear on whether a simulation is possible.
 
 Troyer and Wiese defined a ``solution'' of the sign problem as a
 polynomial-complexity algorithm for a thermal average in a model whose related
-bosonic problem is itself polynomial. A change of representation that leaves
-the cost exponential does not count~\cite{Troyer2005computational}. They mapped
+bosonic problem is itself polynomial~\cite{Troyer2005computational}. They mapped
 the NP-complete ground-state problem of the three-dimensional $\pm J$ Ising
 spin glass to a quantum model with a sign problem,
 $H=-\sum J_{jk}\sigma^x_j\sigma^x_k$. The related bosonic model is a
@@ -121,11 +121,9 @@ or cluster algorithms''. They call obstruction to classical simulation in
 general ``a rather ill-defined task''. They concede that, for non-symmetric
 transfer matrices, a needed similarity transformation might be nonlocal,
 ``rendering the previous arguments void''~\cite{Ringel2017quantized}.
-Related rigorous results include Hastings' intrinsic sign problem for commuting
-double-semion Hamiltonians, under a technical assumption~\cite{Hastings2016how}.
-Later work gave criteria excluding stoquastic Hamiltonians and sign-free
-determinantal QMC for broad classes of chiral topological
-phases~\cite{Smith2020intrinsic,Golan2020intrinsic}. Marvian et al.\ showed
+Related results establish intrinsic sign problems for double-semion
+Hamiltonians~\cite{Hastings2016how} and for broad classes of chiral
+topological phases~\cite{Smith2020intrinsic,Golan2020intrinsic}. Marvian et al.\ showed
 that even \emph{finding} a curing transformation within restricted
 single-qubit classes is NP-complete~\cite{Marvian2019on}. None of these
 results concerns classical algorithms outside the QMC family, or quantum
@@ -158,12 +156,11 @@ disproved~\cite{Cubitt2022undecidability}. The authors emphasize that
 ``algorithmic undecidability always concerns infinite families of systems''.
 The property at stake is defined in the thermodynamic limit. Their models can
 look gapless at all sizes up to a threshold that is itself
-uncomputable~\cite{Cubitt2015undecidability}. A recent review by the same group
-and co-authors puts the general point plainly. Undecidability ``is a feature
-of the mathematical model'', and because any finite problem is decidable, an
-undecidable one ``must necessarily conceal an infinite somewhere''. Its finite
-``reflections'' take the form of computational-complexity hardness or
-size-dependent effects at uncomputably large
+uncomputable~\cite{Cubitt2015undecidability}. A review by these authors and
+co-workers states the general point: undecidability ``is a feature of the
+mathematical model'', and an undecidable problem ``must necessarily conceal an
+infinite somewhere''. At finite sizes it is reflected as complexity-theoretic
+hardness or as abrupt changes at uncomputably large
 sizes~\cite{PeralesEceiza2025undecidability}.
 
 Earlier results have the same structure. Moore embedded a Turing machine in
@@ -182,13 +179,10 @@ in Ref.~\cite{PeralesEceiza2025undecidability}. Weihrauch and Zhong showed
 that the wave propagator is computable on $C^1$ data (losing one derivative)
 and on Sobolev spaces. They argue that the Pour-El-Richards example probably
 does not yield a wave computer that beats the Turing
-machine~\cite{Weihrauch2002is}. A different kind of limit concerns
-\emph{inference devices} embedded in a universe. Wolpert proved that every
-such device fails to infer some function, even if it has super-Turing power,
-and that no two distinguishable devices can infer each
-other~\cite{Wolpert2008physical}. These results limit prediction and
-observation from inside a universe. On our reading they say nothing about
-whether its dynamics could be executed by an external machine.
+machine~\cite{Weihrauch2002is}. Wolpert's limits on \emph{inference devices}, which hold even for
+super-Turing devices, concern prediction and observation by devices embedded
+in the universe~\cite{Wolpert2008physical}. On our reading they do not bear on
+execution by an external machine.
 
 What follows validly is that undecidability of a property (T2) is compatible
 with, and in the cited constructions is \emph{derived from}, computable local
@@ -206,8 +200,8 @@ simulation~\cite{Faizal2025consequences}. Their premises, in order, are as
 follows.
 (i)~A candidate quantum-gravity theory is a computational formal system
 $\mathcal F_{\rm QG}$. Its axioms are recursively enumerable; on the same page
-they are also said to be finite. It is arithmetically expressive, consistent
-and ``empirically complete''.
+they are also said to be finite. It is arithmetically expressive and consistent,
+and satisfies ``empirical completeness''.
 (ii)~Gödel's first theorem gives $\mathrm{Th}(\mathcal F_{\rm QG})\subsetneq
 \mathrm{True}(\mathcal F_{\rm QG})$, with truth defined as satisfaction in the
 standard model of arithmetic. Tarski's and Chaitin's theorems add further
@@ -275,21 +269,20 @@ dynamics~\cite{Copeland2023churchturing}. Aaronson argued that Planck-scale
 physics and the holographic entropy bound appear to exclude Zeno-type and
 Malament-Hogarth hypercomputers, as well as unlimited-precision analog
 computation. He suggested that the intractability of NP-complete problems
-might itself be treated as a physical principle~\cite{Aaronson2005np}. For the
-present review, the symmetry of the situation is what matters. A
-computability-based argument against simulation requires our physics to
-violate the physical Church-Turing thesis. If it does, nothing in the argument
-prevents the host's physics from doing the same.
+might itself be treated as a physical principle~\cite{Aaronson2005np}. What matters here is a symmetry. A computability-based argument against
+simulation requires our physics to violate the physical Church-Turing thesis,
+and if it does, nothing in the argument prevents the host's physics from doing
+the same.
 
 \subsection{Resource bounds and the host's physics}
 \label{sec:complexity:resources}
 
 Bostrom estimated $\sim\!10^{33}$--$10^{36}$ operations for a realistic
 simulation of human mental history, against $\sim\!10^{42}$ operations per
-second for a planetary-mass computer of known design. He also held that
-simulating the whole universe ``down to the quantum level is obviously
-infeasible, unless radically new physics is
-discovered''~\cite{Bostrom2003are} (see \S\ref{sec:philosophy:bostrom}). Lloyd
+second for a planetary-mass computer of known design. He regarded simulating
+the whole universe at the quantum level as infeasible ``unless radically new
+physics is discovered''~\cite{Bostrom2003are} (see
+\S\ref{sec:philosophy:bostrom}). Lloyd
 bounded the computation the observable universe can have performed at
 ${\lesssim}10^{120}$ operations on ${\sim}10^{90}$ bits (${\sim}10^{120}$ with
 gravitational degrees of freedom). He read these numbers both as upper bounds
@@ -312,7 +305,7 @@ own''~\cite{Edge2026commentary}. Bostrom remarks that ``the physics in the
 basement universe might allow for vastly more powerful
 computers''~\cite{Bostrom2025simulation}. Wolpert's framework allows
 simulating and simulated universes to obey different laws~\cite{Wolpert2025what}.
-Running time is similarly unconstrained, because a slowdown in the host is not
+Running time is similarly unconstrained: a slowdown in the host is not
 observable from inside~\cite{Aaronson2017because}. Resource arguments therefore
 constrain two scenarios: Bostrom-type ancestor simulations run by our
 descendants, whose physics is ours by hypothesis, and nested simulations
@@ -346,5 +339,5 @@ Taken together, and granting their unproven premises (for example,
 $\mathsf{BPP}\neq\mathsf{BQP}$), they narrow the admissible designs. A
 simulator of quantum physics within our physics would have to be quantum or
 pay superpolynomial overhead. It would have to approximate continuum quantities
-to finite precision. It would never need to decide the undecidable properties
+to finite precision~\cite{Lloyd1996universal,Aaronson2005np}. It would never need to decide the undecidable properties
 of the models it runs.
