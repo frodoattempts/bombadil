@@ -457,3 +457,19 @@ Section 5 of the report lists them separately.
 - Evidence: "The detection efficiencies, at a confidence level C.L. of 99%, obtained after accounting for searches blindly performed considering all multipole moments ℓ up to ℓmax = 64 are 25% (7%) for the Angular Power Spectrum analysis and 13% (5%) for the needlet analysis"
 - Verified: FULLTEXT
 - Notes: This shows how much power blind all-ℓ searches lose. It motivates a targeted (template) statistic for a specific symmetry.
+
+### C-04-055
+- Claim: Beane et al. conclude that improvement masks much of the ability to probe the scenario, and that any but the very earliest universe simulations are unlikely to be unimproved.
+- Source: Beane2014constraints
+- Locator: Sec. V (Conclusions)
+- Evidence: "Given the ease with which current lattice QCD simulations incorporate improvement or employ discretizations that preserve chiral symmetry, it seems unlikely that any but the very earliest universe simulations would be unimproved with respect to the lattice spacing. Of course, improvement in this context masks much of our ability to probe the possibility that our universe is a simulation"
+- Verified: FULLTEXT
+- Notes: Section 03 (sec:lattice-liv) develops the consequences for the size of the threshold anisotropy.
+
+### C-04-056
+- Claim: Auger relates multipole ℓ to an angular scale of about 180°/ℓ (for example, ℓ = 17 to ≈11° and ℓ = 8 to ≈23°).
+- Source: PierreAuger2024large
+- Locator: Sec. 4.3
+- Evidence: "Ĉ17 , corresponding to an angular scale of ∼180◦ /ℓ ≈ 11◦ , and Ĉ8 , corresponding to an angular scale of ∼23◦"
+- Verified: FULLTEXT
+- Notes: Used for the ℓ = 4 (≈45°) and ℓ = 6 (≈30°) scales (OWN arithmetic). The iron rigidity at E_34 (46 EeV / 26 ≈ 1.8 EV) is also OWN arithmetic.

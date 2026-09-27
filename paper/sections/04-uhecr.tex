@@ -6,10 +6,10 @@ and Savage~\cite{Beane2014constraints}. It reviews what measurements of
 ultra-high-energy cosmic rays (UHECRs) say about their lattice scenario,
 separates what current data constrain from what they leave open, and ends with
 a specific analysis that could be run on public data. The lattice theory and
-the Lorentz-violation bounds are treated in Sec.~\ref{sec:lattice}.
+the Lorentz-violation bounds are treated in Sec.~\ref{sec:lattice-liv}.
 
 \subsection{The prediction and its premises}
-\label{sec:uhecr-prediction}
+\label{sec:uhecr:prediction}
 
 Beane \emph{et al.} assume a simulation on a hyper-cubic space-time grid with
 spacing $b$, starting from an unimproved Wilson action~\cite{Beane2014constraints}.
@@ -38,7 +38,7 @@ nucleus of mass number $A$ carries only about $E/A$ per nucleon, so identifying
 $E_{\max}$ with the observed endpoint depends on composition.
 (iii)~The arXiv version puts the GZK scale at ``$\sim6\times10^{20}$\,eV''
 \cite{Beane2014constraints}. That is ten times the threshold of
-$\sim6\times10^{19}$\,eV quoted by the experiments~\cite{HiRes2008first}, and
+$\sim6\times10^{19}$\,eV quoted by HiRes~\cite{HiRes2008first}, and
 we do not reproduce it.
 
 We checked numerically which spherical-harmonic degrees admit functions
@@ -50,7 +50,7 @@ lattice-aligned pattern has no dipole and no quadrupole: its leading content
 is at $\ell=4$ and $\ell=6$.
 
 \subsection{The flux suppression and the composition question}
-\label{sec:uhecr-spectrum}
+\label{sec:uhecr:spectrum}
 
 HiRes reported a suppression at $\log_{10}(E/\mathrm{eV})=19.75\pm0.04$. It
 observed 13 events above $10^{19.8}$\,eV where an unbroken spectrum predicted
@@ -90,7 +90,7 @@ near $10^{20}$\,eV'' to a statement about $b$, whether the end is attributed to
 the GZK effect or to a lattice.
 
 \subsection{Arrival directions at each angular scale}
-\label{sec:uhecr-anisotropy}
+\label{sec:uhecr:anisotropy}
 
 \paragraph{Dipole.}
 Auger observed a dipole above 8\,EeV at more than $5.2\sigma$ (post-trial),
@@ -122,7 +122,7 @@ $244\pm29\,(\mathrm{stat})\,^{+51}_{-76}\,(\mathrm{syst})$\,EeV whose direction
 points back to a void~\cite{TelescopeArray2023extremely}.
 
 \paragraph{Higher multipoles, including $\ell=4$ and $\ell=6$.}
-Table~\ref{tab:uhecr-multipoles} lists the analyses that measured multipoles
+Table~\ref{tab:uhecr:multipoles} lists the analyses that measured multipoles
 beyond the quadrupole. Auger observes only part of the sky, so it cannot
 estimate individual $a_{\ell m}$ with useful resolution once $\ell_{\max}>2$.
 It reconstructs $C_\ell$ instead, assuming the anisotropies are one
@@ -149,7 +149,7 @@ finds nothing beyond the dipole~\cite{Ahlers2018searching}.
 \caption{Published analyses that measured UHECR multipoles beyond $\ell=2$,
 all of which therefore contain $\ell=4$ and $\ell=6$. None forms an
 $O_h$-invariant combination or scans lattice orientations.}
-\label{tab:uhecr-multipoles}
+\label{tab:uhecr:multipoles}
 \begin{tabular}{p{0.24\linewidth}p{0.2\linewidth}p{0.17\linewidth}p{0.29\linewidth}}
 \hline
 Analysis & Data, energy & $\ell$ range & Result beyond the dipole\\
@@ -164,7 +164,7 @@ Ahlers 2018~\cite{Ahlers2018searching} & public Auger, $>8$\,EeV & pseudo-$C_\el
 \end{table}
 
 \subsection{Magnetic smearing}
-\label{sec:uhecr-gmf}
+\label{sec:uhecr:gmf}
 
 Deflections scale with charge and with the integrated transverse field, and
 inversely with energy~\cite{PierreAuger2017observation}. At
@@ -181,19 +181,22 @@ If directions are corrected for the modelled field, the requirement falls to
 not included~\cite{Unger2024coherent}. The model-to-model spread is smaller than
 the deflections themselves over most of the sky~\cite{Unger2024coherent}.
 
-For iron-like charges near the suppression energy, these rigidities imply
-deflections of tens of degrees. That is comparable to the $\sim45^\circ$ angular
-scale of an $\ell=4$ pattern, so the Galactic field would distort a
-lattice-aligned pattern in a direction-dependent way. A search must therefore
-either forward-model the distortion or work at the highest rigidities, where
-the pattern survives.
+For iron ($Z=26$) at the suppression energy
+$E_{34}\approx46$\,EeV~\cite{PierreAuger2020features}, the rigidity is only
+about 1.8\,EV, far below these thresholds. The characteristic angular scale of
+multipole $\ell$ is about $180^\circ/\ell$~\cite{PierreAuger2024large}, or about
+$45^\circ$ for $\ell=4$ and $30^\circ$ for $\ell=6$. Unless the highest-energy
+particles are light, the Galactic field would therefore distort a
+lattice-aligned pattern in a direction-dependent way. A search must
+forward-model this distortion, or use the high-rigidity limit as the
+unperturbed case.
 
 \subsection{What the existing data do and do not constrain}
-\label{sec:uhecr-status}
+\label{sec:uhecr:status}
 
 $C_\ell$ does not change under rotations. A cubic pattern of \emph{any}
 orientation therefore adds power to $C_4$ and $C_6$, and the non-detections in
-Table~\ref{tab:uhecr-multipoles} already bound the size of such a pattern
+Table~\ref{tab:uhecr:multipoles} already bound the size of such a pattern
 without any orientation scan. The bound is only implicit, for four reasons.
 (a)~No paper quotes numerical $C_4$ or $C_6$ limits above the suppression
 energy.
@@ -207,7 +210,12 @@ $\ell\le64$ power-spectrum search detects it at 99\% CL in only 25\% of skies
 at $\delta=-30^\circ$~\cite{PierreAuger2017multiresolution}.
 (d)~Turning an amplitude limit into a limit on $b$ requires the anisotropy
 amplitude as a function of $b$ and rigidity, which Beane \emph{et al.} do not
-provide~\cite{Beane2014constraints}.
+provide~\cite{Beane2014constraints}. Section~\ref{sec:lattice-liv} argues
+further that, for the unimproved Wilson action, existing Lorentz-violation
+bounds already suppress the cubic anisotropy of the photopion threshold. A
+detectable signal would then require an improved discretization with $b^{-1}$
+near $10^{11}$\,GeV. These considerations limit what a positive or null result
+could mean. They do not make the search uninformative about the phenomenology.
 
 \paragraph{Novelty check.}
 We searched for any analysis that tests UHECR (or other astroparticle) arrival
@@ -215,8 +223,8 @@ directions for a lattice-aligned, cubic or $O_h$-symmetric anisotropy, or that
 confronts the ``numerical simulation'' hypothesis with such data. We checked
 every work that cites Ref.~\cite{Beane2014constraints} in INSPIRE (13 records)
 and Semantic Scholar (61 records), ran full-text queries in INSPIRE, and ran
-arXiv and general web searches. The full log is in the project repository. We
-found no such analysis. Citing works are theory, philosophy or popular
+arXiv and general web searches. The full log is in the accompanying research
+notes. We found no such analysis. Citing works are theory, philosophy or popular
 accounts. Among them, Ref.~\cite{Vazza2025astrophysical} uses the UHECR energy
 only as a resolution requirement for a simulator, and
 Ref.~\cite{Mlodinow2025bounds} bounds a cubic-lattice quantum cellular
@@ -231,7 +239,7 @@ $O_h$-symmetric UHECR anisotropy has been published. NASA ADS and Google Scholar
 could not be queried automatically, so this statement carries that caveat.
 
 \subsection{Public data}
-\label{sec:uhecr-data}
+\label{sec:uhecr:data}
 
 Auger opened its Open Data Portal in February 2021 with 10\% of Phase~I data.
 The release now holds 81{,}121 showers, including 25{,}086 events from the
@@ -256,10 +264,10 @@ all-scale reanalysis of public Auger events has already been
 published~\cite{Ahlers2018searching}, so such work is practical.
 
 \subsection{A proposed search (not a result)}
-\label{sec:uhecr-proposal}
+\label{sec:uhecr:proposal}
 
 The following analysis is feasible with the public data above and addresses
-points (b) and (c) of Sec.~\ref{sec:uhecr-status}. We present it as a proposal;
+points (b) and (c) of Sec.~\ref{sec:uhecr:status}. We present it as a proposal;
 it has not been carried out.
 
 \emph{Model.} The relative flux is written as
@@ -314,6 +322,6 @@ dipole and the orientation scan will increase the threshold for detection.
 \emph{Interpretation.} A null result would bound $\epsilon$ as a function of
 energy threshold and assumed rigidity. Relating $\epsilon$ to $b$ needs a
 calculation of the anisotropy amplitude that the literature does not yet
-contain (Sec.~\ref{sec:lattice}). The bound also does not apply to
+contain (Sec.~\ref{sec:lattice-liv}). The bound also does not apply to
 discretizations with other symmetries or with improved actions, which Beane
 \emph{et al.} themselves consider likely~\cite{Beane2014constraints}.
