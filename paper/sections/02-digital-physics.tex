@@ -1,0 +1,320 @@
+\section{Antecedents and neighbouring programmes: digital physics and computational views of nature}
+\label{sec:digital-physics}
+
+The simulation hypothesis is often presented as the latest form of an older
+idea, that ``the universe is a computer''. That older literature contains
+several different theses. If they are run together, it becomes unclear what a
+given observation could test. The key distinction for this review is between
+the claim that the universe \emph{is} a computation (or is computable, or is
+discrete) and the claim that it is \emph{run on} a computer that belongs to
+some other reality. This section traces where the computational views came
+from and fixes the terms used in later sections.
+
+\subsection{Six theses that are often conflated}
+\label{sec:digital-physics:theses}
+
+We separate six claims. Table~\ref{tab:digital-physics:theses} summarizes them.
+
+\emph{(C) Computational modellability.} Floridi separates two questions. The
+first is whether the physical universe can be adequately modelled digitally
+and computationally. The second is whether it is digital and computational in
+itself. He treats the first as an open ``empirico-mathematical'' question and
+argues that the second is ill-posed~\cite{Floridi2009against}. Thesis (C)
+carries no ontological commitment. Floridi puts this as a contrast between the
+``predicative'' and ``attributive'' senses of ``digital physics''.
+
+\emph{(CU) Computable universe.} Szudzik defines a computable physical model as
+a recursive set of states together with a total recursive function for each
+observable. On this basis he states a \emph{computable universe hypothesis}:
+the universe has a recursive set of states, and every observable is a total
+recursive function of the state~\cite{Szudzik2012computable}. His examples
+include a model with non-discrete, continuous motion. So computability in this
+sense does not require discreteness. Tegmark's \emph{Computable Universe
+Hypothesis} is a different formulation. It requires that the relations defining
+the mathematical structure identified with our universe be computable by
+halting computations~\cite{Tegmark2008mathematical}. Deutsch's physical
+reading of the Church--Turing thesis is a related but separate claim. It says
+that ``every finitely realizable physical system can be perfectly simulated by
+a universal model computing machine operating by finite
+means''~\cite{Deutsch1985quantum}. Deutsch argued that classical continuum
+physics does not satisfy this strong form with respect to the Turing machine.
+Quantum theory, he argued, is compatible with it through a universal quantum
+computer. He also held that the principle has the epistemological status of
+other physical principles, such as the third law of
+thermodynamics~\cite{Deutsch1985quantum}. Deutsch himself calls it ``the
+Church--Turing principle''.
+
+\emph{(D) Digital universe.} This is the thesis that the physical universe
+(time, space and every entity and process in spacetime) is ultimately discrete.
+Floridi takes it as the core of ``digital ontology''~\cite{Floridi2009against}.
+The SEP entry on physical computation adds a requirement for a
+cellular-automaton universe. All fundamental magnitudes must take finitely many
+values, and space and time must be fundamentally discrete or emerge from
+discrete processing~\cite{Piccinini2025computation}.
+
+\emph{(P) Ontic pancomputationalism.} Here the universe is itself a computing
+system. The SEP entry notes that this view originated in physics, not
+philosophy. It combines an \emph{empirical} claim with a \emph{metaphysical}
+one. The empirical claim is that fundamental magnitudes and their state
+transitions are \emph{exactly} described by some computational formalism. The
+metaphysical claim is that computation is what the universe is made
+of~\cite{Piccinini2025computation}. There is a classical version, based on
+cellular automata, and a quantum version associated with
+Lloyd~\cite{Lloyd2006programming}. The entry describes the quantum version as
+possibly a reformulation of quantum mechanics without change in empirical
+content~\cite{Piccinini2025computation}.
+
+\emph{(M) Mathematical universe.} Tegmark's Mathematical Universe Hypothesis
+states that ``our physical world is an abstract mathematical
+structure''~\cite{Tegmark2008mathematical}. It generalizes his earlier
+``ultimate ensemble'' postulate that all structures that exist mathematically
+also exist physically~\cite{Tegmark1998is}.
+
+\emph{(S) Simulated universe.} This is the claim that our universe is a
+computation \emph{implemented on hardware that exists outside it}. Usually the
+hardware is also assumed to have been built by designers. This is the
+simulation hypothesis proper, discussed from Section~2 onward % TODO: replace with \ref to the philosophy section (01)
+of this review.
+
+\begin{table}[t]
+\centering
+\small
+\caption{Computational theses about the physical world. The last column states
+whether the thesis itself posits computing hardware outside our universe.}
+\label{tab:digital-physics:theses}
+\begin{tabular}{@{}p{0.19\linewidth}p{0.36\linewidth}p{0.25\linewidth}p{0.10\linewidth}@{}}
+\hline
+Thesis & Core claim & Representative sources & External hardware? \\
+\hline
+(C) Modellability & The world can be adequately modelled computationally & \cite{Floridi2009against} & No \\
+(CU) Computable universe & States and observables (or defining relations) are computable & \cite{Szudzik2012computable,Tegmark2008mathematical,Deutsch1985quantum} & No \\
+(D) Digital universe & Spacetime and all magnitudes are fundamentally discrete & \cite{Floridi2009against,Fredkin2003introduction} & No \\
+(P) Ontic pancomputationalism & The universe is a (classical or quantum) computing system & \cite{Piccinini2025computation,Lloyd2002computational,Wolfram2002new} & Not necessarily \\
+(M) Mathematical universe & The world is a mathematical structure & \cite{Tegmark2008mathematical} & No \\
+(S) Simulated universe & The world is a computation run on hardware outside it & \cite{Moravec1992pigs,Bostrom2003are} & Yes \\
+\hline
+\end{tabular}
+\end{table}
+
+Several relations among these theses are stated explicitly in the literature.
+First, (D) and (P) are independent. Floridi cites Wheeler as someone who held
+the former but not, at least not explicitly, the latter~\cite{Floridi2009against}.
+Second, (CU) does not entail (D), as Szudzik's continuous example
+shows~\cite{Szudzik2012computable}. Third, (P) does not entail (S). The SEP
+entry notes that the metaphysical claim of (P) needs an account of what the
+computation \emph{is}. It lists three options: a simulation running on a
+computer in another universe, computations as abstract mathematical entities
+(a computational Pythagoreanism), and computational structural
+realism~\cite{Piccinini2025computation}. Only the first is (S). Fourth,
+Tegmark contrasts his hypotheses with (S) explicitly. The Computable Universe
+Hypothesis ``requires the description (the relations) rather than the time
+evolution to be computable'', so that ``the universe is a mathematical
+structure according to the MUH, as opposed to a computation according to the
+simulation hypothesis''~\cite{Tegmark2008mathematical}.
+
+\subsection{A genealogy}
+\label{sec:digital-physics:genealogy}
+
+\paragraph{Zuse and Fredkin.} Zuse's ``Rechnender Raum'' first appeared as a
+journal article in 1967~\cite{Zuse1967rechnender}. It was followed by a book in
+1969~\cite{Zuse1969rechnender} and an MIT technical translation, \emph{Calculating
+Space}, in 1970~\cite{Zuse1970calculating}. We could not consult Zuse's text,
+so we rely on secondary characterizations. The SEP entry credits Zuse and
+Edward Fredkin with the ``earliest and best known'' version of ontic
+pancomputationalism, in which the universe is a giant cellular automaton. It
+adds that Fredkin's largely unpublished ideas influenced Feynman, Toffoli and
+Wolfram~\cite{Piccinini2025computation}. Floridi calls the shared position the
+``Zuse Thesis'': the universe is deterministically computed on a giant but
+discrete computer. He notes that Zuse, Fredkin and Wolfram took that computer
+to be a cellular automaton, Schmidhuber a universal Turing machine, and Lloyd a
+quantum computer~\cite{Floridi2009against}. Fredkin developed ``digital
+mechanics''~\cite{Fredkin1990informational} and ``digital
+philosophy''~\cite{Fredkin2003introduction}. As quoted by Floridi, digital
+philosophy takes space and time to be discrete and the bit as the unit of
+state. It also demands the ``eventual ability to derive'' the equations of
+current physics from such models~\cite{Floridi2009against}. According to the
+SEP entry, Fredkin~\cite{Fredkin2003introduction} also considered the
+possibility that our universe is a simulation on a computer in another universe
+whose physics is inaccessible to us~\cite{Piccinini2025computation}. That
+possibility is thesis (S), not (D).
+
+\paragraph{The MIT physics-of-computation papers (1981--1984).} Feynman's
+keynote ``Simulating physics with computers'' says that his interest in the
+topic was inspired by Fredkin~\cite{Feynman1982simulating}. The part that
+concerns us here is not complexity (see Section~6 % TODO: \ref to complexity section (06)
+) but Feynman's notion of \emph{exact} simulation. Exact simulation would
+require ``everything that happens in a finite volume of space and time'' to be
+``exactly analyzable with a finite number of logical operations''. Present
+physics does not meet this condition, so ``if this proposition is right,
+physical law is wrong''~\cite{Feynman1982simulating}. Feynman also noted that
+if space were replaced by a simple lattice, the speed of light would generically
+depend slightly on direction. The resulting anisotropies are experimentally
+constrained~\cite{Feynman1982simulating}. This observation anticipates the
+lattice tests reviewed in Section~3. % TODO: \ref to lattice/LIV section (03)
+He called Fredkin's programme of finding a computer simulation of physics ``an
+excellent program'', provided the simulation is quantum
+mechanical~\cite{Feynman1982simulating}. Fredkin and Toffoli's conservative
+logic went the other way, from computation to physics. It is a model of
+computation built to respect reversibility and conservation laws, and it shows
+that a perfect gas in a suitably shaped container can reproduce a
+general-purpose digital computer~\cite{Fredkin1982conservative}. Toffoli later
+proposed cellular automata ``as an alternative to (rather than an approximation
+of)'' differential equations in modelling physics~\cite{Toffoli1984cellular}.
+Zuse~\cite{Zuse1982computing} and Wheeler~\cite{Wheeler1982computer} published
+papers in the same 1982 volume of the \emph{International Journal of
+Theoretical Physics}.
+
+\paragraph{Wheeler: ``it from bit''.} Wheeler's slogan is often grouped with
+digital physics, but its content is different. It holds that every physical
+quantity ``derives its ultimate significance from bits, binary yes-or-no
+indications''. These bits are elementary acts of
+``observer-participancy''~\cite{Wheeler1990information}. Wheeler denied a
+microscopic continuum of space and time (``continuum-based physics, no;
+information-based physics, yes''). He also explicitly rejected ``the concept of
+universe as machine'', partly because it requires postulating ``a
+supermachine''~\cite{Wheeler1990information}. ``It from bit'' is therefore an
+informational and participatory thesis close to (D). It is not a thesis of
+type (P) or (S).
+
+\paragraph{Lloyd: limits and the computing universe.} Lloyd derived that a
+system of mean energy $E$ can perform at most $2E/\pi\hbar$ elementary
+operations per second. For a 1\,kg ``ultimate laptop'' the bound is about
+$5.4\times10^{50}$ operations per second~\cite{Lloyd2000ultimate}. Applied to
+the observable universe, the same limits give order-of-magnitude upper bounds
+of about $10^{120}$ operations on about $10^{90}$ bits (about $10^{120}$ bits if
+gravitational degrees of freedom are included). The operation count scales as
+$(t/t_P)^2$~\cite{Lloyd2002computational}. Lloyd offered three readings of
+these numbers. They bound the computation that matter can have performed. They
+bound from below the resources a quantum computer needs to simulate the
+universe directly. And, in a reading he calls ``more controversial'', they give
+the memory and operation count of the universe regarded as a
+computation~\cite{Lloyd2002computational}. The second reading bears on (S).
+The third is a quantum version of (P). Lloyd's own answer to ``Is the universe
+a computer?'' depends ``on the meaning of `computer' and on the meaning of
+`is'\,'': the universe is not a conventional digital computer, but ``it can
+still compute''~\cite{Lloyd2002computational}. A later preprint proposes
+deriving spacetime geometry from an underlying quantum
+computation~\cite{Lloyd2005theory}.
+
+\paragraph{Wolfram: \emph{A New Kind of Science} and the 2020 models.} Wolfram
+asked whether ``some simple program which, if run for long enough, would
+reproduce our universe in every detail'' might underlie physics. Such a program
+would be a model ``not in any sense an approximation or
+idealization''~\cite{Wolfram2002new}. In the same book he wrote that no literal
+mechanistic model of the Zuse--Fredkin kind ``can ever in the end realistically
+be expected to work''~\cite[p.~1026]{Wolfram2002new}. Expert reviews of the
+physics chapter were critical. Aaronson argued that its causal-network picture
+of spacetime had been discussed earlier in quantum gravity, with the difference
+that Wolfram's model is explicitly classical. He also showed that Wolfram's
+deterministic ``long-range thread'' account of entanglement cannot satisfy
+causal invariance, the relativity postulate and Bell-inequality violation all
+at once~\cite{Aaronson2002book}. Kadanoff attributed the automaton-universe view
+to Fredkin. He judged the chapter ``a partially formed idea---exciting, but not
+yet science'' and found ``no comparison with experiment''~\cite{Kadanoff2002new}.
+Weinberg's essay review saw no motivation for the discrete-universe speculation
+beyond familiarity with computers. He also noted that the computational
+equivalence of automata to continuous systems holds only if nothing in nature is
+truly continuous~\cite{Weinberg2002is}. In 2020 Wolfram introduced models in
+which the universe is an evolving hypergraph with no intrinsic space, time or
+matter. He proposed that ``causal invariance'' of the rewriting rules yields
+Lorentz invariance, general covariance and local gauge invariance, and
+described parts of this correspondence as ``speculative''~\cite{Wolfram2020class}.
+In that paper experimentally accessible predictions are a prospect (``it seems
+increasingly likely that experimentally accessible predictions will be
+possible''), not a result. The models' elementary length need not coincide with
+the Planck length~\cite{Wolfram2020class}. Gorard presents proofs that causal
+invariance is equivalent to a discrete general covariance, and derives discrete
+analogues of Lorentz covariance and, under a dimension-preservation assumption,
+of the Einstein equations~\cite{Gorard2020some}. He also relates the models to
+causal sets~\cite{Gorard2020algorithmic}. Butterfield and Dowker argue that any
+Planck-scale discrete theory that recovers general relativity must contain
+causal sets. They list the Wolfram model among the approaches whose status
+under this argument ``it would be a good project to
+assess''~\cite{Butterfield2024recovering}. The 2020 models allow multiway
+(branching) evolution, which the NKS framework did not. We did not find a
+published analysis of whether Aaronson's argument carries over to them.
+
+\paragraph{'t Hooft: the cellular automaton interpretation.} 't~Hooft treats
+quantum mechanics ``as a tool, not as a theory''. He suggests that the Standard
+Model with gravity may be a quantum-mechanical analysis of a system that
+``could be classical at its core''. He also argues that the usual objections to
+superdeterminism can be overcome ``at least in principle''~\cite{tHooft2016cellular}.
+This is a (D)-type proposal about the foundations of quantum mechanics. It does
+not posit a simulator. It makes a ``firm prediction'': quantum computers will
+not outperform a classical computer with one memory site per Planck volume (or
+Planck area) that performs one operation per Planck time~\cite{tHooft2016cellular}.
+This links the proposal to the complexity questions of Section~6.
+
+\paragraph{Algorithmic ensembles and the mathematical universe.} Schmidhuber
+cast his 1997 analysis explicitly as a simulation: a ``Great Programmer''
+runs all computable universes on ``His Big Computer''. Here ``computable''
+means discrete time and finitely describable states, and computing all
+universes needs far less information than computing one arbitrary
+universe~\cite{Schmidhuber1997computer}. He noted that inhabitants ``run on
+local time'' and cannot tell how many machine steps each of their time steps
+takes~\cite{Schmidhuber1997computer}. His later ``speed prior'' assigns low
+probability to histories that are slow to compute. From it he derived a
+concrete, falsifiable-in-principle claim: apparently random events such as
+individual beta decays come from a fast pseudorandom
+generator~\cite{Schmidhuber2000algorithmic}. Tegmark separates his
+computable-universe hypothesis from (S), as quoted above. He also calls
+``a common misconception in the universe simulation literature'' the
+identification of physical time with the step-by-step flow of a computation.
+On his account, a simulating computer need only \emph{specify} a history, not
+compute it~\cite{Tegmark2008mathematical}. He concedes that ``virtually all
+historically successful theories of physics violate the CUH'' because they use
+the continuum~\cite{Tegmark2008mathematical}. Deutsch's and Feynman's
+observations point to the same tension~\cite{Deutsch1985quantum,Feynman1982simulating}.
+
+\paragraph{Early simulated-world proposals.} Explicit versions of (S) came
+from outside physics. In a 1992 essay Moravec argued that a future cyberspace
+would replay human history many times. Hence ``the very moment we are now
+experiencing may actually be (almost certainly is)'' such a replayed
+event~\cite{Moravec1992pigs}. This is a statistical argument of the kind that
+Bostrom later formalized~\cite{Bostrom2003are}. Bostrom's paper cites Moravec's
+\emph{Mind Children}~\cite{Moravec1988mind} and Lloyd's limits
+paper~\cite{Lloyd2000ultimate}. Tegmark lists Tipler~\cite{Tipler1994physics},
+Bostrom and Schmidhuber as authors who discussed the probability that we are
+simulated~\cite{Tegmark2008mathematical}. He describes Lloyd's view as an
+intermediate case: an analog quantum simulation ``not designed by
+anybody''~\cite{Tegmark2008mathematical}.
+
+\subsection{Philosophical assessments}
+\label{sec:digital-physics:philosophy}
+
+The SEP entry distinguishes ``unlimited'' pancomputationalism from ``limited''
+pancomputationalism. The unlimited form, associated with Putnam and Searle,
+holds that every sufficiently complex system implements very many computations.
+The limited form holds that every system implements some computation. Both
+differ from the ontic pancomputationalism of the physicists discussed
+here~\cite{Piccinini2025computation}. The entry finds ``little positive
+evidence'' for ontic pancomputationalism. It suggests that supporters are
+motivated by ``the desire for exact computational models of the world'' rather
+than by evidence. It notes the metaphysical objection that computational
+entities lack the causal and qualitative properties we observe. It also grants
+that the classical version is ``in principle'' testable~\cite{Piccinini2025computation}.
+Floridi argues that digital ontology should be abandoned in favour of
+informational structural realism. His reason is that ``digital'' and
+``analogue'' are modes of presentation relative to a level of abstraction, not
+properties of reality in itself~\cite{Floridi2009against}. His argument has
+drawn at least one published reply~\cite{Sdrolia2014rethinking}.
+
+\subsection{Consequences for this review}
+\label{sec:digital-physics:consequences}
+
+These distinctions have three practical consequences for the rest of the
+review. The first two are our own inferences from the sources above; the third
+restates positions in them.
+First, empirical searches for spacetime discreteness (Section~3) test
+particular (D)-type models, such as a lattice with preferred directions. Their
+bearing on (S) depends on extra assumptions about how a simulator would
+represent our world. A simulator need not use a lattice, or even step through
+our time in order~\cite{Schmidhuber1997computer,Tegmark2008mathematical}.
+Second, the computability and complexity results of Section~6 bear on (CU) and
+on the resource side of (S). Examples are Deutsch's principle, Lloyd's bounds
+(read as lower bounds on the cost of a direct quantum simulation) and
+'t~Hooft's prediction about quantum computers. They do not bear on
+(M)~\cite{Deutsch1985quantum,Lloyd2002computational,tHooft2016cellular}.
+Third, arguments that the universe ``is'' computational do not by themselves
+support the claim that it is simulated, because a computational ontology can be
+read in ways that posit no external hardware~\cite{Piccinini2025computation,Tegmark2008mathematical}.

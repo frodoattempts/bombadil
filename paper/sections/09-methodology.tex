@@ -1,0 +1,329 @@
+% Section 09: methodology and scientific status.
+% Built only from claims in research/ledgers/09-methodology.md (C-09-xxx).
+% Cross-references to other sections use ASSUMED labels, which the integrator
+% must reconcile with the labels those sections actually define:
+%   sec:argument (01, Bostrom and critics), sec:lattice (03), sec:cosmicrays (04),
+%   sec:holographic (05), sec:complexity (06), sec:render (07), sec:infophysics (08).
+% Requires amssymb (\gtrsim).
+
+\section{The scientific status of the simulation hypothesis}
+\label{sec:methodology}
+
+This section sets out the methodological framework for the rest of the review.
+We ask what it would mean to test the claim that the observable universe is a
+computer simulation, which versions of the claim can be tested, what a
+positive or null result would show, and how published results have been
+described to the public. Our conclusion is that only restricted
+sub-hypotheses about how a simulator is built can be tested. For every
+sub-hypothesis we examine, the proposed signature is also predicted by
+non-simulation physics.
+
+\subsection{Standards of testability}
+\label{sec:methodology:standards}
+
+\paragraph{Falsifiability.}
+On Popper's demarcation criterion, a theory is unscientific if it is
+compatible with all possible observations. This holds whether the theory is
+compatible by construction or because it has been modified to accommodate them
+\cite{Thornton2026karl}. Corroboration counts only when it comes from a
+``risky'' prediction that might have failed \cite{Thornton2026karl}. Popper
+also held that a theory rescued from failed predictions by ad hoc hypotheses
+degenerates into dogma \cite{Thornton2026karl}. Lakatos's standard objection is
+that high-level theories are always protected by a ``protective belt'' of
+auxiliary hypotheses. On his account they are abandoned when a research
+programme stalls, not after a single critical test \cite{Thornton2026karl}.
+
+\paragraph{Underdetermination.}
+Stanford distinguishes two forms of underdetermination
+\cite{Stanford2023underdetermination}. In the holist form, a failed prediction
+can be blamed on an auxiliary assumption rather than on the hypothesis under
+test. In the contrastive form, rival theories are equally well supported by
+the same evidence. In the limiting case of empirically equivalent theories, no
+possible evidence can favour one over the other
+\cite{Stanford2023underdetermination}. Descartes' evil demon is the classic
+sceptical instance: all sensory experience would be the same whether it came
+from the demon or from an external world \cite{Stanford2023underdetermination}.
+
+\paragraph{Bayesian confirmation.}
+Evidence $e$ confirms a hypothesis $h$ relative to background $k$ if and only if
+$P(h\mid e\wedge k)>P(h\mid k)$. It is neutral if the two are equal
+\cite{Crupi2025confirmation}. One standard measure of how far $e$ favours $h$
+over its negation is the likelihood ratio
+$P(e\mid h\wedge k)/P(e\mid \neg h\wedge k)$ \cite{Crupi2025confirmation}.
+We use this measure below. A signature discriminates between a simulation
+sub-hypothesis and a non-simulation rival only if their likelihoods for it
+differ.
+
+\paragraph{Graded falsifiability and non-empirical assessment.}
+Carroll argues that falsifiability tracks two virtues, definiteness and
+empiricism. On definiteness, a theory should not be compatible with ``any
+conceivable set of facts'' \cite{Carroll2019beyond}. He ranks theories from
+category~1, where no conceivable test could return an incompatible result, to
+category~5, where there are doable and definitive tests. Category~4 covers
+theories that can be tested only over part of their parameter space
+\cite{Carroll2019beyond}. On his view the important divide lies between
+category~1 and the rest. Category-1 theories ``don't really even have a chance
+of being true''. Ideas in category~4 are tested where possible, and interest in
+them fades as they are squeezed into smaller regions of parameter space
+\cite{Carroll2019beyond}.
+
+A separate debate concerns whether theories may be assessed without empirical
+data. Dawid argues that non-empirical assessment plays an important part in
+high-energy physics \cite{Dawid2013string}. He identifies three arguments: the
+no-alternatives argument, the meta-inductive argument from past success, and
+the argument from unexpected explanatory interconnections. He casts all three
+as Bayesian confirmation \cite{Dawid2019significance}. Ellis and Silk argued
+that exempting speculative theories from experimental verification undermines
+science \cite{Ellis2014scientific}. Rovelli argues that non-empirical evidence
+cannot move a theory from ``maybe'' to ``reliable''. He adds that
+no-alternatives arguments hold only under assumptions that may be false
+\cite{Rovelli2019dangers}.
+
+The simulation-hypothesis literature is largely non-empirical in Dawid's
+sense. The arguments for it are probabilistic
+(Sec.~\ref{sec:argument}), and several arguments against it are a priori or
+concern in-principle cost (Sec.~\ref{sec:complexity}). The no-alternatives
+argument is plainly unavailable to proponents, because each proposed signature
+has a non-simulation explanation (Sec.~\ref{sec:methodology:subhyp}).
+
+\subsection{The unrestricted hypothesis}
+\label{sec:methodology:unrestricted}
+
+Let $H_{\rm SIM}$ denote the unrestricted claim that the observable universe
+is the output of a computation run by a system outside it. $H_{\rm SIM}$
+places no constraint on the simulator's hardware, algorithm, resources or
+intentions. Chalmers argues that nothing could prove we are not in a
+simulation, ``because any such evidence could be simulated''
+\cite{Chalmers2022can}. This passage is a publisher-authorized excerpt of
+Ref.~\cite{Chalmers2022reality}. Wolpert gives a precise example of implementation-level
+equivalence. Beings simulated through fully homomorphic encryption could not
+tell their situation apart from a direct simulation of their laws of physics
+\cite{Wolpert2025what}. A perfect simulation of a physical theory $T$ and $T$
+itself are therefore empirically equivalent in the sense of
+Ref.~\cite{Stanford2023underdetermination}. Their likelihood ratio is unity for
+every possible observation. $H_{\rm SIM}$ is thus an underdetermination of the
+sceptical, Cartesian kind rather than an ordinary scientific one. In Carroll's
+scheme it belongs in category~1. This placement is our application; Carroll
+discusses the multiverse, not simulation.
+
+Two qualifications matter. First, the hypothesis is not symmetric under
+evidence. Chalmers holds that we could obtain ``very strong evidence'' that we
+are simulated, for instance if the simulators showed us the source code, even
+though this would fall short of proof \cite{Chalmers2022can}. Hsu and Zee
+discuss a physical channel for such a disclosure by a creator: a message
+encoded in the cosmic microwave background through the choice of fundamental
+Lagrangian \cite{Hsu2006message}. $H_{\rm SIM}$ can therefore in principle be confirmed
+by a cooperative simulator, but it cannot be refuted. Second, Bostrom himself
+does not claim empirical content for the unrestricted hypothesis. He writes
+that the best guide to how simulators set up our world is ``the standard
+empirical study of the universe we see''. He also writes that the chief
+empirical importance of the simulation disjunct lies in its role in the
+trilemma \cite{Bostrom2003are}. The probability assigned to $H_{\rm SIM}$
+therefore comes from the prior, supplied by the simulation argument
+(Sec.~\ref{sec:argument}), and not from data.
+
+\subsection{Restricted sub-hypotheses and their degenerate rivals}
+\label{sec:methodology:subhyp}
+
+A test becomes possible only when $H_{\rm SIM}$ is conjoined with auxiliary
+assumptions $A$ about the simulator. Beane, Davoudi and Savage make these
+assumptions explicit. They assume a classical computer, a hyper-cubic lattice
+and an unimproved Wilson action. From the cosmic-ray spectrum they derive
+$b^{-1}\gtrsim 10^{11}$~GeV, and they propose a search for lattice-aligned
+anisotropy in the highest-energy cosmic rays \cite{Beane2014constraints}.
+Table~\ref{tab:subhyp} classifies the restricted hypotheses discussed in this
+review. For each class it lists what would count as evidence and which
+non-simulation physics predicts the same signature.
+
+\begin{table}[t]
+\centering
+\footnotesize
+\caption{Restricted simulation sub-hypotheses, their proposed signatures, and
+non-simulation physics that predicts the same signature. The status column is
+a summary only; see the sections cited for details.}
+\label{tab:subhyp}
+\begin{tabular}{p{0.14\textwidth}p{0.23\textwidth}p{0.27\textwidth}p{0.20\textwidth}}
+\hline
+Sub-hypothesis & Signature that would count as evidence & Degenerate non-simulation explanation & Status (summary) \\
+\hline
+H-grid: fixed lattice & Lattice-specific dispersion and energy cut-off; cubic-symmetric anisotropy of ultra-high-energy cosmic rays \cite{Beane2014constraints} & Lorentz violation in quantum-gravity models \cite{Mattingly2005modern}; minimal-length scenarios \cite{Hossenfelder2013minimal}; Lorentz-invariant causal-set discreteness, which also removes the anisotropy \cite{Dowker2004quantum} & Bounds on specific designs only; see Secs.~\ref{sec:lattice}, \ref{sec:cosmicrays} \\
+H-noise: finite resolution & Correlated Planckian position noise in co-located interferometers & Planckian quantum geometry with holographic degrees-of-freedom counting \cite{Hogan2012interferometers} & One model excluded at $4.6\sigma$ incl.\ calibration uncertainty \cite{Chou2016first}; further shear-noise limits \cite{Chou2017interferometric}; see Sec.~\ref{sec:holographic} \\
+H-lazy: render on demand & Interference outcomes that depend on the availability of which-path information to an observer \cite{Campbell2017on} & Collapse models (GRW/CSL) \cite{Bassi2013models}; von~Neumann--Wigner observer postulate, as noted by the proposers \cite{Campbell2017on} & Proposals; see Sec.~\ref{sec:render} \\
+H-budget: bounded compute & Physics that a bounded simulator cannot compute exactly is absent or approximated & Intractability as a physical principle \cite{Aaronson2005np}; physical limits on computation \cite{Lloyd2002computational} & In-principle arguments, no empirical test; see Sec.~\ref{sec:complexity} \\
+H-info: information-physical & New information-thermodynamic laws or effects & Information physics within standard physics \cite{Lloyd2002computational} & Contested; see Sec.~\ref{sec:infophysics} \\
+H-patch: adaptive simulator & Glitches; slow drift of constants \cite{Barrow2007living} & Varying-constant theories with a light field coupled to matter \cite{Uzan2011varying} & Constancy tests exist but are not simulation tests \cite{Uzan2011varying} \\
+\hline
+\end{tabular}
+\end{table}
+
+Two general points follow from the table. The first is degeneracy. Suppose a
+sub-hypothesis $H_{\rm SIM}\wedge A$ and a physical model $P$ both predict a
+signature $s$. Then the likelihood ratio between them for $s$ is close to
+unity. Observing $s$ would confirm their disjunction relative to standard
+physics, but it would not favour simulation over $P$
+\cite{Crupi2025confirmation}. A detected lattice anisotropy would show that
+spacetime is discrete in a particular way. A detected deviation from
+linear quantum dynamics would support a collapse-type modification. In
+neither case would the result show that the discreteness or the collapse was
+computed by someone. For a simulation-specific reading, a signature would need
+features that the rival models do not motivate. An example is a
+discreteness scale far below the Planck scale, which Beane et al.\ note is
+possible in the simulation scenario \cite{Beane2014constraints}. Even then,
+contrastive underdetermination allows a non-simulation model to be built that
+reproduces the feature \cite{Stanford2023underdetermination}.
+
+The second point concerns parameter space. The sub-hypotheses sit in Carroll's
+category~4. Beane et al.\ note that lattice improvement ``masks much of our
+ability to probe'' the scenario. Apart from dispersion-relation effects,
+$\mathcal{O}(b^2)$ operators easily avoid obvious probes
+\cite{Beane2014constraints}. A null result therefore excludes one simulator
+design at one resolution. A finer or improved lattice always survives. The
+same holds for naive preferred-frame discreteness whether or not it is
+simulated. Collins et al.\ show that it generically produces percent-level
+low-energy Lorentz violation unless it is strongly fine-tuned
+\cite{Collins2004lorentz}. Constraints of this kind bear on the physics of
+discreteness. They bear on simulation only through the assumed design.
+
+\subsection{Adaptive simulators and the meaning of null results}
+\label{sec:methodology:adaptive}
+
+The strongest obstacle to testing is a simulator that responds to being
+probed. Bostrom describes this case explicitly. A simulator tracking
+observers' belief states could fill in microscopic detail ``on an as-needed
+basis''. If an error occurred, it could ``edit the states of any brains that
+have become aware of an anomaly'' or ``skip back a few seconds and rerun the
+simulation'' \cite{Bostrom2003are}. Barrow argues that simulators with
+incomplete knowledge of physics would have to ``patch up the problems one by
+one''. Inhabitants would then see occasional glitches and slow drifts in the
+constants \cite{Barrow2007living}. Campbell et al.\ model a rendering engine
+that must preserve consistency while avoiding detection. They propose
+experiments intended to exploit the tension between these two requirements
+\cite{Campbell2017on}. Hossenfelder questions whether adaptation is coherent.
+She asks how a programmer could notice that a simulated mind is about to
+detect a contradiction, and repair it in time, without predicting in advance
+what the mind will investigate \cite{Hossenfelder2017no}.
+
+Methodologically, adaptivity acts as an auxiliary hypothesis of the holist
+kind \cite{Stanford2023underdetermination}. Suppose the simulator suppresses
+detectable anomalies. Then $P(\text{null}\mid H_{\rm SIM}\wedge\text{adaptive})
+\approx P(\text{null}\mid\neg H_{\rm SIM})$, and a null result is
+approximately relevance-neutral \cite{Crupi2025confirmation}. Invoking adaptivity after a
+null result has the structure that Popper classed as an ad hoc rescue
+\cite{Thornton2026karl}. Rovelli's point applies here too. A flexible theory
+loses Bayesian credibility with each failed prediction only when a success
+would have raised it \cite{Rovelli2019dangers}. For a fully adaptive simulator
+no outcome was expected, so null results cost it nothing. Barrow's patching
+scenario does yield a signature, drifting constants. That signature is itself
+degenerate with varying-constant physics, in which a varying constant reflects
+a light field coupled to matter \cite{Uzan2011varying}.
+
+We therefore state every null result in this review as conditional. It
+constrains simulators that are non-adaptive (they do not intervene in response
+to probes) and that implement the assumed architecture. The finite-resource
+premise does real work here. Beane et al.\ argue that finite simulator
+resources imply a non-zero lattice spacing, so that ``in principle there
+always remains the possibility for the simulated to discover the simulators''
+\cite{Beane2014constraints}. That conclusion holds only under the finite-resource
+premise.
+
+\subsection{Published assessments of scientific status}
+\label{sec:methodology:assessments}
+
+Published assessments range from outright rejection of the hypothesis's
+scientific standing to the view that it cannot be ruled out.
+Hossenfelder calls the hypothesis unscientific, ``not a serious scientific
+argument'', while stating that this ``doesn't mean it's wrong''
+\cite{Hossenfelder2021simulation}. Her central objection is that it assumes,
+without explanation, that all observations can be reproduced by an algorithm
+other than the confirmed laws. She adds that algorithmic reproductions of
+natural laws are usually incompatible with relativistic symmetries
+\cite{Hossenfelder2021simulation}. Aaronson argues that the Ringel--Kovrizhin result
+(Sec.~\ref{sec:methodology:reception}) could not rule out the hypothesis. Among
+his reasons are that the simulator could be a quantum computer, or a classical
+one given exponentially more time \cite{Aaronson2017because}. Vazza derives energy requirements that he
+finds incompatible with physics for any simulator in a universe like ours
+\cite{Vazza2025astrophysical}. He concludes that the hypothesis can be
+``reasonably well tested only with respect to universes which are at least
+playing according to the Physics play book''. Anything else, he writes, lies
+``beyond the bounds of falsifiability'' \cite{Vazza2025astrophysical}. Wolpert
+argues that experimental approaches can give only partial answers, because
+they rest on assumptions such as a digital simulating computer
+\cite{Wolpert2025what}. Chalmers argues that we should take the hypothesis
+seriously and cannot rule it out \cite{Chalmers2024taking}. His epistemic
+asymmetry is discussed above (see also Sec.~\ref{sec:argument}). The
+hypothesis was the subject of the 2016 Isaac Asimov Memorial Debate at the
+American Museum of Natural History, with physicists and a philosopher on the
+panel \cite{AMNH2016is}. We cite the debate as an event only.
+
+Among peer-reviewed work, the explicit discussions of testability that we
+found are physics or computer-science papers, not philosophy of science
+\cite{Beane2014constraints,Campbell2017on,Vazza2025astrophysical,Wolpert2025what}.
+We are not aware of a peer-reviewed philosophy-of-science article devoted
+specifically to the falsifiability of the simulation hypothesis. Our search is
+described in the accompanying research notes.
+
+\subsection{Reception: what was reported versus what was claimed}
+\label{sec:methodology:reception}
+
+Table~\ref{tab:reception} pairs four results with how they were publicly
+reported. The news items and press releases cited here are evidence of
+reporting only, not of any scientific claim.
+
+\begin{table}[t]
+\centering
+\footnotesize
+\caption{Claims made in four papers compared with how the results were
+reported. News and press sources document reporting only.}
+\label{tab:reception}
+\begin{tabular}{p{0.16\textwidth}p{0.38\textwidth}p{0.34\textwidth}}
+\hline
+Paper & What the paper claims & How it was reported \\
+\hline
+Beane et al.\ \cite{Beane2014constraints} & Bounds and a proposed signature for one assumed design (unimproved Wilson action, cubic lattice); improvement ``masks'' the signal & University release: ``Researchers say idea can be tested''; ``the first testable signature of such an idea'' \cite{UW2012do} \\
+Ringel \& Kovrizhin \cite{Ringel2017quantized} & Quantized gravitational responses obstruct local sign-free quantum Monte Carlo; no mention of the universe or the simulation hypothesis & ``Physicists Confirm That We're Not Living In a Computer Simulation'' \cite{Eck2017physicists} \\
+Vopson \cite{Vopson2023second} & Abstract: ``scientific evidence that appears to underpin the simulated universe hypothesis'' & ``\ldots Could Mean We Really Live in a Simulation''; author quoted: the law ``is valid regardless of whether the universe is a simulation or not'' \cite{Ferreira2023mind} \\
+Faizal et al.\ \cite{Faizal2025consequences} & Incompleteness theorems applied to quantum gravity modelled as an axiomatic, algorithmic structure: ``the universe cannot be a simulation'' & ``mathematically proven'' and ``a definitive answer'' \cite{UBCO2025ubco}; ``Physicists prove the Universe isn't a simulation after all'' \cite{ScienceDaily2025physicists} \\
+\hline
+\end{tabular}
+\end{table}
+
+The four cases differ in kind. In the Beane et al.\ case the release is
+broadly faithful. It nevertheless elides the dependence on one assumed design,
+which the paper itself stresses \cite{Beane2014constraints,UW2012do}. In the
+Ringel--Kovrizhin case the paper concerns a class of classical algorithms and
+never mentions the simulation hypothesis \cite{Ringel2017quantized}. The
+simulation conclusion was added in reporting \cite{Eck2017physicists}.
+Aaronson responded publicly that the hypothesis ``has not been falsified;
+remains unfalsifiable'' \cite{Aaronson2017because}. One outlet reported that
+the authors were surprised by the headlines \cite{Galeon2017fact}. In the
+Vopson case the paper's abstract is itself hedged (``appears to underpin'')
+\cite{Vopson2023second}. The author's statement, quoted in the coverage, that
+the proposed law holds whether or not the universe is simulated amounts to a
+concession of degeneracy \cite{Ferreira2023mind}. In the Faizal et al.\ case
+the strong conclusion appears in the paper itself: the simulation hypothesis
+is ``logically impossible rather than merely implausible''
+\cite{Faizal2025consequences}. The press release then presented it as a
+definitive mathematical proof \cite{UBCO2025ubco}. The argument's validity is
+disputed. A comment posted to arXiv argues that undecidability limits
+provability, not execution \cite{Redden2025provability}. We assess this in
+Sec.~\ref{sec:complexity}. In every case the headline tied the result to
+the unrestricted hypothesis (``the idea'', ``we'', ``the Universe''). By the
+analysis of Sec.~\ref{sec:methodology:unrestricted}, no single result can
+settle that hypothesis.
+
+\subsection{Working thesis of this review}
+\label{sec:methodology:thesis}
+
+On this analysis we adopt the following position. The unrestricted
+simulation hypothesis is not an empirical hypothesis. No observation can refute
+it, and strong evidence for it would most plausibly require disclosure by the
+simulator itself \cite{Chalmers2022can}.
+What can be tested are conjunctions of the hypothesis with explicit assumptions
+about simulator architecture, resources and non-adaptivity. For each such
+sub-hypothesis in Table~\ref{tab:subhyp}, the signature is also predicted by
+non-simulation physics. A detection would therefore establish new physics,
+such as discreteness, holographic noise or collapse. It would not establish
+that the universe is simulated. A null result bounds the space of
+non-adaptive, resource-limited simulator designs that share the assumed
+architecture. Accordingly, in what follows we speak of constraining simulator
+designs, and we avoid ``proving'' or ``disproving'' the simulation hypothesis.

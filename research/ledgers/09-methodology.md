@@ -467,7 +467,7 @@ claim.
 - Locator: arXiv:2507.22950v1, Abstract; penultimate section (p. 8)
 - Evidence: "Because any putative simulation of the universe would itself be algorithmic, this framework also implies that the universe cannot be a simulation." / "Since it is impossible to simulate a complete and consistent universe, our universe is definitely not a simulation. As the universe is produced by MToE, the simulation hypothesis is logically impossible rather than merely implausible."
 - Verified: FULLTEXT
-- Notes: Unlike the Ringel-Kovrizhin case, the strong claim is in the paper itself. It rests on the premise that physical reality contains non-algorithmic content (their "Meta-Theory of Everything"). Journal: J. Holography Appl. Phys. 5(2), 10-21 (2025). Section 06 covers the logic.
+- Notes: Unlike the Ringel-Kovrizhin case, the strong claim is in the paper itself. The argument models quantum gravity as an axiomatic structure from which spacetime is generated algorithmically (Abstract: "Quantum gravity is therefore envisaged as an axiomatic structure, and algorithmic calculations acting on these axioms are expected to generate spacetime") and posits a non-algorithmic "Meta-Theory of Everything". Journal: J. Holography Appl. Phys. 5(2), 10-21 (2025). Section 06 covers the logic.
 
 ### C-09-057
 - Claim: [Reporting] UBC Okanagan's release (30 Oct 2025) stated that the research "mathematically proven" a simulated universe to be "impossible" and "provides a definitive answer".
