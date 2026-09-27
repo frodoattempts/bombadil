@@ -1,0 +1,257 @@
+\section{Rendering on demand, observers, and quantum foundations}
+\label{sec:rendering-qm}
+
+A family of proposals holds that a resource-limited simulator would compute
+(``render'') physical detail only when it is observed, and that quantum
+measurement is where this shows. We first state what such a test must predict.
+We then examine the most detailed proposal, by Campbell, Owhadi, Sauvageau and
+Watkinson~\cite{Campbell2017on}, and summarise how existing experiments
+constrain it.
+
+\subsection{What a test must predict}
+\label{sec:rendering-qm-logic}
+
+The following argument is ours. Suppose a simulator reproduces the outcome
+statistics of standard quantum mechanics (QM) exactly. Then no experiment whose
+statistics QM predicts can distinguish it from a world that simply obeys QM.
+This includes the delayed-choice and quantum-eraser experiments often invoked
+as support. Their surprising features, such as a pattern that depends on a later
+choice of measurement, are QM predictions, not anomalies. A render-on-demand
+hypothesis becomes testable only when it names an observable (a fringe
+visibility $V$, a conditional probability) and predicts a deviation $\Delta$ from
+the QM value that exceeds the experimental uncertainty. Experiments that agree
+with QM then bound $\Delta$
+(Section~\ref{sec:rendering-qm-constraints}).
+
+\subsection{The proposal of Campbell et al.\ (2017)}
+\label{sec:rendering-qm-campbell}
+
+\paragraph{Assumptions and conjecture.}
+Campbell et al.\ assume that the simulating system ``is finite'' and ``seeks to
+achieve low computational complexity''. By analogy with procedurally generated
+games, they infer that it ``would render reality only at the moment the
+corresponding information becomes available for observation by a conscious
+observer''~\cite[p.~80]{Campbell2017on}. To accommodate Bell violations, they
+posit that locality inside the simulation does ``not constrain the action space
+of the system performing the simulation''~\cite[p.~81]{Campbell2017on}. The
+simulator is therefore explicitly nonlocal with respect to simulated
+spacetime. The testable conjecture is that wave or particle patterns are fixed
+``by the existence and availability of the which-way data when the pattern is
+observed'', not at detection~\cite[p.~82]{Campbell2017on}. ``Availability'' means
+recording ``on objective media''~\cite[p.~87]{Campbell2017on}. The paper does
+not say when a physical record, such as an atomic state or an emitted photon,
+counts as one.
+
+\paragraph{Proposed experiments.}
+The paper proposes four schemes:
+\begin{enumerate}
+\item which-path detectors are left on at the slits, but the recorder is
+  unplugged; success is interference. In the entangled version, the
+  coincidence counter of the Kim et al.\ eraser~\cite{Kim2000delayed} is
+  removed and ``D0 should display the wave pattern if the experiment is
+  successful''~\cite[p.~86]{Campbell2017on};
+\item which-path and screen data go to separate USB drives, and the which-path
+  drive is irreversibly destroyed with probability $1/2$; success is
+  interference only where the partner drive was
+  destroyed~\cite[pp.~87--88]{Campbell2017on};
+\item in a delayed-choice eraser, the signal position $X$ predicts the later
+  random which-path/erasure outcome $R$ via
+  $P[R{=}1|X{\approx}x]\approx[1+2\cos^2(\pi x/a)]^{-1}$ with
+  $a=\lambda L/d$~\cite[Eq.~(2)]{Campbell2017on};
+\item a thought experiment with a manual switch and delays of about 60\,s. A
+  total-variation argument excludes $X$ being drawn from the wave distribution
+  with the switch off and from the particle distribution with it
+  on~\cite[Eqs.~(3)--(4)]{Campbell2017on}.
+\end{enumerate}
+The authors ``cannot predict the outcome'' of scheme~4 but prove it ``will be
+new''~\cite[p.~83]{Campbell2017on}. No scheme carries a numerical prediction.
+The only tolerance given is a noise allowance $\delta(I)<0.9$ in
+scheme~4~\cite[p.~94]{Campbell2017on}.
+
+\paragraph{Do the schemes predict deviations from QM?}
+They do, although the paper does not compare its success criteria with QM. The
+comparison below is ours and draws on the cited literature. In QM, which-path
+information carried by any system suppresses interference whether or not anyone
+reads it. The information ``is still present in the universe, independent of
+whether an observer takes note of it or not'', and ignoring its carrier leaves
+a mixed state ``which cannot show an interference
+pattern''~\cite[Sec.~II.E]{Ma2016delayed}. Schemes~1 and~2 therefore demand
+visibilities of order unity where QM bounds $V$ by the which-path parameter $I$,
+through $I^2+V^2\le1$~\cite{Englert1996fringe,Ma2013quantum}. In QM,
+destroying a classical copy of the record restores nothing. Interference
+reappears only conditionally, through a suitable measurement on the quantum
+carrier of the path information~\cite{Ma2016delayed,Kastner2019delayed}.
+
+In the Kim et al.\ eraser, D0 coincidences with the two erasing detectors give
+fringes and antifringes ($R_{01}\propto\cos^2$, $R_{02}\propto\sin^2$). The
+which-path coincidences give none~\cite[Eq.~(10)]{Kim2000delayed}. The unsorted
+D0 data are thus fringe-free, ``just noise'' in Kastner's
+words~\cite{Kastner2019delayed}. Removing the coincidence counter (scheme~1)
+therefore cannot produce fringes in QM. The erasure subensemble is also
+fringe-free, so in QM $X$ and $R$ are independent and $P(R{=}1|X)=1/2$. Eq.~(2)
+instead assumes a single-detector fringe for $R=0$. It departs from QM by up to
+$1/2$ in probability at dark fringes, where it gives $\approx1$, and by $1/6$ at
+bright fringes, where it gives $1/3$. Scheme~4 assumes ``an interference pattern
+at D0'' in its configurations (a)--(c)~\cite[p.~91]{Campbell2017on}. That is
+also not a QM prediction for an entangled-pair eraser, where fringes appear
+only after conditioning on the partner
+photon~\cite{Ma2013quantum,Kastner2019delayed}. The paper classifies the
+possible outcomes as a ``discontinuity in the rendering reality'', rendering at
+observation, or a paradox~\cite[p.~91]{Campbell2017on}. Under this scheme, the
+QM result (no fringes in unconditioned D0 data in any configuration) counts as
+a ``discontinuity''. In configuration (d) it coincides with the outcome the
+authors call ``a strong indicator that this reality is
+simulated''~\cite[p.~92]{Campbell2017on}. As written, the protocol has no
+outcome that counts against the hypothesis.
+
+\paragraph{Status.}
+The non-profit CUSAC, founded by Campbell, lists five experiments ``that CUSAC
+intends to perform''. It names leads in California (F.\ Khoshnoud) and Canada
+(D.\ Chartrand) but posts no data~\cite{CUSAC2024experiments}. A paper
+co-authored by Khoshnoud, which acknowledges Campbell and Chartrand, reports a
+teaching-lab single-photon double slit with $|V|=0.65\pm0.22$. It also reports a
+polarisation eraser in which orthogonal polarisers on the slits removed the
+fringes without any measurement: ``we did not need to measure the path
+information''~\cite{Luo2024young}. That paper is not presented as a test of the
+simulation hypothesis, and a polarisation marker is not the unplugged recorder
+of scheme~1. As of September 2026 we found no citable report of any of the four
+schemes having been performed.
+
+\subsection{What existing experiments constrain}
+\label{sec:rendering-qm-constraints}
+
+Wheeler proposed choosing the measurement after the photon has entered the
+interferometer~\cite{Wheeler1978past}, and later described a cosmological
+version~\cite{Wheeler1983law}. His criterion for a completed phenomenon was an
+``irreversible act of amplification'', not conscious
+awareness~\cite[Sec.~II.D]{Ma2016delayed}. The quantum
+eraser~\cite{Scully1982quantum} extended the scheme to entangled pairs.
+Table~\ref{tab:rendering-qm-exps} lists realisations that test the two
+questions a rendering hypothesis raises: does the timing of the choice matter,
+and does an unread record matter? All agree with QM within their quoted
+uncertainties. The review by Ma, Kofler and Zeilinger concludes that ``no
+physical interactions or signals, let alone into the past, are necessary to
+explain the experimental results''~\cite[Sec.~VI]{Ma2016delayed}.
+
+\begin{table}[t]
+\centering
+\small
+\caption{Experiments that bound render-on-demand deviations ($V$: fringe
+visibility; $I$: which-path parameter; uncertainties as quoted, $\pm1\sigma$
+where stated).}
+\label{tab:rendering-qm-exps}
+\begin{tabular}{p{0.25\linewidth}p{0.34\linewidth}p{0.33\linewidth}}
+\hline
+Experiment & Varied, or left unread & Result \\
+\hline
+Jacques et al.~\cite{Jacques2007experimental} &
+Open/closed choice by QRNG, space-like separated from entry (48\,m) &
+Closed: $V=94\%$; open: no fringes, port probabilities $0.50\pm0.01$, $I>0.99$ \\
+Kim et al.~\cite{Kim2000delayed} &
+Idler registered $\geq8$\,ns after the signal &
+Fringes/antifringes with D1/D2; none with D3/D4 \\
+Ma et al.\ 2013~\cite{Ma2013quantum} &
+Erasure choice space-like separated (55\,m, 144\,km), or $\approx450\,\mu$s later &
+$I=0.955(7)$, no fringes; erasure: $V=0.951(18)$, $I=0.077(22)$ \\
+Ma et al.\ 2012~\cite{Ma2012experimental} &
+Swapping choice 14--313\,ns after the other photons were registered &
+Fidelity $0.681\pm0.034$ vs $0.421\pm0.029$ \\
+D\"urr et al.~\cite{Durr1998origin} (via~\cite{Ma2016delayed}) &
+Path stored in atomic internal states, not read out &
+Fringes vanish; momentum kick $10^{-4}$ of fringe period \\
+Hackerm\"uller et al.~\cite{Hackermuller2004decoherence} &
+Path carried off by undetected thermal photons &
+$V=47,29,7,0\%$ at 0, 3, 6, 10.5\,W; matches decoherence theory \\
+Hornberger et al.~\cite{Hornberger2003collisional} &
+Path left in colliding gas molecules &
+Pressure-dependent loss of $V$, as predicted \\
+\hline
+\end{tabular}
+\end{table}
+
+Two limits apply. First, the delayed-choice experiments vary the timing of the
+choice. None of them destroyed a classical record, or varied whether a person
+viewed it, as schemes~1--2 require. Second, the decoherence and internal-state
+experiments show interference lost to unread records. D\"urr et al.\ put this
+as ``the mere fact that which-path information is stored in the detector and
+could be read out already destroys the interference
+pattern''~\cite[Sec.~IV.B]{Ma2016delayed}. Because ``availability'' is not
+operationally defined, however, a proponent could call such records
+``available''. On our reading, any deviation tied to \emph{when} a choice is
+made is bounded at the few-per-cent level of the best photonic $V$ and $I$
+uncertainties. A test of the unread-record variant requires fixing the
+availability criterion before the data are taken.
+
+\subsection{Other observer-dependent and ``glitch'' proposals}
+\label{sec:rendering-qm-others}
+
+Whitworth argued, in a technical report, that a virtual world ``would likewise
+be expected to be calculated only on demand''~\cite{Whitworth2008physical}.
+Arvan proposed a ``peer-to-peer simulation hypothesis'' for quantum
+phenomena~\cite{Arvan2014unified}. Irwin, Amaral and Chester's
+``self-simulation'' interpretation~\cite{Irwin2020self} asserts that it
+``became more widely agreed that it is consciousness'', rather than interaction
+with a detector, that changes the double-slit pattern. This is at odds with the
+review literature above~\cite{Ma2016delayed}. As evidence they cite Radin et
+al.'s attention experiments~\cite{Radin2016psychophysical}. An independent
+reanalysis of the 2016 dataset found shifts in the predicted direction but ``not
+deemed significant ($p>0.05$)'', and concluded that it ``does not contain
+evidence of mind-matter interaction''~\cite{Tremblay2019independent}.
+Yampolskiy's ``How to hack the simulation?'', published as ``How to Escape From
+the Simulation''~\cite{Yampolskiy2023how}, does not evaluate evidence. It
+proposes that ``every novel QM experiment can be seen as an attempt at hacking
+the simulation'', and it surveys proposals to overload the simulator with
+computationally intense activity. A reviewer comment printed with the paper
+argues that if simulators cannot optimise through layers of abstraction, a
+full-universe simulation is more likely. That would make it futile to expand
+``the human-observed-in-detail cone''~\cite{Yampolskiy2023how}. None of these works gives a quantitative prediction that differs from
+QM. By contrast, Chalmers and McQueen give explicit dynamics for
+consciousness-triggered collapse and report that simple versions are
+``falsified by the quantum Zeno effect''. More complex versions remain
+compatible with current data and are in principle testable with quantum
+computers~\cite{Chalmers2022consciousness}. Their model is not a simulation
+proposal, but it shows the kind of formulation the render-on-demand literature
+lacks.
+
+\subsection{Nonlocality, superdeterminism and freedom of choice}
+\label{sec:rendering-qm-bell}
+
+Loophole-free Bell tests constrain any simulator that works from local data.
+Hensen et al.\ found $S=2.42\pm0.20$ in 245 trials at 1.3\,km ($p=0.039$)
+\cite{Hensen2015loophole}. Giustina et al.\ reported $p\le3.74\times10^{-31}$
+\cite{Giustina2015significant}. Shalm et al.\ reported $p$ down to
+$5.9\times10^{-9}$, or $2.3\times10^{-7}$ after adjusting for setting
+predictability~\cite{Shalm2015strong}. A simulator matching these results must
+therefore act nonlocally with respect to simulated spacetime, as Campbell et
+al.\ posit, or correlate its hidden state with the settings. The latter is a
+violation of Statistical Independence, i.e.\
+superdeterminism~\cite{Hossenfelder2020rethinking}. Campbell et al.'s ``VR
+engine reacting to the intention of the experimentalist''~\cite[p.~94]{Campbell2017on}
+falls in this class.
+
+In-universe versions of the setting-correlation option have been narrowed.
+The BIG Bell Test used 97{,}347{,}490 choices from about 100{,}000
+participants~\cite{BIGBellTest2018challenging}. Cosmic Bell tests used Milky
+Way stars, with violations of $7.31\sigma$ and $11.93\sigma$ quoted as lower
+bounds, pushing the latest local-realist intervention back by
+$\sim600$\,yr~\cite{Handsteiner2017cosmic}. With quasars they reached $9.3\sigma$
+and pushed it back to at least $\sim7.8$\,Gyr ago, covering 96\% of the
+past-light-cone space-time volume~\cite{Rauch2018cosmic}. All of these assume
+fair sampling and constrain \emph{local} mechanisms. Hossenfelder and Palmer
+argue that they ``do not -- cannot -- rule out Superdeterminism'', and that
+``one cannot prove freedom of choice by assuming freedom of
+choice''~\cite[Sec.~4.3]{Hossenfelder2020rethinking}. A simulator that sets
+settings and outcomes jointly from outside spacetime escapes these bounds and
+is empirically a superdeterministic model. It inherits the same testability
+problem: the signature Hossenfelder and Palmer propose, Born-rule-violating
+time-correlations for nearly identical preparations, needs a concrete model to
+fix how similar the preparations must be~\cite[Sec.~6]{Hossenfelder2020rethinking}.
+'t~Hooft uses a computer image himself: a God who must ``run a universe''
+prefers deterministic rules on a classical computer. He sees ``no objections
+against super-determinism''~\cite{tHooft2019free}. His cellular automaton
+interpretation predicts that quantum computers cannot outperform a classical
+computer with one memory site per Planck volume updating once per Planck time.
+He states that exceeding this bound would falsify the
+theory~\cite[Sec.~5.8]{tHooft2016cellular}. That is a quantified,
+resource-based prediction of the kind the render-on-demand proposals reviewed
+here do not yet provide.
