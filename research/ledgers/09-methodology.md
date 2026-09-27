@@ -7,8 +7,8 @@ Texts were read in the files saved under `/tmp/claude-0/papers/` (arXiv PDFs
 through `pdftotext`, SEP HTML, Europe PMC full-text XML, blog and news HTML).
 Access dates for web pages: 2026-09-27.
 
-News articles and press releases (C-09-050 to C-09-058) are cited **only** as
-evidence of how results were reported. They are not evidence for any scientific
+News articles and press releases (claims marked [Reporting]: C-09-050, 052,
+053, 055, 057, 058) are cited **only** as evidence of how results were reported. They are not evidence for any scientific
 claim.
 
 ---
