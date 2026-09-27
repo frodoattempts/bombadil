@@ -1,0 +1,158 @@
+\section{A discretized spacetime as a simulation signature: theory and constraints}
+\label{sec:lattice-liv}
+
+The most concrete physical proposal for testing the simulation hypothesis is that a simulator would discretize spacetime on a lattice, as lattice gauge theory does, and that the discretization would leave observable artefacts. This section covers four things:
+\begin{itemize}
+\item what the proposal assumes and predicts (Sec.~\ref{sec:lattice-liv:beane});
+\item how lattice artefacts depend on the discretization (Sec.~\ref{sec:lattice-liv:artefacts});
+\item which Lorentz-invariance-violation (LIV) bounds constrain it (Secs.~\ref{sec:lattice-liv:liv}--\ref{sec:lattice-liv:mapping});
+\item why these bounds exclude only simulators with a preferred frame (Secs.~\ref{sec:lattice-liv:natural}--\ref{sec:lattice-liv:causal}).
+\end{itemize}
+Section~\ref{sec:lattice-liv:open} lists what remains open. Cosmic-ray observations are reviewed in Sec.~4. Here we use only the energy scales. Results derived for this review are labelled \emph{this work}. Their derivations are given in the supplementary notes to this section.
+
+\subsection{The lattice-simulation proposal of Beane, Davoudi and Savage}
+\label{sec:lattice-liv:beane}
+
+\paragraph{Assumptions.}
+Beane, Davoudi and Savage~\cite{Beane2014constraints} study ``the hypothesis that the observed universe is a numerical simulation performed on a cubic space-time lattice''. They motivate it by extrapolating the resource requirements of lattice QCD, which scale roughly as $\lambda_{\rm QCD}L^5/b^6$ for a lattice of extent $L$ and spacing $b$. The extrapolation is fitted to the MILC (staggered) and SPECTRUM (anisotropic clover-Wilson) ensemble programmes. The authors list its caveats themselves, starting with the continuation of an effective Moore's law~\cite[Sec.~I]{Beane2014constraints}. They further assume:
+\begin{itemize}
+\item a classical computer;
+\item a hypercubic grid;
+\item following the history of lattice QCD, an ``early'' simulation with the cheapest discretization, unimproved Wilson fermions, whose leading artefacts are $O(b)$~\cite[Secs.~I--II]{Beane2014constraints}.
+\end{itemize}
+In their analysis, all particles, including composite hadrons, obey the free lattice dispersion relations of their eqs.~(16)--(17)~\cite[Sec.~IV]{Beane2014constraints}.
+
+\paragraph{Derived constraints.}
+Three results follow.
+\begin{enumerate}
+\item The $O(b)$ Pauli term of the Wilson action shifts magnetic moments by $2mbC_p$, with $C_p=1+O(\alpha)$~\cite[eqs.~(3), (5)]{Beane2014constraints}. Attributing the then-current $\sim3.6\sigma$ muon $g-2$ discrepancy entirely to the lattice gives $b^{-1}=(3.6\pm1.1)\times10^{7}$~GeV, which the authors call ``an approximate upper bound on the lattice spacing''~\cite[eq.~(10)]{Beane2014constraints}. This is a central value tied to a 2012 anomaly, not a null bound.
+\item Comparing $\alpha$ from the electron $g-2$ with $\alpha$ from atomic recoil gives $b=|(-0.6\pm1.7)\times10^{-9}|$~GeV$^{-1}$, hence $b^{-1}\gtrsim4\times10^{8}$~GeV from the $1\sigma$ values~\cite[eqs.~(12)--(13)]{Beane2014constraints}.
+\item Any lattice imposes a maximum energy $E_{\max}\sim1/b$. Requiring the cosmic-ray spectrum to extend to its observed cutoff gives $b^{-1}\sim10^{11}$~GeV, the paper's headline bound~\cite[Sec.~IV]{Beane2014constraints}.
+\end{enumerate}
+Two qualifications apply. The authors quote the photopion (``GKZ'') cutoff as $\sim6\times10^{20}$~eV. The conventional threshold is $\simeq5\times10^{19}$~eV~\cite{Liberati2013tests}, and the Pierre Auger Observatory measures a flux suppression above $E_{34}=(46\pm3\pm6)\times10^{18}$~eV~\cite{PierreAuger2020features}. The order of magnitude of the bound is unaffected, but it carries no confidence level. The authors also note that for chirally symmetric discretizations $C_p$ vanishes or is exponentially small, so that the $g-2$ and $\alpha$ constraints become much weaker. They regard all of these constraints as ``estimates only''~\cite[Sec.~III]{Beane2014constraints}.
+
+\paragraph{The predicted signature.}
+The free lattice dispersion relations have only cubic symmetry~\cite[eqs.~(16)--(17), Fig.~2]{Beane2014constraints}. If the lattice rest frame coincides with the CMB frame, the $\Delta$-resonance threshold for photopion production becomes direction dependent~\cite[eq.~(18)]{Beane2014constraints}. Rewriting that equation (this work), the fractional threshold shift is
+\begin{equation}
+\frac{\delta\omega}{\omega}=\frac{5}{12}\Big(\sum_{j}n_j^4-\frac{3}{5}\Big)(b|\mathbf p|)^2 ,
+\label{eq:lattice-liv:threshold}
+\end{equation}
+where $\mathbf n=\mathbf p/|\mathbf p|$ is taken in the lattice frame. The shift is $+(b|\mathbf p|)^2/6$ along a lattice axis and $-(b|\mathbf p|)^2/9$ along a body diagonal.
+
+Beane et al.\ predict that, if the lattice supplies the cutoff, ``the angular distribution of the highest energy components would exhibit cubic symmetry in the rest frame of the lattice''. For smaller spacings the effect would be less significant and masked by the GZK mechanism, and a non-cubic lattice would imprint its own symmetry~\cite[Sec.~IV]{Beane2014constraints}. The paper gives no arrival-direction amplitude beyond eq.~(18). It does not model magnetic deflection or the source distribution.
+
+Two further statements matter below. First, the authors argue that the naturalness problem of Lorentz-violating dimension-four operators does not arise, because ``the underlying space-time symmetries respected by the lattice action will necessarily be preserved at the quantum level''. They attribute this protection to Euclidean hypercubic symmetry and note that Hamiltonian formulations are also possible~\cite[Sec.~I and fn.~3]{Beane2014constraints}. Second, they conclude that improvement ``masks much of our ability to probe'' the scenario, and that it is ``unlikely that any but the very earliest universe simulations would be unimproved''~\cite[Sec.~V]{Beane2014constraints}.
+
+\subsection{Lattice artefacts depend on the discretization}
+\label{sec:lattice-liv:artefacts}
+
+The predictions above are properties of one action, not of lattices in general.
+\begin{itemize}
+\item \textbf{Fermion discretizations.} The Nielsen--Ninomiya theorem forbids a local lattice fermion that is free of doublers, chirally symmetric and has the correct continuum limit~\cite{Fodor2012light}. Every fermion discretization therefore trades one property for another. Wilson fermions generically have $O(a)$ artefacts. Staggered fermions, twisted-mass fermions at maximal twist and exactly chiral (domain-wall or overlap) fermions scale as $O(a^2)$. Improved staggered actions such as asqtad scale as $O(g^2a^2)$~\cite{Fodor2012light}.
+\item \textbf{Gauge action.} The plaquette action has $O(a^2)$ errors. Tree-level L\"uscher--Weisz improvement removes them classically, but radiative corrections reintroduce $O(g^2a^2)$ terms~\cite{Fodor2012light}.
+\item \textbf{Rotational symmetry.} On a hypercubic lattice the action is constrained by hypercubic symmetry. Davoudi and Savage show that, with suitably smeared operators, rotation-violating contributions are suppressed by $O(a^2)$ in the continuum limit, including at one loop~\cite{Davoudi2012restoration}.
+\item \textbf{Anisotropic lattices.} These have temporal spacing $a_t$ different from spatial spacing $a_s$ (e.g.\ $a_s/a_t=3.5$). The gauge and fermion anisotropies must be tuned so that boosted hadrons obey a relativistic dispersion with a common ``speed of light''~\cite{Lin2009first}.
+\item \textbf{Symmetric alternatives.} Discretizations that retain continuous symmetry have been proposed. A Euclidean regulator with a dynamical embedding is exactly $SE(d)$ covariant at finite spacing~\cite{Gantumur2026rotationally}. A ``Lorentz covariant'' lattice-graph construction has been proposed explicitly in reply to Beane et al.~\cite{Andersen2012lorentz}; it is an unrefereed preprint whose technical claims we have not assessed.
+\end{itemize}
+Any bound on $b$ is therefore a bound on a particular simulator design.
+
+\subsection{The LIV framework and current bounds}
+\label{sec:lattice-liv:liv}
+
+A lattice at rest in some frame breaks Lorentz invariance, so LIV constraints apply to it. The Standard-Model Extension (SME) parametrizes Lorentz and CPT violation in effective field theory~\cite{Colladay1997cpt,Colladay1998lorentz}. Its coefficients are compiled in the Kosteleck\'y--Russell data tables, whose January 2026 edition (arXiv v19) contains 52 data tables covering the literature to the end of 2025~\cite{Kostelecky2011data}. Coleman and Glashow's earlier framework considers renormalizable, rotationally invariant perturbations in a preferred frame, which give species-dependent maximal attainable velocities~\cite{Coleman1999high}. Reviews treat the modified dispersion relations $E^2=p^2+m^2+f^{(n)}p^n/E_{\rm Pl}^{n-2}$ and their astrophysical tests~\cite{Mattingly2005modern,Jacobson2006lorentz,Liberati2013tests,Addazi2022quantum}.
+
+Two features matter here. First, the QED dimension-5 operators, which give $n=3$ dispersion and vacuum birefringence, all violate CPT~\cite{Jacobson2006lorentz}. Second, once photon decay is kinematically allowed, the photon lifetime is ``extremely short ($\ll$1 sec)''. Threshold constraints are therefore insensitive to the dynamics~\cite{Jacobson2006lorentz}. Table~\ref{tab:lattice-liv:bounds} collects representative bounds.
+
+\begin{table}[t]
+\centering
+\small
+\caption{Representative LIV bounds relevant to a spacetime lattice. $E_{\rm Pl}=1.22\times10^{19}$~GeV. ``Sub'' means subluminal. $n$ follows the convention of each source.}
+\label{tab:lattice-liv:bounds}
+\begin{tabular}{p{3.6cm}p{5.4cm}p{1.6cm}p{2.2cm}}
+\hline
+Observable & Bound & CL & Ref.\\
+\hline
+GRB 090510 time of flight (Fermi) & $M_{\rm QG,1}/M_{\rm Pl}>1.19$ (most conservative) to $>102$; $>1.22$ from $|\Delta t/\Delta E|<30$~ms/GeV & 99\% for the lag analysis & \cite{Abdo2009limit}\\
+Four Fermi-LAT GRBs & $E_{\rm QG,1}>7.6\,E_{\rm Pl}$, $E_{\rm QG,2}>1.3\times10^{11}$~GeV (sub, no intrinsic effects); $1.8\,E_{\rm Pl}$ and $4.0\times10^{10}$~GeV with intrinsic effects & 95\% & \cite{Vasileiou2013constraints}\\
+GRB 221009A (LHAASO) & $E_{\rm QG,1}>1.0\times10^{20}$~GeV, $E_{\rm QG,2}>6.9\times10^{11}$~GeV (sub); abstract: ``$>10\,E_{\rm Pl}$'', ``$>6\times10^{-8}E_{\rm Pl}$'' & 95\% & \cite{LHAASO2024stringent}\\
+PeV photons, no spectral cutoff (LHAASO) & $E_{\rm cut}>1140$~TeV (J2032+4102), $>750$~TeV (Crab); superluminal photon scale $\approx1.42\times10^{33}$~eV ($n=1$) & 95\% & \cite{LHAASO2022exploring}\\
+Vacuum birefringence, GRB 140206A & $\xi<1\times10^{-16}$ (CPT-odd, $n=3$) & ---\,$^a$ & \cite{Gotz2014grb}\\
+Crab synchrotron, leptons, $n=3$ & $O(10^{-5})$ & 95\% & \cite{Maccione2007new}\\
+Crab synchrotron, leptons, $n=4$ & $M_{\rm LV}\gtrsim2\times10^{16}$~GeV & 95\% & \cite{Liberati2012scale}\\
+UHECR spectrum, protons, dim.~6 & $-10^{-3}\lesssim\eta_p^{(4)}\lesssim10^{-6}$ (pure protons) & 99\% & \cite{Maccione2009planck,Liberati2013tests}\\
+GZK photons (Auger) & $\delta_{\gamma,2}>-10^{-58}$~eV$^{-2}$ (only with sub-dominant protons to $10^{20}$~eV) & ---\,$^b$ & \cite{PierreAuger2022testing}\\
+Causal-set swerves (relic $\nu$) & $k<10^{-61}$~GeV$^3$ & estimate & \cite{Kaloper2006low}\\
+\hline
+\end{tabular}
+
+\smallskip
+\raggedright\footnotesize
+$^a$ The limit follows from requiring polarization rotation $\le90^\circ$ across the band. The polarization itself is $>28\%$ at 90\% c.l. \\
+$^b$ Hadronic limits in the same work ($\delta_{\rm had,2}<10^{-57}$~eV$^{-2}$ at $5\sigma$) cover only positive, superluminal coefficients.
+\end{table}
+
+\subsection{Mapping the lattice dispersion onto LIV bounds}
+\label{sec:lattice-liv:mapping}
+
+Beane et al.\ note correctly that the Coleman--Glashow velocity bounds ``do not directly apply'', because lattice velocities depend on momentum~\cite[Sec.~IV]{Beane2014constraints}. The momentum-dependent LIV literature does apply, however.
+
+\paragraph{The dispersion relations as dimension-six LIV (this work).}
+Expanding eqs.~(16)--(17) of Ref.~\cite{Beane2014constraints} for $|\mathbf k|\ll1/b$ gives
+\begin{align}
+E_\gamma^2 &= k^2-\tfrac{b^2}{12}\,f(\mathbf n)\,k^4, &
+E_e^2 &= k^2+m^2-\tfrac{b^2}{3}\,f(\mathbf n)\,k^4, &
+f(\mathbf n)&=1+\textstyle\sum_j n_j^4\in[\tfrac43,2].
+\label{eq:lattice-liv:mdr}
+\end{align}
+We checked these coefficients against the exact relations numerically. For a continuous-time (Hamiltonian) lattice, $f\to\sum_j n_j^4\in[\frac13,1]$. The modification is even in $k$ and has a single photon branch. The scenario is therefore CPT-even and non-birefringent at leading order, and birefringence limits do not constrain it.
+
+\paragraph{Consequences (this work).}
+Four orders of magnitude of constraint follow. We quote each at the least constraining lattice orientation.
+\begin{enumerate}
+\item \emph{Time of flight.} Matching Eq.~\eqref{eq:lattice-liv:mdr} to the LHAASO parametrization gives $E_{\rm QG,2}=b^{-1}(12/f)^{1/2}$. The LHAASO limit~\cite{LHAASO2024stringent} then implies $b^{-1}\gtrsim2\times10^{11}$~GeV at 95\% CL. This is comparable to the $E_{\max}$ estimate, but it comes from an independent observable with a stated confidence level.
+\item \emph{Photon decay.} In Eq.~\eqref{eq:lattice-liv:mdr} the electron is four times more subluminal than the photon at equal momentum. Asymmetric pair production $\gamma\to e^+e^-$ is then kinematically allowed above $k_{\rm th}=(64/f)^{1/4}(m_e/b)^{1/2}$, far below $1/b$. We confirmed this numerically with the exact lattice relations. The result differs from the statement in Ref.~\cite{Beane2014constraints} that this process proceeds only for photon energies ``comparable to the inverse lattice spacing''. Requiring no decay below the LHAASO lower limit on any cutoff, 1140~TeV~\cite{LHAASO2022exploring}, gives $b^{-1}\gtrsim4\times10^{14}$~GeV. This assumes, as argued in the EFT literature~\cite{Jacobson2006lorentz,Liberati2013tests}, that decay above threshold is fast.
+\item \emph{Crab synchrotron.} The lattice electron has an $n=4$ subluminal dispersion with $\eta=-1$ and $M_{\rm LV}=b^{-1}(3/f)^{1/2}$. The Crab-Nebula limit $M_{\rm LV}\gtrsim2\times10^{16}$~GeV (95\% CL)~\cite{Liberati2012scale} then implies $b^{-1}\gtrsim10^{16}$~GeV.
+\item \emph{UHE photons.} With a sub-dominant proton component, the Auger photon limit~\cite{PierreAuger2022testing} would imply $b^{-1}\gtrsim3\times10^{19}$~GeV. This limit is conditional on the unsettled UHECR composition~\cite{Liberati2013tests}.
+\end{enumerate}
+These mappings use EFT bounds derived for isotropic dispersion, so they hold only up to factors of order unity. Direction-dependent SME limits~\cite{Vasileiou2013constraints,Kostelecky2011data} would be the rigorous route.
+
+For the unimproved-Wilson scenario, the strongest robust constraint is therefore not the GZK argument but the $n=4$ electron bound. By Eq.~\eqref{eq:lattice-liv:threshold}, it limits the cubic anisotropy of the photopion threshold near $5\times10^{10}$~GeV to a fraction of order $10^{-11}$.
+
+\paragraph{Improved actions (this work).}
+The answer depends on which bound is considered.
+\begin{itemize}
+\item The $E_{\max}\sim1/b$ argument depends only on the Brillouin zone, $|k_j|\le\pi/b$. It changes by factors of order unity under improvement.
+\item The $g-2$ and $\alpha$ bounds disappear once the Pauli term is removed~\cite{Beane2014constraints}.
+\item $O(b)$ (clover) improvement leaves the free dispersion, and hence all of the bounds above, unchanged.
+\item With improvement only at tree level, residual $O(\alpha b^2)$ terms~\cite{Fodor2012light} would still give $b^{-1}\gtrsim10^{15}$~GeV via the Crab bound.
+\item If the $O(b^2)$ terms are removed to all orders, the leading anisotropy becomes $O(b^4k^4)$. The synchrotron maximum-frequency argument of Ref.~\cite{Liberati2012scale}, applied to $n=6$, then gives only $b^{-1}\gtrsim10^{11}$~GeV, comparable to the Beane et al.\ estimate.
+\end{itemize}
+A cubic-anisotropy signal at the GZK scale therefore requires a simulator that is both nonperturbatively improved and has $b^{-1}$ within about an order of magnitude of $10^{11}$~GeV.
+
+\subsection{Naturalness: why preferred-frame discreteness is hard to hide}
+\label{sec:lattice-liv:natural}
+
+Collins et al.\ argue that a Planck-scale preferred frame, combined with known particle interactions, induces Lorentz violation ``at the percent level, some 20 orders of magnitude higher than earlier estimates, unless the bare parameters of the theory are unnaturally strongly fine-tuned''. The violation appears as species-dependent speeds of light~\cite{Collins2004lorentz}. Their argument assumes real time rather than a Euclidean continuation.
+
+Gambini et al.\ argued that non-perturbative treatments may evade this conclusion~\cite{Gambini2011small}. Polchinski replied that a Euclidean lattice with equal steps has discrete rotational symmetries that forbid dimension-four Lorentz-violating terms, whereas ``a Lorentzian lattice with equal time and space steps has no such enhanced symmetry'' and a lattice propagator is not consistent with unitarity. He concludes that the only known exceptions rely on supersymmetry~\cite{Polchinski2012comment}. Later work shows that a separation between the EFT scale and the LIV scale can suppress percolation to low energies~\cite{Belenchia2016lorentz}.
+
+This debate bears directly on the claim of Beane et al.\ that hypercubic symmetry protects the simulation. That protection is a property of Euclidean lattices, and a real-time or Hamiltonian simulator lacks it. The need to tune separate gauge and fermion ``speeds of light'' on anisotropic lattice-QCD ensembles~\cite{Lin2009first} is a concrete instance of the dimension-four tuning that Collins et al.\ describe.
+
+\subsection{Lorentz-invariant discreteness}
+\label{sec:lattice-liv:causal}
+
+Discreteness does not require a preferred frame. In causal set theory~\cite{Bombelli1987space}, spacetime is a random Poisson sprinkling, and its discreteness is locally Lorentz invariant~\cite{Dowker2004quantum}. Bombelli, Henson and Sorkin proved that no equivariant measurable map exists from sprinklings to spacetime directions. The discreteness of a sprinkled causal set therefore ``will not give rise to `Lorentz breaking' effects like modified dispersion relations''. The same theorem implies that no finite-valency graph can be associated with a sprinkling consistently with Lorentz invariance~\cite{Bombelli2009discreteness}. In manifold-like causal sets each element has infinitely many nearest neighbours, and the resulting non-locality is characteristic of the approach~\cite{Surya2019causal}. On our reading, this non-locality is the computational price of a Lorentz-invariant discretization.
+
+The null LIV results in Table~\ref{tab:lattice-liv:bounds} therefore exclude only simulators with a lattice at rest in some frame. They are silent about Lorentz-invariant discretizations of this type.
+
+Causal sets have their own phenomenology: Lorentz-invariant momentum-space diffusion, or ``swerves''~\cite{Dowker2004quantum,Philpott2009energy}. Relic-neutrino bounds give $k<10^{-61}$~GeV$^3$. With effective-field-theory scaling this requires a dimensionless coefficient below $10^{-118}$, which Kaloper and Mattingly call ``an extremely small value begging for a first-principles explanation''~\cite{Kaloper2006low}. More generally, discreteness is neither necessary nor sufficient for a minimal length~\cite{Hossenfelder2013minimal}.
+
+\subsection{What remains open}
+\label{sec:lattice-liv:open}
+
+\begin{enumerate}
+\item We are not aware of any published search for cubic-symmetric anisotropy in UHECR arrival directions. Our searches of INSPIRE, arXiv and Semantic Scholar are documented in the notes; see also Sec.~4. The mapping above suggests that such a search is informative only for nonperturbatively improved simulators with $b^{-1}\sim10^{11}$~GeV.
+\item The mappings in Sec.~\ref{sec:lattice-liv:mapping} should be redone with direction-dependent SME coefficients and with the dispersion relations of domain-wall and overlap fermions, which we have not derived.
+\item For Lorentz-invariant discreteness, two gaps remain. Quantum fields on causal sets have so far been constructed only for the free scalar~\cite{Addazi2022quantum}. Extending the swerve calculation to an FRW universe is open~\cite{Surya2019causal}.
+\item A lattice-like signature does not by itself distinguish a simulated universe from discrete physics. Every bound discussed here is a bound on a class of discretizations, whether or not anyone is running them.
+\end{enumerate}

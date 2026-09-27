@@ -1,0 +1,350 @@
+\section{Arguments from computational complexity and computability}
+\label{sec:complexity}
+
+A second family of arguments asks whether the laws of physics as we know them
+could be run on a computer at all, and at what cost. Complexity arguments ask
+how resources scale. Computability arguments ask whether any algorithm can do
+the job. Before reviewing the literature we separate three tasks that are often
+conflated:
+\begin{enumerate}
+\item[(T1)] \emph{Execution}: evolving a given initial state forward by the
+  dynamical law, to some accuracy, for a finite time.
+\item[(T2)] \emph{Decision}: answering a question about a model that quantifies
+  over infinitely many times, sizes or instances, such as whether the system
+  ever halts, whether a spectral gap survives the thermodynamic limit, or
+  whether a ground state has energy below $E_0$.
+\item[(T3)] \emph{Proof}: deriving every true sentence of a formal theory of
+  the model from its axioms.
+\end{enumerate}
+A simulator of a universe must perform (T1). Most of the negative results below
+concern (T2) or (T3). A negative result for (T2) or (T3) bears on the
+simulation hypothesis only through an additional premise linking it to (T1). We
+state that premise explicitly in each case.
+
+\subsection{Feynman, Lloyd and the extended Church-Turing thesis}
+\label{sec:complexity:feynman}
+
+Feynman's keynote address concerned \emph{exact} simulation, in which ``the
+computer will do exactly the same as nature''. He explicitly set aside
+approximate numerical integration~\cite{Feynman1982simulating}. He imposed the
+efficiency rule that the number of computer elements should be proportional to
+the simulated space-time volume. He was candid that this was a stipulation:
+``I make up the rules, I'm allowed to do that''~\cite[p.~469]{Feynman1982simulating}.
+Under that rule, a classical machine that stores the general probability
+function of $N$ variables fails, because doubling $N$ requires an
+``exponentially explosive growth'' of the computer~\cite[p.~472]{Feynman1982simulating}.
+His categorical ``No!'' concerned a different question. He asked whether a
+\emph{local} classical probabilistic computer can reproduce quantum
+probabilities. The obstruction he identified is a Bell-type
+inequality~\cite[pp.~476, 485]{Feynman1982simulating}. He conjectured that
+locally coupled quantum spins could imitate any discrete quantum system. He
+was confident for bosons but left fermions open~\cite[p.~476]{Feynman1982simulating}.
+
+Lloyd showed that the conjecture holds for local Hamiltonians. A quantum
+computer simulates a closed local system with memory and time ``directly
+proportional to the time and space taken up by the system to be
+simulated''~\cite{Lloyd1996universal}. Continuous variables, such as a lattice
+gauge field, are handled by discretization, with $N$ qubits per variable giving
+$N$ bits of accuracy~\cite{Lloyd1996universal}. Bravyi and Kitaev showed that
+fermionic modes and qubits simulate each other with at most logarithmic
+overhead per gate~\cite{Bravyi2002fermionic}. Polynomial-time quantum
+algorithms exist for scattering in $\phi^4$ theory in up to four spacetime
+dimensions~\cite{Jordan2012quantum}. Lloyd regarded such results as ``a strong
+indication'' that any eventual theory of quantum gravity will be efficiently
+simulable on a quantum computer~\cite{Lloyd2002computational}. That is an
+expectation, not a theorem.
+
+The complexity-theoretic premise behind ``the universe is too hard to
+simulate'' is the failure of the extended Church-Turing thesis (ECT). The ECT
+holds that any reasonable model of computation can be simulated efficiently by
+a probabilistic Turing machine. Unlike the original thesis, it is an empirical
+hypothesis whose truth depends on physics~\cite{Copeland2023churchturing}.
+Bernstein and Vazirani gave the first formal evidence against it: an oracle
+problem solvable in quantum polynomial time but requiring superpolynomial time
+classically. They also showed that $\mathsf{BPP}\subseteq\mathsf{BQP}\subseteq
+\mathsf{P}^{\#\mathsf{P}}$. An unrelativized proof of quantum advantage would
+therefore require a major breakthrough in complexity
+theory~\cite{Bernstein1997quantum}. Experimental evidence is likewise
+conditional. Arute et al.\ estimated that a sampling task their processor
+performed in about 200\,s would take a state-of-the-art classical supercomputer
+about 10{,}000 years~\cite{Arute2019quantum}. A later tensor-network method
+produced one million samples for that circuit, at fidelity $F\approx0.0037$, in
+about 15 hours on 512 GPUs~\cite{Pan2022solving}.
+
+What follows validly from these results? If the ECT fails in our universe, a
+\emph{classical} simulator that faithfully reproduces quantum dynamics incurs a
+superpolynomial overhead on some instances. A quantum simulator does not, by
+Lloyd's theorem. The argument therefore constrains the simulator's architecture
+and running time. It does not bear on whether a simulation is possible.
+
+\subsection{The sign problem}
+\label{sec:complexity:sign}
+
+Troyer and Wiese defined a ``solution'' of the sign problem as a
+polynomial-complexity algorithm for a thermal average in a model whose related
+bosonic problem is itself polynomial. A change of representation that leaves
+the cost exponential does not count~\cite{Troyer2005computational}. They mapped
+the NP-complete ground-state problem of the three-dimensional $\pm J$ Ising
+spin glass to a quantum model with a sign problem,
+$H=-\sum J_{jk}\sigma^x_j\sigma^x_k$. The related bosonic model is a
+ferromagnet that cluster algorithms simulate efficiently. A \emph{generic}
+solution of the sign problem would therefore solve an NP-complete problem in
+randomized polynomial time. The paper states P$\,=\,$NP, and a footnote
+correctly refines this to BPP~\cite{Troyer2005computational}. The result is
+worst-case. It ``does not exclude that a specific sign problem can be solved
+for a restricted subclass'', and meron-cluster algorithms are an
+example~\cite{Troyer2005computational}.
+
+Two further points in the paper matter here. First, the hard instances require
+inverse temperatures growing with $N$. Classical Monte Carlo on the
+corresponding spin glass has autocorrelation times $\tau\propto e^{aN}$.
+Troyer and Wiese also judge that quantum simulators are ``most likely not a
+generic solution'' either~\cite{Troyer2005computational}. Second, physical
+relaxation towards minimum-energy states, as in spin glasses, soap films and
+protein folding, is itself subject to local optima and long relaxation
+times~\cite{Aaronson2005np}. NP-hardness of the sign problem is therefore a
+statement about the worst-case cost of a (T2)-type equilibrium task. It does
+not show that nature efficiently computes something that a computer cannot. A
+simulator that executes the dynamics (T1) need not solve the spin-glass
+ground-state problem, just as a physical spin glass does not.
+
+Ringel and Kovrizhin proved a narrower and stronger statement for a specific
+algorithm class~\cite{Ringel2017quantized}. Take bosonic systems whose gapped
+phases have a nonvanishing quantized thermal Hall conductance, as most
+fractional quantum Hall phases do. For these, no \emph{local} sign-free QMC
+formulation exists. Here ``local'' means that the configuration variables are
+obtained from the physical degrees of freedom by finite-depth local quantum
+circuits. The argument extends to a chiral Kagome antiferromagnet under
+``additional microscopic assumptions''. The authors state that they ``do not
+address the possibility of nonlocal approaches to QMC, such as determinant QMC
+or cluster algorithms''. They call obstruction to classical simulation in
+general ``a rather ill-defined task''. They concede that, for non-symmetric
+transfer matrices, a needed similarity transformation might be nonlocal,
+``rendering the previous arguments void''~\cite{Ringel2017quantized}.
+Related rigorous results include Hastings' intrinsic sign problem for commuting
+double-semion Hamiltonians, under a technical assumption~\cite{Hastings2016how}.
+Later work gave criteria excluding stoquastic Hamiltonians and sign-free
+determinantal QMC for broad classes of chiral topological
+phases~\cite{Smith2020intrinsic,Golan2020intrinsic}. Marvian et al.\ showed
+that even \emph{finding} a curing transformation within restricted
+single-qubit classes is NP-complete~\cite{Marvian2019on}. None of these
+results concerns classical algorithms outside the QMC family, or quantum
+simulators.
+
+The Science Advances article does not mention the simulation hypothesis; we
+searched the full text for this. Press coverage nevertheless ran headlines
+such as ``Physicists Confirm That We're Not Living In a Computer Simulation'',
+asserting that it is ``impossible to model the physics of our universe on even
+the biggest computer''~\cite{Eck2017physicists}. One report attributed to the
+paper quotations about memory ``built from more atoms than there are in the
+universe'' that do not occur in the published text~\cite{UPI2017were}.
+Aaronson identified four independent gaps between the paper and the headline.
+Only local transformations within QMC are excluded. $\mathsf{BPP}\neq\mathsf{BQP}$
+is unproven. A simulator could be quantum. An exponential classical slowdown
+would be invisible to the simulated~\cite{Aaronson2017because}. Bostrom made
+the quantum-computer point in the same context~\cite{Bostrom2025simulation}.
+
+\subsection{Undecidability of physical properties}
+\label{sec:complexity:undecidability}
+
+Cubitt, Perez-Garcia and Wolf constructed translationally invariant,
+nearest-neighbour Hamiltonians on a 2D lattice of $d$-level systems, with
+interaction strength at most~1. Each Hamiltonian is gapped with $\gamma\ge1$
+if a universal Turing machine halts on input $n$, and gapless otherwise. The
+spectral-gap problem is therefore undecidable~\cite{Cubitt2015undecidability,Cubitt2022undecidability}.
+It follows that for any consistent, recursively axiomatized theory there is
+such a Hamiltonian whose gap can be neither proved nor
+disproved~\cite{Cubitt2022undecidability}. The authors emphasize that
+``algorithmic undecidability always concerns infinite families of systems''.
+The property at stake is defined in the thermodynamic limit. Their models can
+look gapless at all sizes up to a threshold that is itself
+uncomputable~\cite{Cubitt2015undecidability}. A recent review by the same group
+and co-authors puts the general point plainly. Undecidability ``is a feature
+of the mathematical model'', and because any finite problem is decidable, an
+undecidable one ``must necessarily conceal an infinite somewhere''. Its finite
+``reflections'' take the form of computational-complexity hardness or
+size-dependent effects at uncomputably large
+sizes~\cite{PeralesEceiza2025undecidability}.
+
+Earlier results have the same structure. Moore embedded a Turing machine in
+the motion of a single particle with three degrees of freedom. For such a
+system ``virtually any question about [its] long-term dynamics is
+undecidable'' even for exactly known initial conditions. Yet finite-time
+quantities remain computable, and ``the best one can do is to simulate the
+system and see what happens''~\cite{Moore1990unpredictability}. Wolfram put
+the general point directly. The behaviour of a physical system ``may always be
+calculated by simulating explicitly each step''. Questions about idealized limits
+of infinite time, volume or precision can be formally undecidable. The finite versions are decidable, though PSPACE-complete
+for universal cellular automata~\cite{Wolfram1985undecidability}. Pour-El and
+Richards exhibited computable initial data for a 3D wave equation whose (weak)
+solution is not computable~\cite{PourEl1981wave}. We rely here on the account
+in Ref.~\cite{PeralesEceiza2025undecidability}. Weihrauch and Zhong showed
+that the wave propagator is computable on $C^1$ data (losing one derivative)
+and on Sobolev spaces. They argue that the Pour-El-Richards example probably
+does not yield a wave computer that beats the Turing
+machine~\cite{Weihrauch2002is}. A different kind of limit concerns
+\emph{inference devices} embedded in a universe. Wolpert proved that every
+such device fails to infer some function, even if it has super-Turing power,
+and that no two distinguishable devices can infer each
+other~\cite{Wolpert2008physical}. These results limit prediction and
+observation from inside a universe. On our reading they say nothing about
+whether its dynamics could be executed by an external machine.
+
+What follows validly is that undecidability of a property (T2) is compatible
+with, and in the cited constructions is \emph{derived from}, computable local
+dynamics (T1). These proofs work by embedding a universal Turing machine in a
+computable model~\cite{PeralesEceiza2025undecidability}. An argument from
+undecidability to non-simulability therefore needs a further premise: that
+executing a single step of the physical dynamics requires the answer to an
+undecidable question. That premise amounts to hypercomputation in nature.
+
+\subsection{The Faizal-Krauss-Shabir-Marino argument}
+\label{sec:complexity:faizal}
+
+Faizal et al.\ argue from incompleteness to the impossibility of
+simulation~\cite{Faizal2025consequences}. Their premises, in order, are as
+follows.
+(i)~A candidate quantum-gravity theory is a computational formal system
+$\mathcal F_{\rm QG}$. Its axioms are recursively enumerable; on the same page
+they are also said to be finite. It is arithmetically expressive, consistent
+and ``empirically complete''.
+(ii)~Gödel's first theorem gives $\mathrm{Th}(\mathcal F_{\rm QG})\subsetneq
+\mathrm{True}(\mathcal F_{\rm QG})$, with truth defined as satisfaction in the
+standard model of arithmetic. Tarski's and Chaitin's theorems add further
+limits.
+(iii)~``Physically these Gödel sentences correspond to empirically meaningful
+facts—e.g., specific black-hole microstates.''
+(iv)~Reality instantiates an external, non-recursively-enumerable truth
+predicate $T(x)$ that is ``actualized in nature''. Undecidability results such
+as the spectral gap supply ``empirical backing'', and the Lucas-Penrose
+argument supplies motivation.
+(v)~Simulation proposals assume ``that every physical truth is reducible to the
+output of a finite algorithm''.
+They conclude that ``any finite algorithm can at best emulate'' the computable
+fragment, that reality ``cannot be instantiated on a Turing-equivalent
+device'', and that the simulation hypothesis is ``logically impossible rather
+than merely implausible''~\cite{Faizal2025consequences}. A university press
+release described this as showing the idea to be ``mathematically impossible''
+and as possibly ``the final, definitive answer''~\cite{UBCO2025physicists}.
+
+The valid core is conditional. \emph{If} the observable dynamics of our
+universe depends on a non-recursively-enumerable predicate, then no
+Turing-equivalent machine reproduces it. The antecedent is a denial of the
+physical Church-Turing thesis. Gödel's theorems do not supply it. Step~(ii)
+concerns provability of arithmetic sentences within a theory, which is task
+(T3). Step~(iii), which carries the argument from (T3) to physics, is asserted
+without derivation. Redden's comment makes the corresponding objection. The
+argument conflates what a formal theory can prove with what an algorithm can
+execute. A Turing-complete cellular automaton such as Conway's Game of Life
+has undecidable long-term questions yet evolves by a finite
+rule~\cite{Redden2025provability}. Non-simulability would require dynamics
+that must resolve undecidable problems in order to advance, i.e.\
+hypercomputation, for which there is no physical evidence~\cite{Redden2025provability}.
+We add three points. First, the physical undecidability results offered as
+``empirical backing'' are theorems about infinite families of computable
+models, proved by embedding Turing machines in them
+(\S\ref{sec:complexity:undecidability}). They exhibit algorithmic rules
+generating undecidable global properties, not non-algorithmic dynamics.
+Second, even granting all premises, the conclusion excludes only
+Turing-equivalent simulators. A host universe with hypercomputational
+resources is not addressed, so ``logically impossible'' overstates the paper's
+own result. Third, premise~(v) is not Bostrom's position: he holds that only
+what simulated observers could notice need be computed~\cite{Bostrom2003are}.
+In a 2026 reply to a published discussion paper, the authors clarified that
+they take Gödelian truths to be ``objectively actualized in physical
+reality'', independently of human cognition~\cite{Faizal2026reply}. This
+restates the contested premise; it does not argue for it. A formal
+computer-science treatment reaches the opposite verdict under the physical
+Church-Turing thesis. Using Kleene's second recursion theorem, Wolpert proved
+that a universe satisfying the thesis and its converse can simulate itself.
+He also showed that many questions about simulation are undecidable by Rice's
+theorem~\cite{Wolpert2025what}. The disagreement therefore reduces to whether
+physical dynamics is Turing-computable. That is an open empirical question,
+not a consequence of incompleteness.
+
+\subsection{Hypercomputation and the physical Church-Turing thesis}
+\label{sec:complexity:hypercomputation}
+
+The Church-Turing thesis concerns what a human can compute by rote. The
+physical theses of Deutsch and Wolfram, that every finitely realizable
+physical system can be simulated by a universal machine, are distinct
+empirical claims~\cite{Copeland2023churchturing}. Idealized Newtonian machines
+with unbounded speeds violate Gandy's ``Thesis M''. Deutsch argued that a
+universal Turing machine cannot perfectly simulate continuous classical
+dynamics~\cite{Copeland2023churchturing}. Aaronson argued that Planck-scale
+physics and the holographic entropy bound appear to exclude Zeno-type and
+Malament-Hogarth hypercomputers, as well as unlimited-precision analog
+computation. He suggested that the intractability of NP-complete problems
+might itself be treated as a physical principle~\cite{Aaronson2005np}. For the
+present review, the symmetry of the situation is what matters. A
+computability-based argument against simulation requires our physics to
+violate the physical Church-Turing thesis. If it does, nothing in the argument
+prevents the host's physics from doing the same.
+
+\subsection{Resource bounds and the host's physics}
+\label{sec:complexity:resources}
+
+Bostrom estimated $\sim\!10^{33}$--$10^{36}$ operations for a realistic
+simulation of human mental history, against $\sim\!10^{42}$ operations per
+second for a planetary-mass computer of known design. He also held that
+simulating the whole universe ``down to the quantum level is obviously
+infeasible, unless radically new physics is
+discovered''~\cite{Bostrom2003are} (see \S\ref{sec:philosophy:bostrom}). Lloyd
+bounded the computation the observable universe can have performed at
+${\lesssim}10^{120}$ operations on ${\sim}10^{90}$ bits (${\sim}10^{120}$ with
+gravitational degrees of freedom). He read these numbers both as upper bounds
+on computation by matter within the universe and as lower bounds for a quantum
+computer simulating it directly~\cite{Lloyd2002computational}. Vazza concluded
+that simulating our universe, or even a low-resolution Earth, is impossible for
+a simulator in a universe ``sharing the same properties''. He added that
+``only universes with very different physical properties'' could produce ours
+as a simulation, a question he places outside what is scientifically
+testable~\cite{Vazza2025astrophysical}.
+
+The logical point is that such bounds bind a simulator only if the simulator
+is subject to our physics. Several authors state this explicitly. Neukart et
+al.\ derive that a simulating computer ``governed by the same physical laws''
+would need at least as many particles as the simulated universe, unless the
+programmer ``isn't limited by the simulation's physical
+laws''~\cite{Neukart2022do}. Edge and Brown note that Vazza's conclusions hold
+``if the simulator's universe is governed by physics like our
+own''~\cite{Edge2026commentary}. Bostrom remarks that ``the physics in the
+basement universe might allow for vastly more powerful
+computers''~\cite{Bostrom2025simulation}. Wolpert's framework allows
+simulating and simulated universes to obey different laws~\cite{Wolpert2025what}.
+Running time is similarly unconstrained, because a slowdown in the host is not
+observable from inside~\cite{Aaronson2017because}. Resource arguments therefore
+constrain two scenarios: Bostrom-type ancestor simulations run by our
+descendants, whose physics is ours by hypothesis, and nested simulations
+within a single physics. They do not constrain the unrestricted hypothesis.
+The unrestricted hypothesis, in turn, gains immunity from these arguments only
+at the cost of testability (\S\ref{sec:methodology:unrestricted}).
+
+\begin{table*}[t]
+\centering
+\small
+\caption{Complexity and computability arguments: what each establishes about
+simulability.}
+\label{tab:complexity}
+\begin{tabular}{p{0.2\linewidth}p{0.36\linewidth}p{0.36\linewidth}}
+\hline
+Argument & Establishes & Does not establish \\
+\hline
+Feynman; Lloyd & Exponential cost for classical storage of general quantum states; efficient quantum simulation of local Hamiltonians & That classical simulation is impossible; the ECT's failure is unproven \\
+Troyer-Wiese & No generic polynomial-time sign-problem solution unless NP $\subseteq$ BPP & That nature solves these instances efficiently \\
+Ringel-Kovrizhin & No local sign-free QMC for chiral bosonic phases & Anything about nonlocal QMC, other classical algorithms, or quantum simulators \\
+Cubitt et al.; Moore; Wolfram & Undecidable thermodynamic-limit or infinite-time properties of computable models & Uncomputability of finite-time dynamics \\
+Faizal et al. & Incompleteness of r.e.\ theories (standard) & That physical dynamics is non-algorithmic; exclusion of non-Turing hosts \\
+Bostrom; Lloyd; Vazza & Resource limits for simulators within our physics & Limits on hosts with different physics \\
+\hline
+\end{tabular}
+\end{table*}
+
+Table~\ref{tab:complexity} summarizes the section. No complexity-theoretic or
+computability result reviewed here rules the simulation hypothesis in or out.
+Taken together, and granting their unproven premises (for example,
+$\mathsf{BPP}\neq\mathsf{BQP}$), they narrow the admissible designs. A
+simulator of quantum physics within our physics would have to be quantum or
+pay superpolynomial overhead. It would have to approximate continuum quantities
+to finite precision. It would never need to decide the undecidable properties
+of the models it runs.

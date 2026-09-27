@@ -139,7 +139,7 @@ printed journal page is given. All PDFs are saved under `/tmp/claude-0/papers/`.
 - Locator: arXiv pp. 3–4, Eqs. (10)–(11)
 - Evidence: "The specific NP-complete problem we consider [7] is to determine whether a state with energy less than or equal to a bound E0 exists for a classical three-dimensional Ising spin glass" ... "The related bosonic model is the ferromagnet with all couplings Jjk ≥ 0 and efficient cluster algorithms with polynomial time complexity are known for this model"
 - Verified: FULLTEXT
-- Notes: The reduction needs inverse temperature βJ ≥ N ln 2 + ln(12N), which scales with system size.
+- Notes: The reduction needs inverse temperature βJ ≥ N ln 2 + ln(12N), which grows with system size (arXiv p. 3: "by choosing an inverse temperature βJ ≥ N ln 2 + ln(12N) the thermal average of the energy will be less than E0 + J/2 if at least one configuration with energy E0 or less exists"). The .tex draft uses this ("hard instances require inverse temperatures growing with N").
 
 ### C-06-017
 - Claim: What Troyer and Wiese exclude, assuming standard conjectures, is a *generic* polynomial-time solution of the sign problem. Specific solutions for restricted classes of models, such as meron-cluster algorithms, are not excluded. Strictly, the relevant containment is NP ⊆ BPP rather than P = NP.
