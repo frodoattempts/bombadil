@@ -1,0 +1,241 @@
+\section{Finite information density and interferometric searches for Planckian noise}
+\label{sec:holographic}
+
+A simulation run on finite hardware can only represent a finite amount of
+information about any region. Holographic entropy bounds say that, if
+semiclassical gravity is a reliable guide, nature also stores only a finite
+amount of information in a region, and that this amount scales with the area of
+the boundary rather than with the volume. This section reviews what those bounds
+imply about the ``resolution budget'' of any substrate that reproduces our
+physics. It then turns to the one experimental programme that has tried to
+detect a macroscopic consequence of finite spatial information: interferometric
+searches for Planckian ``holographic noise''. The models tested in these
+searches come from quantum gravity, not from assumptions about simulation. We
+state this at the start because the popular description of these experiments as
+tests of whether space is ``pixelated'' blurs the distinction.
+
+\subsection{Holographic bounds as an information budget}
+
+Bekenstein argued from the generalized second law (GSL) that a weakly
+gravitating system of energy $E$ and radius $R$ in asymptotically flat space
+obeys $S_{\rm matter}\le 2\pi E R$ in Planck units~\cite{Bekenstein1981universal};
+we rely on Bousso's account of the argument, which also notes that whether the
+GSL implies this bound ``remains controversial''~\cite{Bousso2002holographic}.
+'t~Hooft went further and argued that the observable degrees of freedom can be
+described as Boolean variables on a two-dimensional lattice, about ``one Boolean
+variable per Planckian surface element''~\cite{tHooft1993dimensional}.
+Susskind recast this proposal as a ``screen'' of ``pixels'', each storing one
+bit~\cite{Susskind1995world}. That is the origin of the pixel vocabulary, and it
+was introduced as a heuristic, not as a claim about computation. In Bousso's
+review the covariant entropy bound limits the information content of the
+spacetime regions adjacent to a surface to $1.4\times10^{69}$ bits per square
+metre, and the holographic principle is the assertion that this bound has its
+origin in a quantum theory of gravity~\cite{Bousso2002holographic}. Bousso also
+spells out the contrast with a naive lattice. One oscillator with $n$ states per
+Planck volume gives $\sim n^{V}$ states, which scales with volume and is ``at
+odds'' with the spherical entropy bound~\cite{Bousso2002holographic}.
+
+These results bear on the simulation hypothesis in three ways. First, they give
+a physically motivated upper bound on the memory a faithful simulation of a
+region would need: a substrate that reproduces semiclassical gravity need not
+store more than an area-law number of bits. For the whole observable universe,
+Lloyd estimated at most $\sim10^{120}$ elementary operations on $\sim10^{90}$
+bits ($\sim10^{120}$ bits if gravitational degrees of freedom are
+included)~\cite{Lloyd2002computational}. Vazza used the holographic bound to
+estimate $\sim3.5\times10^{124}$ bits and concluded that a Planck-resolution
+simulation of the visible universe by a simulator sharing our physics is
+impossible on energy grounds~\cite{Vazza2025astrophysical}. Vazza also notes
+that a coarse-grained description of the cosmic web needs vastly fewer bits, so
+the conclusion depends on the resolution assumed~\cite{Vazza2025astrophysical}.
+The resource arguments themselves are reviewed in the section on computational limits.
+% cross-link: Section 02 (computational resources); replace with \ref at merge.
+Second, the bounds limit \emph{maximum entropy}. They do not imply that geometry
+is discrete, or that a finite information density must leave a measurable
+imprint. 't~Hooft himself remarked that the holographic ``blurring is small
+compared to the uncertainties produced by the usual quantum mechanical
+fluctuations''~\cite{tHooft1993dimensional}. Third, whether the information
+limit could have \emph{macroscopic} observable consequences is the question that
+motivated the experiments below.
+
+\subsection{Hogan's holographic noise and the GEO600 episode}
+
+Hogan proposed that a transverse indeterminacy of position, inferred from the
+limits of measurement with Planck-wavelength radiation, would produce
+``holographic noise''. This noise would have a transverse shear signature and a
+flat strain power spectral density equal to the Planck time $t_P$, predicted
+``with no parameters''~\cite{Hogan2008measurement}. The step from information to
+noise is explicit. The normalization uses Nyquist--Shannon sampling with one
+degree of freedom per $2l_P$ in each transverse direction on a light sheet, and
+an experimental upper bound on the noise would therefore give ``a lower bound on
+the number density of independent position eigenstates''~\cite{Hogan2008measurement}.
+Hogan stated that the effect is ``not derived here from a fundamental theory''.
+He compared the predicted spectrum with GEO600, not LIGO, arguing that LIGO's
+arm cavities suppress the effect~\cite{Hogan2008measurement}, and he wrote that
+the approximate agreement with ``otherwise unexplained noise in GEO600 motivates
+further study''~\cite{Hogan2008measurement,Hogan2008indeterminacy}. A 2009
+revision lowered the predicted amplitude by $\sqrt{\pi}$, to
+$h=\sqrt{t_P/2\pi}=0.92\times10^{-22}\,{\rm Hz^{-1/2}}$ for GEO600. It also
+withdrew an earlier claim about the spectral slope and predicted strong
+correlation between nearly co-located interferometers~\cite{Hogan2009holographic}.
+
+The proposal was contested. Smolyaninov argued that the derivation assumes
+linear diffraction of Planck radiation, and that vacuum self-focusing would
+reduce the angular uncertainty to $\sim\lambda_p/L$, ``19 orders of magnitude
+smaller''~\cite{Smolyaninov2009level}. Amelino-Camelia called it ``a young
+proposal still looking for some maturity''. He also stressed that it is unrelated
+to earlier ``holography-inspired'' noise estimates of the spacetime-foam
+type~\cite{AmelinoCamelia2013quantum}, so the phrase ``holographic noise'' names
+two different proposals. On the experimental side, GEO600 papers of the period
+report noise between roughly 100\,Hz and 1\,kHz that had not yet been
+explained~\cite{Hild2009dcreadout,Luck2010upgrade}. The GEO600 team later
+reported that in ``tuned DC readout'' experiments ``all of the observed noise
+could be explained'' by known sources~\cite{Luck2010upgrade}; that paper does not
+mention holographic noise. Amelino-Camelia concluded that ``the brief season of
+the `GEO600 anomaly' \ldots\ is over''~\cite{AmelinoCamelia2013quantum}.
+Hogan's revised analysis argued that folded arms (GEO600) and Fabry--Perot arms
+(LIGO) do not amplify holographic noise, so that it was ``not currently ruled out
+by either LIGO or GEO600''. He proposed a dedicated test: cross-correlating two
+nearly co-located interferometers at frequencies near $c/2L$~\cite{Hogan2012interferometers}.
+Separately, Kwon and Hogan showed that LIGO/Virgo stochastic-background limits
+already exclude some \emph{metric}-fluctuation (spacetime-foam) models, whereas
+their non-metric holographic model remained near the limits of the experiments
+of the time~\cite{Kwon2016interferometric}.
+
+Hogan's most explicitly informational statement is a non-refereed essay. It
+opens ``If reality has finite information content, space has finite fidelity''
+and posits a ``Planck broadcast'' bandwidth of about $2\times10^{43}$ bits per
+second~\cite{Hogan2013now}. The essay uses computing metaphors (a ``cosmic
+Internet Service Provider'', the ``operating system'' the universe ``runs on'').
+It also rejects Planck-size pixels (``nature is not really pixelated in little
+squares'') in favour of a transverse blur
+$\langle x_\perp^2\rangle=(2.135\times10^{-18}\,{\rm m})^2(L/1\,{\rm m})$, far
+larger than the Planck length~\cite{Hogan2013now}. It does not propose that the
+universe is a simulation.
+
+\subsection{The Fermilab Holometer}
+
+The Holometer consisted of two co-located 39.06\,m power-recycled Michelson
+interferometers (about 2\,kW on each beamsplitter, beamsplitters 0.91\,m apart,
+no arm cavities). Their outputs were cross-correlated up to 25\,MHz to average
+down uncorrelated shot noise~\cite{Holometer2016first,Holometer2017holometer}.
+Each interferometer had a shot-noise-limited sensitivity of
+$2.1\times10^{-18}$\,m\,Hz$^{-1/2}$. After 145\,h of data the cross-spectrum
+reached $2.1\times10^{-20}$\,m\,Hz$^{-1/2}$, surpassing strain power spectral
+density $t_P$ for signal bandwidths above 11\,kHz~\cite{Holometer2016first}.
+The first analysis tested a ``speculative model'' of Planckian diffraction
+from ``a putative fundamental Nyquist frequency $f_p=1/t_p$'' (the Kwon--Hogan
+model~\cite{Kwon2016interferometric}). It excluded that model at $5.1\sigma$
+statistical significance ($4.6\sigma$ including a 10\% calibration uncertainty),
+equivalently a normalization below 44\% of the prediction at 95\% CL. The authors
+stressed that this ``appl[ies] only to the spectral shape of the particular model''
+and that the layout ``would not respond'' to rotational
+correlations~\cite{Holometer2016first}. The final straight-arm analysis (704\,h)
+found no correlation. At $2\sigma$ it limited the amplitudes of a two-parameter
+shear model to $|\beta_L|<0.10\,t_P$ and $|\beta_{2L}|<0.25\,t_P$, well below
+the order-unity values predicted, and stated explicitly that it does not
+constrain a newer Lorentz-invariant rotational model~\cite{Holometer2017interferometric}.
+A reconfiguration with one arm of each interferometer bent by $90^\circ$ tested
+that rotational model~\cite{Hogan2017statistical} with 1098\,h of data. It
+constrained its normalization to $\eta<0.25\,t_P$ at 95\% confidence for one
+rotation axis~\cite{Richardson2021interferometric}. The authors note that the
+planar geometry cannot test models whose uncertainty entangles all three spatial
+directions, and that local quantum-field-theoretic models of quantum gravity
+predict no effect in such a measurement~\cite{Richardson2021interferometric}.
+The same data also gave the first direct limits on MHz stochastic gravitational
+waves, which lie far above closure density~\cite{Holometer2017mhz}.
+
+In short, the Holometer placed null bounds on specific models: two spectral
+families of shear noise and one rotational model. It did not rule out Planckian
+information limits in general. A Holometer collaborator later described the
+first-generation design as resting on a ``naive premise'' that drew ``(justified)
+criticism'' for not being Lorentz invariant, and reinterpreted its null result
+as ``a verification of an exact symmetry''~\cite{Kwon2025phenomenology}. We could
+not locate a published version of that Lorentz-invariance criticism.
+
+\subsection{Geontropic fluctuations and next-generation experiments}
+
+Verlinde and Zurek started from the covariant entropy bound and postulated
+``Planck size pixels on the surface bounding a causally connected part of
+space''. Energy fluctuations of these pixels would produce arm-length
+fluctuations $\langle\delta L^2\rangle\sim l_pL$ with strong transverse
+correlations~\cite{Verlinde2021observational}. Follow-up work tied the effect to
+the area-law fluctuations of the modular Hamiltonian, computed in AdS/CFT and
+modelled in flat space by a high-occupation bosonic field~\cite{Verlinde2020spacetime,Zurek2022vacuum,Verlinde2022modular}.
+Zurek notes that ``it is not known how to precisely extend'' these ideas to flat
+space~\cite{Zurek2022vacuum}. Li et al.\ recast published LIGO and Holometer data
+as rough $3\sigma$ bounds on the normalization $\alpha$ (natural value
+$\alpha\sim1$). They find $\alpha\lesssim3$ (LIGO) and $\alpha\lesssim0.7$
+(Holometer) with an infrared cutoff, and $\alpha\lesssim0.1$ and
+$\alpha\lesssim0.6$ without one. Contrary to Hogan's earlier assumption, they
+also argue that these fluctuations do accumulate in Fabry--Perot
+arms~\cite{Li2023interferometer}. Two new cross-correlation experiments target
+this regime. GQuEST (Caltech/Fermilab) is a design for 5\,m interferometers with
+photon-counting readout that evades the standard quantum limit. It projects
+$\alpha<0.6$ at $3\sigma$ in 60\,h and $\alpha<0.1$ in 2160\,h at design
+sensitivity~\cite{Vermeulen2025photon}. QUEST (Cardiff)~\cite{Vermeulen2021experiment}
+has reported first limits on correlated length fluctuations between 13 and
+80\,MHz from a $10^4$\,s run with 1.83\,m arms. It frames these as
+stochastic-background bounds and quotes no constraint on a specific
+quantum-gravity model~\cite{Patra2025broadband}. If the effect were real, it
+would be a large background for Cosmic Explorer and the Einstein
+Telescope~\cite{Bub2023quantum}. A tabletop demonstration has shown that
+quantum-correlated light can outperform classical light in detecting a correlated
+signal injected into two interferometers in the MHz band~\cite{Pradyumna2020twin}.
+
+Other theorists dispute that an effect of this size is expected. Carney et al.\
+find that the effective field theory of gravitons ``unambiguously predicts''
+$\Delta L\sim\ell_{\rm pl}\sim10^{-35}$\,m. On this view a detection would signal
+``a severe breakdown of effective quantum field theory''~\cite{Carney2026response}.
+A recent preprint likewise finds graviton-induced noise spectra that are finite
+but Planck-suppressed~\cite{Freidel2026geometric}. Reviews place these searches
+among tests of particular phenomenological models of spacetime
+fluctuations~\cite{Carlip2023spacetime,Sharmila2026signatures}.
+
+\begin{table*}[t]
+\centering
+\footnotesize
+\caption{Interferometric searches for Planckian, holographically motivated noise.
+Sensitivities are as quoted by the cited papers (cross-spectrum values unless
+stated). ``Proposal'' marks projections, not measurements.}
+\label{tab:holographic-experiments}
+\begin{tabular}{p{2.3cm}p{2.6cm}p{3.0cm}p{2.9cm}p{3.6cm}p{1.3cm}}
+\hline
+Instrument & Observable & Sensitivity & Model tested & Result & Ref.\\
+\hline
+GEO600 (folded 600\,m arms) & DARM strain noise, $\sim$100--600\,Hz & peak $2.2\times10^{-22}$\,Hz$^{-1/2}$ at 530\,Hz & Hogan holographic noise (comparison, not a dedicated test) & Unexplained noise later attributed to known sources in DC readout; Hogan: not ruled out after arm-folding factor & \cite{Hogan2008measurement,Luck2010upgrade,Hogan2012interferometers}\\
+LIGO/Virgo & stochastic-background cross-correlation (41.5--169.25\,Hz); published strain spectra & $\Omega_{\rm GW}<5.6\times10^{-6}$ (95\% CL) used for foam models & metric-fluctuation (foam) models; geontropic recast & ``random walk'' model excluded; white-noise model $a_0<0.06$; geontropic $\alpha\lesssim0.1$ (no IR cutoff) or $\lesssim3$ (IR cutoff) & \cite{Kwon2016interferometric,Li2023interferometer}\\
+Holometer I (39\,m, straight arms, 2015--16) & DARM cross-spectrum up to 25\,MHz & $2.1\times10^{-20}$\,m\,Hz$^{-1/2}$ (145\,h) & Kwon--Hogan Planckian diffraction; shear-noise family & Excluded at $4.6\sigma$ ($<44\%$ at 95\% CL); $|\beta_L|<0.10\,t_P$, $|\beta_{2L}|<0.25\,t_P$ ($2\sigma$, 704\,h) & \cite{Holometer2016first,Holometer2017interferometric}\\
+Holometer II (38.9\,m, bent arms) & rotational DARM cross-spectrum, 1.1--20\,MHz & $6.1\times10^{-21}$\,m\,Hz$^{-1/2}$; CSD$_{\delta h}<t_P/2$ (1098\,h) & Hogan--Kwon--Richardson rotational model & $\eta<0.25\,t_P$ (95\% CL, one axis) & \cite{Richardson2021interferometric}\\
+QUEST (Cardiff, 1.83\,m) & DARM cross-spectrum, 13--80\,MHz & strain $3\times10^{-20}$\,Hz$^{-1/2}$ ($10^4$\,s) & none specific (stochastic length fluctuations) & Upper limits; no model constraint quoted & \cite{Patra2025broadband}\\
+GQuEST (Caltech/Fermilab, 5\,m) & photon-counting readout, peak $\sim$15.6\,MHz & Proposal: nominal signal in several hours & Verlinde--Zurek geontropic fluctuations & Proposal: $\alpha<0.6$ in 60\,h; $\alpha<0.1$ in 2160\,h ($3\sigma$) & \cite{Vermeulen2025photon}\\
+\hline
+\end{tabular}
+\end{table*}
+
+\subsection{Relation to the simulation hypothesis}
+
+The logical link is weak and one-directional. (i) A simulation with finite
+memory must coarse-grain, but nothing requires the coarse-graining to show up as
+stationary, correlated displacement noise at the MHz frequencies these
+instruments probe. A simulator could just as well reproduce smooth semiclassical
+geometry to any accuracy we can measure, so a null result says nothing about
+simulation as such. (ii) The models that were actually tested (Hogan's shear and
+rotational models, the Verlinde--Zurek fluctuations) are derived from holography
+and quantum-gravity arguments, with normalizations fixed by entropy bounds. None
+of them is derived from assumptions about a simulating computer. A positive
+detection would therefore first be evidence about quantum gravity. (iii) None of
+the theoretical or experimental papers reviewed here invokes the simulation
+hypothesis~\cite{Hogan2008measurement,Hogan2012interferometers,Holometer2016first,Holometer2017interferometric,Richardson2021interferometric,Verlinde2021observational,Vermeulen2025photon,Patra2025broadband}.
+The nearest approach is metaphor: the sampling-theorem language of the Holometer
+analysis~\cite{Holometer2016first} and Hogan's ``Planck broadcast''
+essay~\cite{Hogan2013now}. The only explicit link we found is in a non-refereed
+preprint. It suggests that if experiments such as the Holometer showed ``the
+holographic universe'' to be true, this ``may be interpreted as an indication of
+us participating in a simulation chain''~\cite{Neukart2022do}. The experiment it
+cites~\cite{Holometer2016first} reported a null result for one noise spectrum and
+did not test holography in general. Moreover, holographic scaling, if confirmed,
+would be at least as naturally read as a fact about quantum gravity as evidence
+of an ``external programmer''. What these experiments do provide is an
+operational upper bound on some forms of macroscopic, Planck-normalized position
+noise, and the evidence reviewed here does not support treating them as tests of
+the simulation hypothesis.
