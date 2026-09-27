@@ -211,10 +211,10 @@ reasoning, not as claims of the cited paper.
 - Notes: Wheeler originals: METADATA only (not accessible). Characterization taken from the RMP review, which quotes them. The RMP dates the collection "1984"; the Princeton volume carries 1983 (Crossref DOI 10.1515/9781400854554). Page range 182-213 from Ma2013quantum ref. [13].
 
 ### C-07-023
-- Claim: Wheeler wrote that "No elementary phenomenon is a phenomenon until it is a registered (observed) phenomenon", while also warning that it is "wrong to talk of the 'route' of the photon".
+- Claim: Wheeler wrote that "No elementary phenomenon is a phenomenon until it is a registered (observed) phenomenon", and his criterion for completing a phenomenon was "an irreversible act of amplification" (not conscious awareness); he also warned that it is "wrong to talk of the 'route' of the photon".
 - Source: Ma2016delayed (quoting Wheeler1983law)
 - Locator: RMP Sec. II.D, p. 7 (arXiv)
-- Evidence: "In actuality it is wrong to talk of the 'route' of the photon. [...] 'No elementary phenomenon is a phenomenon until it is a registered (observed) phenomenon.'"
+- Evidence: "In actuality it is wrong to talk of the 'route' of the photon. [...] it makes no sense to talk of the phenomenon until it has been brought to a close by an irreversible act of amplification: 'No elementary phenomenon is a phenomenon until it is a registered (observed) phenomenon.'"
 - Verified: FULLTEXT
 - Notes: Quote via the review; the original not read. Render-on-demand proposals often cite Wheeler; Wheeler's criterion is registration by "an irreversible act of amplification", not conscious observation (same passage).
 
@@ -461,6 +461,14 @@ reasoning, not as claims of the cited paper.
 - Evidence: "it rules out any causal influence from the emission to the choice which might instruct the photon to behave as a particle or as a wave. Note that this resembles the freedom-of-choice loophole"
 - Verified: FULLTEXT
 - Notes: Relevant to a "simulator that reads the setting in advance" (our analysis in the section).
+
+### C-07-054
+- Claim: Scully and Drühl (1982) proposed the quantum eraser, in which which-path information carried by a second emitted photon can be erased by a suitable detection, recovering interference, with the choice delayable until after the first photon's generation.
+- Source: Scully1982quantum; Ma2016delayed
+- Locator: Ma et al. RMP Sec. II.E, Figs. 6-7
+- Evidence: "If one can detect photon φ in a way that its spatial origin (thus which-path information of γ) is erased, interference is recovered."; "The choice can be delayed with respect to the generation of γ."
+- Verified: FULLTEXT
+- Notes: Scully & Drühl original: METADATA only (Phys. Rev. A 25, 2208-2213); description taken from the RMP review.
 
 ---
 

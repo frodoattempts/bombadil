@@ -75,7 +75,8 @@ def load_bib():
             v = field(e["body"], f)
             if v:
                 by_id.setdefault((f, v.lower()), []).append(key)
-        if not any(field(e["body"], f) for f in ("doi", "eprint", "url", "isbn")):
+        if not (any(field(e["body"], f) for f in ("doi", "eprint", "url", "isbn"))
+                or re.search(r"\\url\{|\bdoi:?\s*10\.", e["body"], re.I)):
             problems.append(f"key {key} ({e['src']}): no doi/eprint/url/isbn")
     for (f, v), keys in by_id.items():
         if len(keys) > 1:
