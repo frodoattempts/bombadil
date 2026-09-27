@@ -20,6 +20,8 @@ import json
 import os
 import re
 import sys
+import time
+import urllib.error
 import urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -53,7 +55,10 @@ def field(body, name):
 
 
 def norm(s):
-    return re.sub(r"[^a-z0-9]+", " ", (s or "").lower()).strip()
+    s = re.sub(r"<[^>]+>", " ", s or "")                       # MathML / HTML tags
+    s = re.sub(r"\\(texttimes|times|,|;|!|mathrm|rm|text)", " ", s)  # LaTeX spacing/markup
+    s = s.replace("\u2019", "'").replace("\u00d7", " ")
+    return re.sub(r"[^a-z0-9]+", " ", s.lower()).strip()
 
 
 def load_bib():
@@ -113,20 +118,40 @@ def cited_keys():
     return cites
 
 
-def fetch_json(url):
-    with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=30) as r:
-        return json.load(r)
+def fetch_json(url, tries=5):
+    for attempt in range(tries):
+        try:
+            with urllib.request.urlopen(urllib.request.Request(url, headers=UA), timeout=30) as r:
+                return json.load(r)
+        except urllib.error.HTTPError as exc:
+            if exc.code != 429 or attempt == tries - 1:
+                raise
+        except urllib.error.URLError:
+            if attempt == tries - 1:
+                raise
+        time.sleep(2 ** attempt)
 
 
 def online_check(entries):
     bad = []
     for key, e in sorted(entries.items()):
+        if field(e["body"], "titlecheck"):   # documented, legitimate title difference
+            continue
         title = field(e["body"], "title")
         doi, eprint = field(e["body"], "doi"), field(e["body"], "eprint")
         try:
             if doi:
-                msg = fetch_json("https://api.crossref.org/works/" + urllib.request.quote(doi))["message"]
-                remote = (msg.get("title") or [""])[0]
+                try:
+                    msg = fetch_json("https://api.crossref.org/works/" + urllib.request.quote(doi))["message"]
+                    remote = (msg.get("title") or [""])[0]
+                except urllib.error.HTTPError as exc:
+                    if exc.code != 404:
+                        raise
+                    # not a Crossref DOI (e.g. DataCite/Zenodo): check it is registered, skip title match
+                    h = fetch_json("https://doi.org/api/handles/" + doi)
+                    if h.get("responseCode") != 1:
+                        raise RuntimeError("DOI not registered")
+                    continue
             elif eprint and re.match(r"^(\d{4}\.\d{4,5}|[a-z-]+(\.[A-Z]{2})?/\d{7})", eprint):
                 html = urllib.request.urlopen(urllib.request.Request(
                     "https://arxiv.org/abs/" + eprint, headers=UA), timeout=30).read().decode("utf-8", "replace")
