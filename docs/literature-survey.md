@@ -115,8 +115,12 @@ dedicated analysis; this needs a more exhaustive check.
 - Pierre Auger Observatory: a dipole of ~6.5% above 8 EeV at >5.2σ (Auger
   Collaboration 2017). It is interpreted as extragalactic in origin, and it is
   the dominant large-scale structure any lattice search must model.
-- **Auger Open Data**: 10% of cosmic-ray events released in 2021, expanding to
-  **30% of Phase-I surface-detector events above 2.5 EeV (2004–2022)**.
+- **Auger Open Data**: 10% of cosmic-ray events released in 2021. An expansion
+  to 30% of Phase-I surface-detector events above 2.5 EeV (2004–2022) was
+  announced but, as of September 2026, the portal still shows the 10% release.
+  More useful for R1: Auger's complete list of 2,635 events above 32 EeV is
+  public on Zenodo (CC BY 4.0), about 1,387 of them at ≥ 40 EeV. See
+  `paper/sections/04-uhecr.tex`.
 
 ### 2.2 H-noise — pixelated / holographic space
 
@@ -271,8 +275,9 @@ parallel, pen-and-paper track.
   "lattice spacing" in UHECR papers.
 - What exactly is the expected *magnitude* of the lattice anisotropy for a
   given *b* in Beane et al.? This needs extracting from the paper.
-- Which energy threshold and event count does the 30% Auger release provide
-  above 40 EeV? This sets the statistical reach.
+- ~~Which energy threshold and event count does the 30% Auger release provide
+  above 40 EeV?~~ Answered in section 04 of the paper: the Zenodo event list
+  gives ~1,387 events at ≥ 40 EeV.
 
 ---
 

@@ -33,8 +33,8 @@ Three further points in the same paper matter below.
 Bennett's formulation makes the bookkeeping explicit~\cite{Bennett2003notes}. An entropy decrease
 of the information-bearing degrees of freedom must be compensated by an entropy increase elsewhere,
 typically as ``energy imported into the computer, converted to heat, and dissipated into the
-environment''. Erasing random data can be thermodynamically reversible, whereas erasing known data
-cannot~\cite{Bennett2003notes}.
+environment''. Erasing random data can be thermodynamically reversible, whereas erasing known data is
+thermodynamically irreversible~\cite{Bennett2003notes}.
 
 The bound has been tested in several systems:
 \begin{itemize}
@@ -81,8 +81,8 @@ Later papers extend the idea in two steps.
   This gives 1.288 bits for $\{p,e,n\}$ and 1.509 bits for $\{u,d,e\}$, and about $6\times10^{80}$
   bits in the observable universe~\cite{Vopson2021estimation}. He postulates that stable massive
   particles store this information ``about themselves''~\cite{Vopson2021estimation}.
-\item \emph{Wider consequences.} Earlier estimates tied $\sim\!10^{94}$ bits to the missing dark
-  matter; the 2021 paper itself calls this ``most likely overestimated''~\cite{Vopson2021estimation}.
+\item \emph{Wider consequences.} An earlier estimate tied $\sim\!5\times10^{94}$ bits to the missing dark
+  matter; the 2021 paper itself calls this ``most likely overestimated''~\cite{Vopson2021estimation}. Missing information has also been reviewed as a dark-matter candidate~\cite{Dzaferovic2021missing}.
   Growth of digital data was projected to exceed half of Earth's mass in $\sim500$
   years~\cite{Vopson2020information}.
 \end{itemize}
@@ -114,7 +114,7 @@ The proponent states that M/E/I ``still awaits an experimental confirmation''~\c
 and ``has no empirical validation yet''~\cite{Vopson2025response}. We are not aware of any reported
 execution of the annihilation protocol. The only direct weighings of storage media that we found
 had an accuracy of $10^{-8}$\,kg. They recorded unexplained transient weight changes of order
-1\,mg, which their authors did not attribute to a mass of information~\cite{Kish2013does}. That
+1\,mg, which their authors did not attribute to a mass of information~\cite{Kish2013does,Kish2007gravitational}. That
 accuracy is about 17 orders of magnitude short of the predicted $2.5\times10^{-25}$\,kg per
 terabyte.
 
@@ -137,7 +137,8 @@ above.
   make the same point for such memories: the system's ``energy and mass \dots\ remain the same''
   after writing~\cite{Kish2013does}. A bit known to be in one well therefore has the same mean
   energy $E$ as the thermalized bit. It differs only in nonequilibrium free energy, by
-  $T D[\rho\Vert\rho_{\rm eq}]=k_BT\ln2$~\cite{Esposito2011second}. Since the mass of a body
+  $T D[\rho\Vert\rho_{\rm eq}]=k_BT\ln2$ (Ref.~\cite{Esposito2011second}; the value $\ln 2$ is our
+  evaluation for a symmetric bit). Since the mass of a body
   measures its energy content, $m=E_0/c^2$~\cite{Okun2008einstein}, this entropic free-energy
   excess implies no extra rest mass. The $k_BT\ln 2$ that appears on erasure is supplied as work
   by the eraser and leaves as heat~\cite{Jun2014high,Bennett2003notes}. It is not released from
@@ -152,7 +153,7 @@ above.
   NIST-JANAF parameters~\cite{NIST2026copper}. Equivalently, $\Delta m_{\rm inf}c^2\approx3.0$\,MJ
   for the 1\,kg, 100\,K example, whereas the measured enthalpy increment between 300 and 400\,K is
   $3.9\times10^{4}$\,J. The ordinary relativistic mass increase of the heated block,
-  $\Delta H/c^2\approx4\times10^{-13}$\,kg, is non-zero and about 80 times smaller than the
+  $\Delta H/c^2\approx4\times10^{-13}$\,kg~\cite{Okun2008einstein}, is non-zero and about 80 times smaller than the
   claimed information mass.
 \item \emph{The ``information per particle'' is a property of the mixture (our calculation).} The
   1.288 and 1.509 bits are entropies of the species mix in a population, not properties of a
@@ -179,9 +180,10 @@ two examples.
 \item \emph{SARS-CoV-2 genomes.} Ten genomes of identical length (29{,}903 nt) were selected from
   NCBI because they ``displayed an incremental number of SNP mutations with time'' (0--49 over 22
   months). Their nucleotide-composition entropy falls from 1.9570243 to 1.9562614 bits, ``rather
-  linearly'' in time.
+  linearly'' in time~\cite{Vopson2022second}.
 \end{itemize}
-The authors read the genomic trend as hinting at a deterministic, entropy-driven mutation process.
+The authors read the genomic trend as hinting at a deterministic, entropy-driven mutation
+process~\cite{Vopson2022second,Vopson2022possible}.
 
 Later work extends the law to atomic physics (Hund's rules), to the prevalence of symmetry, and to
 cosmology~\cite{Vopson2023second,Vopson2025is}. The cosmological derivation assumed $dQ=T\,dS=0$
@@ -200,7 +202,7 @@ universe''~\cite{Vopson2025is}.
   negative slopes throughout~\cite{Ostrowski2024entropy}. For SARS-CoV-2 the slope is
   $(-0.972\pm0.018)\times10^{-5}$ per mutation by least squares, with $\chi^2=7.6\times10^{7}$,
   and $(-1.146\pm0.421)\times10^{-5}$ by robust Bayesian regression. The robust slopes for HIV and
-  influenza lie within $1.4\sigma$ of zero. The authors interpret the trend through nonequilibrium
+  influenza lie within $1.4\sigma$ of zero (our reading of their Table~I). The authors interpret the trend through nonequilibrium
   thermodynamics rather than a new law, and do not test a mutational-bias null model.
 \item \emph{Reformulations.} Crecraft attributes the magnetic example to the ordinary second law.
   He argues that the statistical information entropy used is ``ill defined'' as the basis of a
@@ -212,7 +214,7 @@ universe''~\cite{Vopson2025is}.
   increasing) Shannon entropy in simulated nuclear fuel~\cite{Kubinski2024shannon}.
 \item \emph{Public critique of the gravity paper.} Hossenfelder argued in a video that $H$ is
   unchanged by swapping 0s and 1s and is maximal at equal numbers, and that the paper ``shouldn't
-  have been published''~\cite{Hossenfelder2025gravity}. Vopson replied that the video gives no
+  have been published''~\cite{Hossenfelder2025gravity}, as transcribed in Ref.~\cite{Vopson2025response}. Vopson replied that the video gives no
   explicit mathematical rebuttal and that fixing an encoding gives bit values
   meaning~\cite{Vopson2025response}. The reply and the cosmological note appeared as ``News and
   Views'' items in \emph{IPI Letters}, a journal edited by Vopson. The journal states that such
@@ -232,20 +234,20 @@ universe''~\cite{Vopson2025is}.
   \item In the most mutated genome of the table, 22 of 49 differences are C$\to$U, and 41 of 49
     move a site toward a more common base.
   \item A null model with unbiased substitutions predicts an \emph{increase} of
-    $+3.9\times10^{-6}$ bits per substitution, compared with the observed $-1.6\times10^{-5}$.
+    $+3.9\times10^{-6}$ bits per substitution, compared with the observed mean of $-1.6\times10^{-5}$ bits per SNP.
   \end{itemize}
   The choice of estimator is not the issue here. At fixed $N$ the Miller--Madow correction is a
   constant offset~\cite{Paninski2003estimation}. What matters is the absence of a null model and
-  the selection of sequences ``with an incremental number'' of SNPs. A monotone composition drift
-  under a biased mutation process is expected on standard population-genetic grounds and does not
-  indicate a new law.
+  the selection of sequences ``with an incremental number'' of SNPs. Simmonds attributes the U-rich, C-poor composition of other human coronaviruses to prolonged
+  C$\to$U hypermutation~\cite{Simmonds2020rampant}. A composition drift of this kind is what a
+  biased mutation process produces, and it does not indicate a new law.
 \item \emph{Digital example.} For the magnetic medium, Landauer's accounting says that
   thermalization \emph{raises} the entropy of the information-bearing degrees of freedom by up to
   $Nk_B\ln2$~\cite{Landauer1961irreversibility}. What falls is the relative entropy the medium
   retains about the written record. For undriven relaxation, $\Delta I=-\Delta_iS\le0$ follows
   from Eq.~(12) of Ref.~\cite{Esposito2011second}. The ``second law of infodynamics'' in this
   example is therefore a restatement of the ordinary second law, as Crecraft and Todd also
-  conclude.
+  conclude~\cite{Crecraft2024second,Todd2026thermodynamic}.
 \item \emph{Gravity model.} In the gravity model $H$ depends only on the counts $(N_0,N_1)$. It is
   unchanged when a particle moves through empty cells and changes only when particles merge. The
   $1/R^2$ law enters through the identifications $\Delta r=\hbar/mc$, $M=NHk_BT\ln2/c^2$ and
@@ -260,11 +262,12 @@ Table~\ref{tab:information} summarizes the status of each claim. The empirically
 Landauer's bound with heat delivered to the environment, gives no support to a rest mass of stored
 information. As formulated, the M/E/I conjecture conflicts with the standard energy bookkeeping of
 symmetric memories. Its temperature-dependent version conflicts with calorimetry by nearly two
-orders of magnitude. Its flagship test is untested, and it has a declared escape route if no
+orders of magnitude (our calculation). Its flagship test has not been performed, and it has a declared escape route if no
 photons are seen. The infodynamics trends are reproducible arithmetic on well-defined data. Their
 sign is explained by a known mutational bias in the genomic case and by the ordinary second law in
-the digital case. None of these results, therefore, bears on whether the universe is
-computed~\cite{Vopson2023second,Vopson2025is}. The infodynamics analyses are cheap to audit, and the
+the digital case. On the present evidence, therefore, neither proposal provides empirical support specific to the
+hypothesis that the universe is computed, contrary to the framing in
+Refs.~\cite{Vopson2023second,Vopson2025is}. The infodynamics analyses are cheap to audit, and the
 research notes outline a protocol for doing so.
 
 \begin{table}[t]
@@ -279,7 +282,7 @@ Claim & Status & Decisive test & Test status \\
 \hline
 Landauer bound, $\ge k_BT\ln2$ of heat per erased bit~\cite{Landauer1961irreversibility} &
 Established; derivations debated~\cite{Norton2011waiting} &
-Single-bit erasure calorimetry &
+Single-bit erasure experiments &
 Confirmed within errors~\cite{Berut2012experimental,Jun2014high,Hong2016experimental} \\
 Stored bit has rest mass $k_BT\ln2/c^2$~\cite{Vopson2019mass} &
 Conjecture; contested~\cite{Lairez2024on,Burgin2022is} &

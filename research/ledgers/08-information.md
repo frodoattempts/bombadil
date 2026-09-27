@@ -436,6 +436,30 @@ Read with care:
 - Verified: FULLTEXT
 - Notes: The NSB estimator is introduced in Nemenman2002entropy.
 
+### C-08-052
+- Claim: Džaferović-Mašić (2021) reviews "missing information" as a dark-matter candidate based on M/E/I, and mentions proposed tests with an ultra-accurate balance and a LIGO-like interferometer.
+- Source: Dzaferovic2021missing
+- Locator: Abstract
+- Evidence: "One of the most intriguing dark matter candidates is missing information in the cosmos. This is based on the mass-energy-information equivalence principle presented by M Vopson"; "Two major proposals are in the direction of using an ultra-accurate balance ... and originally developed sensitive interferometer similar to the one in LIGO experiment."
+- Verified: ABSTRACT
+- Notes: Conference proceedings (J. Phys. Conf. Ser. 1814, 012006).
+
+### C-08-053
+- Claim: In a companion paper, Vopson proposes a "governing law of genetic mutations", according to which genomes mutate driven by a tendency to reduce their information entropy.
+- Source: Vopson2022possible
+- Locator: Abstract
+- Evidence: "we are able to formulate a governing law of genetic mutations, stating that genomes undergo genetic mutations over time driven by a tendency to reduce their overall information entropy, challenging the existing Darwinian paradigm."
+- Verified: ABSTRACT
+- Notes: Applied Sciences 12, 6912 (2022). A related method paper is Vopson2021new (Physica A; METADATA only).
+
+### C-08-054
+- Claim: The weighing experiments on storage media summarized by Kish and Granqvist were originally reported by Kish (2007) in Fluctuation and Noise Letters.
+- Source: Kish2007gravitational
+- Locator: Kish2013does, reference [8]
+- Evidence: "[8] L.B. Kish, "'Gravitational mass' of information?", Fluct. Noise Lett., vol. 7, pp. C51–C68, 2007."
+- Verified: METADATA
+- Notes: We did not read the 2007 paper. All numbers are taken from Kish2013does (C-08-018).
+
 ## E. This work (independent technical assessment)
 
 ### C-08-T01
