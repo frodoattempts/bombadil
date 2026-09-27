@@ -10,7 +10,7 @@ Offline:
   * every \\cite key in paper/**/*.tex exists in the bibliography
   * every cited key is backed by at least one claim in research/ledgers/
   * no UNVERIFIED claim's source is cited only via UNVERIFIED claims
-  * every bib entry has a doi, eprint or url
+  * every bib entry has a doi, eprint, url or isbn
 Online:
   * DOIs resolve on Crossref and titles match; arXiv IDs resolve and titles match
 """
@@ -75,8 +75,8 @@ def load_bib():
             v = field(e["body"], f)
             if v:
                 by_id.setdefault((f, v.lower()), []).append(key)
-        if not any(field(e["body"], f) for f in ("doi", "eprint", "url")):
-            problems.append(f"key {key} ({e['src']}): no doi/eprint/url")
+        if not any(field(e["body"], f) for f in ("doi", "eprint", "url", "isbn")):
+            problems.append(f"key {key} ({e['src']}): no doi/eprint/url/isbn")
     for (f, v), keys in by_id.items():
         if len(keys) > 1:
             problems.append(f"same {f} {v} under keys {keys}")

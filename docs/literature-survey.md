@@ -59,7 +59,9 @@ simulated, you should believe you probably are).
 - **Kipping (2020)** makes the argument Bayesian with model averaging over
   "simulations are possible" and "not possible". The posterior probability that
   we are simulated comes out **slightly below 50%**. It approaches 50% only in
-  the limit of infinitely many simulations.
+  the limit of infinitely many simulations. This assumes equal prior weight on
+  the two models, which Kipping himself notes may be generous to the
+  simulation side.
 - **Chalmers (2022, *Reality+*)** argues the question is metaphysically
   meaningful but that being simulated would not make the world "unreal".
 
@@ -282,7 +284,7 @@ Direct arXiv access was unavailable from the research environment, so
 page-level details should be re-checked before any citation in formal writing.
 
 **Philosophy / probability**
-- Bostrom, N. (2003). Are You Living in a Computer Simulation? *Philosophical Quarterly* 53(211), 243–255.
+- Bostrom, N. (2003). Are We Living in a Computer Simulation? *Philosophical Quarterly* 53(211), 243–255.
 - Weatherson, B. (2003). Are You a Sim? *Philosophical Quarterly* 53(212), 425–431.
 - Birch, J. (2013). On the 'simulation argument' and selective scepticism. *Erkenntnis* 78, 95–107.
 - Kipping, D. (2020). A Bayesian Approach to the Simulation Argument. *Universe* 6(8), 109. [doi:10.3390/universe6080109](https://doi.org/10.3390/universe6080109) · [arXiv:2008.12254](https://arxiv.org/abs/2008.12254)

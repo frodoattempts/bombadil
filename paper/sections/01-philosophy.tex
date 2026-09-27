@@ -1,0 +1,336 @@
+\section{The simulation argument in philosophy and formal epistemology}
+\label{sec:philosophy}
+
+Most scientific interest in whether the universe is a computation goes back to a
+probabilistic argument by Bostrom~\cite{Bostrom2003are}. This section states that
+argument exactly, sets out the main lines of objection in the philosophical literature,
+and says what the argument does and does not imply for empirical work. That last point
+connects this section to the physical proposals reviewed later.
+
+\subsection{Bostrom's argument}
+\label{sec:philosophy:bostrom}
+
+\paragraph{Premises.}
+The argument has one metaphysical premise, one empirical premise and one epistemic
+premise. The metaphysical premise is a weak \emph{substrate-independence} thesis. Bostrom
+does not require that it be necessarily true, only that ``in fact, a computer running a
+suitable program would be conscious''. He needs only that replicating a brain's
+computational processes ``in suitably fine-grained detail, such as on the level of
+individual synapses'' would suffice for experience. He takes this ``as a given'' rather
+than arguing for it~\cite[\S\,II]{Bostrom2003are}.
+
+The empirical premise concerns computing capacity. Bostrom estimates the processing needed
+to emulate one human brain at ${\sim}10^{14}$ or ${\sim}10^{16}$--$10^{17}$ operations
+per second. He estimates the processing needed for an \emph{ancestor-simulation} of the
+mental history of humankind at roughly $10^{33}$--$10^{36}$ operations. The second figure
+is the product of $10^{11}$ humans, 50 years each, $3\times10^{7}$\,s per year and
+$10^{14}$--$10^{17}$ operations per second~\cite[\S\,III and fn.~10]{Bostrom2003are}. He
+takes $10^{42}$ operations per second as a rough figure for a planetary-mass computer
+built from known nanotechnological designs. On that figure, one such computer could run
+an ancestor-simulation ``by using less than one millionth of its processing power for
+one second''~\cite[\S\,III]{Bostrom2003are}. The $10^{42}$ figure comes from an unpublished
+working manuscript that Bostrom cites. It is not derived from physical law.
+
+The resource estimate depends on a further assumption: a simulation need only reproduce
+what the simulated observers can notice. Detail is filled in ``on an as-needed basis'',
+and anomalies are handled by editing the brain states of the observers who noticed them
+or by re-running the simulation~\cite[\S\,III]{Bostrom2003are}. Bostrom himself states that
+simulating ``the entire universe down to the quantum level is obviously infeasible,
+unless radically new physics is discovered''~\cite[\S\,III]{Bostrom2003are}.
+
+\paragraph{The fraction formula.}
+Let $f_P$ be the fraction of human-level technological civilizations that reach a
+posthuman stage. Let $\bar N$ be the average number of ancestor-simulations run by a
+posthuman civilization, and $\bar H$ the average number of individuals who lived in a
+civilization before it became posthuman. Bostrom writes the fraction of observers with
+human-type experiences who live in simulations as~\cite[\S\,IV]{Bostrom2003are}
+\begin{equation}
+  f_{\mathrm{sim}} \;=\; \frac{f_P\,\bar N\,\bar H}{(f_P\,\bar N\,\bar H) + \bar H}.
+  \label{eq:philosophy:fsim}
+\end{equation}
+Let $f_I$ be the fraction of posthuman civilizations interested in running
+ancestor-simulations, and $\bar N_I$ the average number such civilizations run. Then
+$\bar N = f_I \bar N_I$ and
+\begin{equation}
+  f_{\mathrm{sim}} \;=\; \frac{f_P\, f_I\, \bar N_I}{(f_P\, f_I\, \bar N_I) + 1}.
+  \label{eq:philosophy:fsimstar}
+\end{equation}
+Bostrom argues that $\bar N_I$ is extremely large, and concludes that at least one of
+the following holds~\cite[\S\,IV]{Bostrom2003are}:
+(1)~$f_P \approx 0$; (2)~$f_I \approx 0$; (3)~$f_{\mathrm{sim}} \approx 1$.
+
+\paragraph{The indifference step.}
+A separate premise turns proposition~(3) into a credence. This is the \emph{bland
+indifference principle},
+$\mathrm{Cr}(\mathrm{SIM} \mid f_{\mathrm{sim}} = x) = x$. Bostrom says it ``prescribes
+indifference only between hypotheses about which observer you are, when you have no
+information about which of these observers you are''. He supports it with an analogy to
+an unexpressed junk-DNA sequence and a betting argument~\cite[\S\,V]{Bostrom2003are}. He
+also says it is weaker than the premise of the Doomsday argument, which he describes as
+``much stronger and more controversial''~\cite[\S\,V]{Bostrom2003are}.
+
+\paragraph{What Bostrom claims.}
+The conclusion is a disjunction, and Bostrom has repeatedly declined to endorse its third
+disjunct on its own. In 2003 he recommended apportioning credence ``roughly evenly''
+among (1)--(3)~\cite[\S\,VII]{Bostrom2003are}. In 2005 he wrote that ``the disjunction is
+all that the simulation argument purports to show''~\cite[\S\,1]{Bostrom2005simulation}. In
+2009 he wrote: ``I believe that we are probably not simulated''~\cite{Bostrom2009simulation}.
+His current FAQ assigns a ``substantial probability'' to the hypothesis but gives no
+number~\cite[Q2]{Bostrom2025simulation}. Bostrom also held that the truth of~(3) would
+leave most beliefs nearly intact, since ``our best guide'' to how the simulators set up
+our world ``is the standard empirical study of the universe we
+see''~\cite[\S\,VI]{Bostrom2003are}.
+
+\paragraph{The 2011 patch.}
+Bostrom and Kulczycki later identified ``a mathematical non sequitur'' in
+Eq.~\eqref{eq:philosophy:fsim}~\cite{Bostrom2011patch}. The formula uses one average
+$\bar H$ for all civilizations. Suppose instead that civilizations which go on to run
+simulations have much shorter pre-posthuman phases than those that do not. Then all
+three disjuncts can fail at once. The paper offers two independent patches. The first
+assumes that cumulative pre-posthuman populations do not differ by an astronomically
+large factor between simulating and non-simulating civilizations; its appendix uses a
+factor of one million. The second restricts the reference class using indexical evidence
+about our position in history, such as a ``computer age birth rank''. Throughout, the
+paper assumes a finite universe~\cite{Bostrom2011patch}.
+
+\subsection{Objections to the inference}
+\label{sec:philosophy:objections}
+
+\paragraph{The indifference step and the nature of evidence.}
+Weatherson~\cite{Weatherson2003are} distinguishes four readings of the general principle
+behind the indifference step. On two readings, he argues, it is false. On the third it
+does not yield Bostrom's principle. On the fourth it yields the principle only given an
+auxiliary premise: that all of one's evidence is probabilistically independent of being
+a Sim, which ``we have no reason to believe''. Against that premise he raises
+epistemological externalism: ``seeing a dagger and sim-seeing a sim-dagger'' may give
+different evidence even if the experiences match. He also raises a Goodman-style
+challenge built on the gerrymandered predicate ``suman''~\cite{Weatherson2003are}.
+
+Bostrom replied that the principle constrains \emph{conditional} credence, so that
+further evidence enters by conditionalization. On his reply, the argument requires only
+that our actual evidence is too weak to move credence far once
+$f_{\mathrm{sim}}\approx 1$ is given~\cite[\S\,2]{Bostrom2005simulation}. He also argued
+that the simulation argument differs from brain-in-a-vat scepticism. It relies on
+empirical premises and aims to raise credence in a disjunction about the world, not to
+produce general agnosticism~\cite[\S\,4]{Bostrom2005simulation}.
+
+Birch~\cite{Birch2013on} makes explicit the constraint that the argument places on
+credence:
+$\mathrm{Cr}(\mathrm{SIM}) \ge \mathrm{Cr}(\mathrm{SIM}\mid H_3)\,
+\bigl(1-\mathrm{Cr}(H_1\vee H_2)\bigr)$.
+He then argues that the argument needs a ``selective scepticism''. The trilemma requires
+good evidence about the physical limits of computation. The indifference step requires
+that our evidence not support mundane claims about our own constitution. Given a
+``parity of evidence'' premise, these requirements are ``jointly incompatible''.
+Retreating to a weaker four-way disjunction does not recover the constraint on credence.
+Birch also argues that a simulated observer could infer with confidence only that at
+least one ancestor-simulation is possible. He concludes that ``there is thus no good
+reason to believe'' the argument's conclusion~\cite{Birch2013on}.
+
+Crawford (abstract-level) gives a structurally parallel argument that one is a ``freak
+observer'' formed in a fluctuation. He also argues that ``the evidence that simulants or
+freak observers exist is not a reason to think that I am one of them''~\cite{Crawford2013freak}.
+
+Thomas~\cite{Thomas2026simulation} accepts that Bostrom's reasoning establishes only a
+conditional claim. He notes that confidence in a high ratio of simulants is hard to
+square with being a simulant. He therefore replaces that premise with a weaker one: the
+expected simulant-to-non-simulant ratio in one's reference class is high,
+\emph{conditional on} one's being non-simulated. Given an indifference principle and an
+admissibility condition on the reference class, he proves that the odds of being
+simulated are at least this expected ratio. He also argues that finding many simulations
+being run would not necessarily raise those odds~\cite{Thomas2026simulation}. This
+runs against Bostrom's remark that our going on to create ancestor-simulations ``would be
+strong evidence against (1) and (2)''~\cite[\S\,VI]{Bostrom2003are}.
+
+\paragraph{Substrate-independence.}
+Some objections target the metaphysical premise. Beisbart (abstract-level) argues that
+the interactions among hardware components during a brain simulation ``do not resemble
+the ways in which neurons interact in the brain''~\cite{Beisbart2014are}. Summers and
+Arvan (abstract-level) argue that if panpsychism or panqualityism is true, living in a
+simulation might be possible only as a brain in a vat, which would make simulation
+unlikely~\cite{Summers2022two}. Chalmers reports that Godfrey-Smith~\cite{GodfreySmith2024simulation} favours a
+biological basis for experience, and replies that functionalist views remain serious
+possibilities~\cite{Chalmers2024taking}.
+
+\paragraph{The motivational disjunct.}
+Bostrom noted that an ethical ban on ancestor-simulations would support~(2) only if it
+were combined with a civilization-wide means of enforcing it~\cite[\S\,VI]{Bostrom2003are}.
+Greene~\cite{Greene2020termination} argues that running ancestor-simulations, and probing
+experimentally for simulation, carry a risk that the simulators terminate our world.
+Harris~\cite{Harris2024simulation} builds on this. He argues that any beings unsure
+whether they are simulated have self-preservation reasons not to run conscious
+simulations, since a nested simulation could exhaust the resources of a lower level.
+This supports disjunct~(2), and Harris concludes that a high probability for~(3) ``is
+premature''~\cite{Harris2024simulation}.
+
+\subsection{Nesting and resource decay}
+\label{sec:philosophy:nesting}
+
+Bostrom allowed that simulated civilizations might run simulations of their own. He also
+noted that the cost to the basement level counts against many levels, so that ``we
+should expect our simulation to be terminated when we are about to become
+posthuman''~\cite[\S\,VI]{Bostrom2003are}. Brueckner objected that a simulated being cannot
+``really'' build another computer~\cite{Brueckner2008simulation}. Our knowledge of this
+objection comes from the opening paragraph of Brueckner's paper and from Bostrom's
+quotation of it. Bostrom replied that virtual machines really perform the computations they
+emulate~\cite{Bostrom2009simulation}.
+
+Carroll~\cite{Carroll2016maybe} states a ``resolution conundrum''. Each level has less
+computing power than the one above it, so the hierarchy ends in simulations unable to
+simulate. With a typicality premise, most observers then live at that lowest level. This
+conflicts with the premise that such simulations are feasible. Carroll calls the
+typicality premise ``more or less completely without justification''. Kipping's
+hierarchical model agrees that most realities lie in the lowest level when $p\lambda\gg1$
+(notation below). He suggests that inhabitants of the lowest level might still build
+detailed, non-sentient simulations and so reach the same
+trilemma~\cite[\S\,2.3]{Kipping2020bayesian}. Bostrom's FAQ proposes that simulators could
+cap simulated civilizations' computing, which would make most civilizations ``leaf nodes
+of the simulation tree''~\cite[Q6]{Bostrom2025simulation}.
+
+Bibeau-Delisle and Brassard write a Drake-style equation for the simulated fraction. In
+a recursive scenario they bound it above by a simulation-efficiency factor that they
+argue ``is most likely under 50\%''~\cite{BibeauDelisle2021probability}.
+
+These authors draw different conclusions from one observation: our civilization has not
+produced simulated minds. This comparison is ours, not any single author's. Richmond takes
+the observation to make our level unusual on Bostrom's picture, which would favour
+hierarchies with fewer levels~\cite{Richmond2008doomsday}. Lewis shows that in some models
+conditioning on it \emph{raises} the credence that one is simulated~\cite{Lewis2013doomsday}.
+Kipping uses it to obtain a Bayes factor close to unity~\cite{Kipping2020bayesian}.
+
+\subsection{Self-locating belief and anthropic reasoning}
+\label{sec:philosophy:anthropics}
+
+The indifference step is one instance of a wider problem: how to assign credence when
+one is uncertain which observer one is. Bostrom's \emph{Self-Sampling Assumption} (SSA)
+says that one should reason as if one were a random sample from all observers in one's
+reference class~\cite[p.~57]{Bostrom2002anthropic}. He later restates it in terms of
+observer-moments. The rival \emph{Self-Indication Assumption} (SIA) favours hypotheses on
+which many observers exist. Bostrom rejects SIA, mainly through the ``Presumptuous
+Philosopher'' case~\cite[pp.~66, 124--125]{Bostrom2002anthropic}. He also shows that
+whether an entity belongs to the reference class can change the rational credence when
+population size depends on the hypothesis~\cite[pp.~69--71]{Bostrom2002anthropic}.
+
+Elga defends the ``thirder'' answer to Sleeping Beauty~\cite{Elga2000self}. He also
+defends an indifference principle: ``similar centered worlds deserve equal
+credence''~\cite{Elga2004defeating}. On Elga's view, hypotheses about one's location among
+duplicates carry no default bias against them, whereas ordinary sceptical hypotheses
+do~\cite{Elga2004defeating}. Birch uses this distinction to specify the rare
+circumstances in which Bostrom's selective scepticism could be defensible, and argues that
+we are not in them~\cite{Birch2013on}.
+
+Lewis~\cite{Lewis2013doomsday} argues that the simulation argument succeeds where the
+Doomsday argument fails. His result depends on a location-uniform prior, which he
+identifies with the thirder position. Richmond (abstract-level) argues the opposite:
+anti-simulation conclusions follow with ``more \dots\ robust reference classes'' and
+without indifference principles~\cite{Richmond2017why}.
+
+Two limitations run through this literature. First, it mostly assumes finitely many
+observers~\cite{Bostrom2011patch}. Bostrom's FAQ notes that in an infinite universe the
+simulated fraction ``is not defined'', and proposes a limit-density
+measure~\cite[Q7]{Bostrom2025simulation}. Second, the verdict depends on the choice of
+reference class and self-sampling rule, and that choice is itself disputed.
+
+\subsection{Quantitative treatments}
+\label{sec:philosophy:bayes}
+
+Kipping~\cite{Kipping2020bayesian} combines disjuncts (1) and (2) into a ``physical
+hypothesis'' $H_P$. He compares it with a simulation hypothesis $H_S$ in which a base
+civilization runs $\lambda$ simulations, each of which runs its own simulations with
+probability $p$, down to a maximum depth $G$. Assigning equal prior probability to $H_P$
+and $H_S$, and conditioning only on one's existence, he obtains a probability of being in
+base reality of $\tfrac12 + 1/[2(N_{\mathrm{sim}}+1)]$, where $N_{\mathrm{sim}}$ is the
+total number of simulated realities. The probability of being simulated is therefore below
+50\% and tends to 50\% as $N_{\mathrm{sim}}\to\infty$. Conditioning instead on the fact
+that we have not produced simulations gives a Bayes factor of $(\lambda-1)/\lambda$. Kipping
+also finds that if humanity began producing such simulations, the probability of base
+reality would fall to $\lambda/N_{\mathrm{sim}}$~\cite{Kipping2020bayesian}.
+
+The 50\% ceiling comes from the equal-prior assumption, not from data. Kipping himself
+notes that equal priors could be ``too generous'' to $H_S$ because it is the more complex
+model~\cite[\S\,3]{Kipping2020bayesian}. The v1 text also contains two prose sentences that
+contradict its own equations; we rely on the abstract and equations. The
+Kipping and Bibeau--Brassard models~\cite{Kipping2020bayesian,BibeauDelisle2021probability}
+make Bostrom's framework explicit. The numbers they produce follow from assumed priors,
+branching structure and efficiency factors, none of which is measured.
+
+\subsection{Simulation and scepticism}
+\label{sec:philosophy:scepticism}
+
+Chalmers argues that the hypothesis that one is in a matrix ``is not a skeptical
+hypothesis, but a metaphysical hypothesis''~\cite{Chalmers2005matrix}. He treats it as
+equivalent to three claims: our world was created, its microphysics is computational, and
+our minds are constituted outside it. If this is right, most ordinary beliefs remain true.
+Local or recent simulations are at worst ``partial skeptical
+hypotheses''~\cite{Chalmers2005matrix}.
+
+In \emph{Reality+}~\cite{Chalmers2022reality}, as summarized in his
+précis~\cite{Chalmers2024precis}, Chalmers restates the argument as ``if there are no sim
+blockers, we are probably sims''. His sim blockers include Bostrom's two disjuncts and
+also the impossibility of intelligent or conscious sims, simulators' avoidance of
+conscious sims, and excessive computing cost. He argues that we cannot know that any sim
+blocker obtains, so we cannot know that we are not simulated~\cite{Chalmers2024precis}.
+His anti-sceptical move is structuralist: a simulation with the same causal structure as
+an unsimulated universe makes the same physical theories true~\cite{Chalmers2024precis}.
+Replying to critics, he gives an illustration: 10\% credence in the denial of each of two
+sim blockers leaves ``a 1\% credence that most humanlike beings are sims''. He rejects
+global scepticism but leaves local scepticism open~\cite{Chalmers2024taking}.
+
+Schwitzgebel (abstract-level) argues that, conditional on being simulated, we should give
+significant credence to a small or brief simulation~\cite{Schwitzgebel2024lets}.
+Summers and Arvan argue that, under panpsychism or panqualityism, viable simulation
+hypotheses become ``substantially sceptical''~\cite{Summers2022two}.
+
+\paragraph{Ethics and theology.}
+In peer-reviewed philosophy of religion, Dainton proposes a ``simulation solution'' to the
+problem of natural evil~\cite{Dainton2020natural}. Crummett assesses it against Fall and
+diabolical theodicies~\cite{Crummett2021real}. Johnson argues that some theists are
+committed to our world most likely being a simulation~\cite{Johnson2011natural}, and
+Steinhart draws out further theological analogues~\cite{Steinhart2010theological}. All four
+are cited at abstract level.
+
+\subsection{What the argument does and does not license empirically}
+\label{sec:philosophy:bridge}
+
+Five points link this section to the physical proposals reviewed in later sections.
+
+\begin{enumerate}
+\item \emph{The argument does not predict any observable signature.} Its conclusion is a
+disjunction whose third disjunct concerns the fraction of observers who are simulated,
+not the physics they observe~\cite{Bostrom2003are,Bostrom2005simulation}. Bostrom's
+resource estimate assumes that simulators render only what observers
+notice~\cite[\S\,III]{Bostrom2003are}. His FAQ doubts that lattice-artefact searches of the
+kind proposed by Beane \emph{et al.} would detect a simulation. It gives two reasons:
+simulators need not use ``the crude simulation technique that such a test would
+detect'', and they ``could fake the results''~\cite[Q12]{Bostrom2025simulation}. Any physical test must therefore add
+assumptions about how a simulator would be built. Those assumptions are not supplied by
+the argument.
+
+\item \emph{Observations bear on it only indirectly.} Bostrom holds that the hypothesis is
+testable only in the weak sense that evidence bearing on disjuncts (1) or (2) shifts
+credence in~(3)~\cite[Q11]{Bostrom2025simulation}. Qualitative expectations do exist in the
+literature. For example, Barrow suggests occasional ``glitches'' and slow drifts in the
+constants~\cite{Barrow2007living}. These are motivated guesses, not consequences of the
+argument.
+
+\item \emph{Null results and positive results are asymmetric.} Greene argues that no
+experiment could show that we are \emph{not} simulated, since a simulator could program
+any observation; only a positive anomaly would be diagnostic~\cite{Greene2020termination}.
+Bostrom's FAQ makes a related point from the other direction: philosophical arguments, but
+not experiments, are immune to the concern that a successful test might prompt
+termination~\cite[Q12]{Bostrom2025simulation}.
+
+\item \emph{Physics constrains the premises, not the conclusion.} Empirical bounds on the
+cost of simulating physics bear on the empirical premise about computing capacity, that
+is, on the ``sims will require too much computer power'' blocker~\cite{Chalmers2024precis}.
+But Birch argues that a simulated observer's physics need not reflect the true limits of
+computation outside the simulation~\cite{Birch2013on}. Bostrom's FAQ replies with a
+two-case argument~\cite[Q4]{Bostrom2025simulation}. Neither side's reasoning is settled by
+data.
+
+\item \emph{Credences in the literature rest on priors.} Stated probabilities range from
+Bostrom's ``roughly even'' split~\cite{Bostrom2003are}, to ``probably not
+simulated''~\cite{Bostrom2009simulation}, to Kipping's ``less than
+50\%''~\cite{Kipping2020bayesian}. Each follows from contested indifference principles,
+reference classes or model priors. None is a measurement.
+\end{enumerate}
