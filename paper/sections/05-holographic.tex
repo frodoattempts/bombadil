@@ -117,11 +117,11 @@ universe is a simulation.
 The Holometer consisted of two co-located 39.06\,m power-recycled Michelson
 interferometers (about 2\,kW on each beamsplitter, beamsplitters 0.91\,m apart,
 no arm cavities). Their outputs were cross-correlated up to 25\,MHz to average
-down uncorrelated shot noise~\cite{Holometer2016first,Holometer2017holometer}.
+down uncorrelated shot noise~\cite{Chou2016first,Holometer2017holometer}.
 Each interferometer had a shot-noise-limited sensitivity of
 $2.1\times10^{-18}$\,m\,Hz$^{-1/2}$. After 145\,h of data the cross-spectrum
 reached $2.1\times10^{-20}$\,m\,Hz$^{-1/2}$, surpassing strain power spectral
-density $t_P$ for signal bandwidths above 11\,kHz~\cite{Holometer2016first}.
+density $t_P$ for signal bandwidths above 11\,kHz~\cite{Chou2016first}.
 The first analysis tested a ``speculative model'' of Planckian diffraction
 from ``a putative fundamental Nyquist frequency $f_p=1/t_p$'' (the Kwon--Hogan
 model~\cite{Kwon2016interferometric}). It excluded that model at $5.1\sigma$
@@ -129,11 +129,11 @@ statistical significance ($4.6\sigma$ including a 10\% calibration uncertainty),
 equivalently a normalization below 44\% of the prediction at 95\% CL. The authors
 stressed that this ``appl[ies] only to the spectral shape of the particular model''
 and that the layout ``would not respond'' to rotational
-correlations~\cite{Holometer2016first}. The final straight-arm analysis (704\,h)
+correlations~\cite{Chou2016first}. The final straight-arm analysis (704\,h)
 found no correlation. At $2\sigma$ it limited the amplitudes of a two-parameter
 shear model to $|\beta_L|<0.10\,t_P$ and $|\beta_{2L}|<0.25\,t_P$, well below
 the order-unity values predicted, and stated explicitly that it does not
-constrain a newer Lorentz-invariant rotational model~\cite{Holometer2017interferometric}.
+constrain a newer Lorentz-invariant rotational model~\cite{Chou2017interferometric}.
 A reconfiguration with one arm of each interferometer bent by $90^\circ$ tested
 that rotational model~\cite{Hogan2017statistical} with 1098\,h of data. It
 constrained its normalization to $\eta<0.25\,t_P$ at 95\% confidence for one
@@ -198,13 +198,14 @@ fluctuations~\cite{Carlip2023spacetime,Sharmila2026signatures}.
 Sensitivities are as quoted by the cited papers (cross-spectrum values unless
 stated). ``Proposal'' marks projections, not measurements.}
 \label{tab:holographic-experiments}
-\begin{tabular}{p{2.3cm}p{2.6cm}p{3.0cm}p{2.9cm}p{3.6cm}p{1.3cm}}
+\footnotesize\setlength{\tabcolsep}{3pt}
+\begin{tabular}{p{2.1cm}p{2.5cm}p{2.9cm}p{2.7cm}p{3.6cm}p{1.6cm}}
 \hline
 Instrument & Observable & Sensitivity & Model tested & Result & Ref.\\
 \hline
 GEO600 (folded 600\,m arms) & DARM strain noise, $\sim$100--600\,Hz & peak $2.2\times10^{-22}$\,Hz$^{-1/2}$ at 530\,Hz & Hogan holographic noise (comparison, not a dedicated test) & Unexplained noise later attributed to known sources in DC readout; Hogan: not ruled out after arm-folding factor & \cite{Hogan2008measurement,Luck2010upgrade,Hogan2012interferometers}\\
 LIGO/Virgo & stochastic-background cross-correlation (41.5--169.25\,Hz); published strain spectra & $\Omega_{\rm GW}<5.6\times10^{-6}$ (95\% CL) used for foam models & metric-fluctuation (foam) models; geontropic recast & ``random walk'' model excluded; white-noise model $a_0<0.06$; geontropic $\alpha\lesssim0.1$ (no IR cutoff) or $\lesssim3$ (IR cutoff) & \cite{Kwon2016interferometric,Li2023interferometer}\\
-Holometer I (39\,m, straight arms, 2015--16) & DARM cross-spectrum up to 25\,MHz & $2.1\times10^{-20}$\,m\,Hz$^{-1/2}$ (145\,h) & Kwon--Hogan Planckian diffraction; shear-noise family & Excluded at $4.6\sigma$ ($<44\%$ at 95\% CL); $|\beta_L|<0.10\,t_P$, $|\beta_{2L}|<0.25\,t_P$ ($2\sigma$, 704\,h) & \cite{Holometer2016first,Holometer2017interferometric}\\
+Holometer I (39\,m, straight arms, 2015--16) & DARM cross-spectrum up to 25\,MHz & $2.1\times10^{-20}$\,m\,Hz$^{-1/2}$ (145\,h) & Kwon--Hogan Planckian diffraction; shear-noise family & Excluded at $4.6\sigma$ ($<44\%$ at 95\% CL); $|\beta_L|<0.10\,t_P$, $|\beta_{2L}|<0.25\,t_P$ ($2\sigma$, 704\,h) & \cite{Chou2016first,Chou2017interferometric}\\
 Holometer II (38.9\,m, bent arms) & rotational DARM cross-spectrum, 1.1--20\,MHz & $6.1\times10^{-21}$\,m\,Hz$^{-1/2}$; CSD$_{\delta h}<t_P/2$ (1098\,h) & Hogan--Kwon--Richardson rotational model & $\eta<0.25\,t_P$ (95\% CL, one axis) & \cite{Richardson2021interferometric}\\
 QUEST (Cardiff, 1.83\,m) & DARM cross-spectrum, 13--80\,MHz & strain $3\times10^{-20}$\,Hz$^{-1/2}$ ($10^4$\,s) & none specific (stochastic length fluctuations) & Upper limits; no model constraint quoted & \cite{Patra2025broadband}\\
 GQuEST (Caltech/Fermilab, 5\,m) & photon-counting readout, peak $\sim$15.6\,MHz & Proposal: nominal signal in several hours & Verlinde--Zurek geontropic fluctuations & Proposal: $\alpha<0.6$ in 60\,h; $\alpha<0.1$ in 2160\,h ($3\sigma$) & \cite{Vermeulen2025photon}\\
@@ -225,14 +226,14 @@ and quantum-gravity arguments, with normalizations fixed by entropy bounds. None
 of them is derived from assumptions about a simulating computer. A positive
 detection would therefore first be evidence about quantum gravity. (iii) None of
 the theoretical or experimental papers reviewed here invokes the simulation
-hypothesis~\cite{Hogan2008measurement,Hogan2012interferometers,Holometer2016first,Holometer2017interferometric,Richardson2021interferometric,Verlinde2021observational,Vermeulen2025photon,Patra2025broadband}.
+hypothesis~\cite{Hogan2008measurement,Hogan2012interferometers,Chou2016first,Chou2017interferometric,Richardson2021interferometric,Verlinde2021observational,Vermeulen2025photon,Patra2025broadband}.
 The nearest approach is metaphor: the sampling-theorem language of the Holometer
-analysis~\cite{Holometer2016first} and Hogan's ``Planck broadcast''
+analysis~\cite{Chou2016first} and Hogan's ``Planck broadcast''
 essay~\cite{Hogan2013now}. The only explicit link we found is in a non-refereed
 preprint. It suggests that if experiments such as the Holometer showed ``the
 holographic universe'' to be true, this ``may be interpreted as an indication of
 us participating in a simulation chain''~\cite{Neukart2022do}. The experiment it
-cites~\cite{Holometer2016first} reported a null result for one noise spectrum and
+cites~\cite{Chou2016first} reported a null result for one noise spectrum and
 did not test holography in general. Moreover, holographic scaling, if confirmed,
 would be at least as naturally read as a fact about quantum gravity as evidence
 of an ``external programmer''. What these experiments do provide is an

@@ -496,3 +496,11 @@ secondary source and the Notes say so.
 - Evidence: OpenLibrary: "Mind children", Hans Moravec, Harvard University Press, 1988; "The Physics of Immortality", Frank J. Tipler, Doubleday, 1994.
 - Verified: METADATA
 - Notes: Neither book was read. The tex must not describe their content beyond Tegmark's listing of Tipler (C-02-047) and Bostrom's citation of Moravec (C-02-057).
+
+### C-02-059
+- Claim: Lloyd's popular book "Programming the Universe" (2006) presents the computational-universe view; cited for attribution only.
+- Source: Lloyd2006programming
+- Locator: Alfred A. Knopf, New York, 2006, ISBN 1400040922
+- Evidence: Open Library record for ISBN 1400040922: "Programming the universe: from the big bang to quantum computers", 2006.
+- Verified: METADATA
+- Notes: Added at integration. No content claim rests on the book.

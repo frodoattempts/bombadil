@@ -1,0 +1,43 @@
+\section{Discussion and open problems}
+\label{sec:discussion}
+
+\subsection{What is constrained}
+\label{sec:discussion:synthesis}
+
+Table~\ref{tab:subhyp} summarizes the status of each restricted sub-hypothesis. Three patterns emerge from Secs.~\ref{sec:lattice-liv}--\ref{sec:information}.
+
+First, the only quantitative empirical constraints concern \emph{preferred-frame discreteness} and one specific \emph{holographic-noise} model. For a hypercubic lattice with unimproved Wilson fermions, existing Lorentz-violation limits bound the inverse lattice spacing far above the cosmic-ray estimate of the original proposal (Sec.~\ref{sec:lattice-liv:mapping}). The Holometer excluded the tested holographic-noise model~\cite{Chou2016first}. Both constraints fall on the physics of discreteness, whether or not it is simulated. They are evaded by Lorentz-invariant discreteness~\cite{Dowker2004quantum}, by improved discretizations (Sec.~\ref{sec:lattice-liv:mapping}), and by noise models with a different spectral or spatial structure (Sec.~\ref{sec:holographic}).
+
+Second, the proposals aimed at the \emph{simulation} rather than at discreteness are either untested or, as stated, inconsistent with established physics. The render-on-demand schemes count as ``success'' an outcome that standard quantum mechanics excludes, and none has been carried out (Sec.~\ref{sec:rendering-qm}). The information-physics proposals have one sharp, unperformed prediction. The empirical trends reported for them have standard explanations (Sec.~\ref{sec:information}).
+
+Third, the complexity and computability arguments on both sides depend on premises that do the real work. Examples are that the simulator obeys our physics, that it is a Turing-equivalent machine, or that it must reproduce every property of a model rather than evolve it for a finite time (Sec.~\ref{sec:complexity}). None of these arguments is an empirical test.
+
+\subsection{Open problems}
+\label{sec:discussion:open}
+
+We list open problems that we consider tractable, in order of feasibility.
+
+\begin{enumerate}
+\item \emph{A cubic-harmonic anisotropy search.} The $O_h$-invariant $\ell=4$ and $\ell=6$ analysis specified in Sec.~\ref{sec:uhecr:proposal} can be carried out with public data. Section~\ref{sec:lattice-liv:mapping} shows that such a search is informative only for simulators whose $O(b^2)$ artefacts are removed to all orders and whose $b^{-1}$ lies near $10^{11}$~GeV. A null result would therefore bound a narrow but well-defined design class. A detection would be evidence for discreteness, not for simulation. A prerequisite is a theory prediction of the anisotropy amplitude, as a function of $b$, after propagation and magnetic deflection. No such prediction exists yet (Sec.~\ref{sec:uhecr}).
+\item \emph{Lattice-theory checks of the dispersion mapping.} Our derivations in Sec.~\ref{sec:lattice-liv:mapping} use isotropic effective-field-theory bounds and free-field dispersion relations. Three extensions would make them rigorous: direction-dependent Standard-Model-Extension limits, the photon-decay rate in the lattice theory itself, and dispersion relations for domain-wall and overlap fermions.
+\item \emph{A quantified render-on-demand model.} We found no model that predicts a \emph{quantified} deviation from quantum mechanics as a function of a simulator's resource budget (Sec.~\ref{sec:rendering-qm}). Without one, no experiment can test the idea. With one, existing delayed-choice and decoherence experiments would already bound the budget.
+\item \emph{Tests of the mass--energy--information conjecture.} The proposed annihilation experiment~\cite{Vopson2022experimental} and the calorimetric consistency argument of Sec.~\ref{sec:information} give definite targets. We found no reported attempt at the former.
+\item \emph{Formal treatment of nesting and host physics.} The Bayesian treatment of the simulation argument~\cite{Kipping2020bayesian} could be extended to nested simulations with resources that decrease with depth~\cite{Carroll2016maybe}, and to simulators whose physics differs from ours. This would clarify which conclusions depend on assuming that the simulator shares our physics.
+\end{enumerate}
+
+\subsection{Limitations of this review}
+\label{sec:discussion:limitations}
+
+Our ledgers record every source that we could read only as an abstract or a bibliographic record. The main gaps are the following:
+\begin{itemize}
+\item Several philosophy papers were paywalled.
+\item The primary sources of Zuse, Fredkin, Greisen and Zatsepin--Kuzmin could not be consulted. Claims about them are attributed to the secondary sources that report them.
+\item Some bibliographic databases could not be queried automatically (PhilPapers, NASA ADS full text, Google Scholar). Every ``we are not aware of'' statement in this paper refers to the documented searches in the ledgers, which did not include these databases. We will repeat these searches manually before publication.
+\end{itemize}
+The analyses labelled ``this work'' have been checked numerically. They have not been checked by independent experts, and we invite scrutiny of them in particular.
+
+\emph{Data and code availability.} The claim ledgers, per-section research notes, derivations, the numerical check of the lattice photon-decay threshold, the SARS-CoV-2 entropy reproduction scripts, and the citation-checking tool are available in the public repository accompanying this paper.
+
+\subsection{Conclusion}
+
+As a claim about reality, the simulation hypothesis cannot be settled by observation. Specific hypotheses about how a simulator would be built can be tested, and some already have been constrained, although often more strongly than their proponents noted. The most informative future work will not ask whether the universe is simulated. It will ask which classes of discrete, resource-bounded or information-physical dynamics nature permits. That question belongs to physics whatever the answer to the first.

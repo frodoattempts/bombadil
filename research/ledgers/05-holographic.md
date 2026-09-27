@@ -229,13 +229,13 @@ equation it comes from. Version checked is noted where it matters.
 - Locator: Abstract; Sec. "Comparison with Experimental Data"
 - Evidence: "It is shown that effects are negligible in standard field theory with canonically quantized gravity." / "it is clear that the “random walk” model is now safely ruled out." / "We calculate the limit on this coefficient as a0 < 0.06, with the same 95% confidence level." / "Predictions in this case are shown to be close to current and projected experimental bounds."
 - Verified: FULLTEXT
-- Notes: The metric-fluctuation models are spacetime-foam models (Amelino-Camelia, Ng-van Dam type); cross-link to the spacetime-foam/discreteness section. This paper supplies the model tested in Holometer2016first.
+- Notes: The metric-fluctuation models are spacetime-foam models (Amelino-Camelia, Ng-van Dam type); cross-link to the spacetime-foam/discreteness section. This paper supplies the model tested in Chou2016first.
 
 ## C. Fermilab Holometer
 
 ### C-05-028
 - Claim: The Holometer comprised two co-located, co-aligned 39.06 m power-recycled Michelson interferometers (1064 nm, about 2 kW on each beamsplitter, beamsplitters 0.91 m apart) with no arm cavities, giving a flat broadband response up to and beyond the 3.8 MHz free spectral range, digitized at 50 MHz; each had shot-noise-limited sensitivity of about 2.1 x 10^-18 m/sqrt(Hz).
-- Source: Holometer2016first
+- Source: Chou2016first
 - Locator: pp. 1-2, Fig. 1
 - Evidence: "a pair of co-located and co-aligned 39.06 m long power-recycled Michelson interferometers, each operating at 2 kW power with mean shot-noise-limited differential position noise sensitivity of 2.1 × 10^−18 m/[√]Hz." / "They thus maintain their full Michelson differential bandwidth at frequencies up to the 3.8 MHz inverse light-crossing time of the apparatus" / "the small separation d = 0.91 m between the two beam splitters"
 - Verified: FULLTEXT
@@ -243,7 +243,7 @@ equation it comes from. Version checked is noted where it matters.
 
 ### C-05-029
 - Claim: Cross-correlating 145 hours of data (July-August 2015) with 381 Hz resolution averaged down uncorrelated shot noise over 2 x 10^8 spectral measurements to a sensitivity of 2.1 x 10^-20 m/sqrt(Hz) to stationary correlated signals; for bandwidths above 11 kHz the strain/shear PSD sensitivity surpassed the Planck time t_p = 5.39 x 10^-44 /Hz.
-- Source: Holometer2016first
+- Source: Chou2016first
 - Locator: Abstract; "Measured spectra"
 - Evidence: "The dominant but uncorrelated shot noise is averaged down over 2 × 10^8 independent spectral measurements with 381 Hz frequency resolution to obtain 2.1 × 10^−20 m/[√]Hz sensitivity to stationary signals. For signal bandwidths ∆f > 11 kHz, the sensitivity to strain h or shear power spectral density of classical or exotic origin surpasses a milestone PSDδh < tp where tp = 5.39 × 10^−44 /Hz is the Planck time." / "averaged over 145 hours of data taken in July-August, 2015"
 - Verified: FULLTEXT
@@ -251,7 +251,7 @@ equation it comes from. Version checked is noted where it matters.
 
 ### C-05-030
 - Claim: The Holometer tested a "speculative model of Planckian diffraction" (from Kwon and Hogan) predicting a sinc-shaped cross-spectrum normalized to 4.64 x 10^-41 m^2/Hz for L of about 39 m; the data were consistent with zero at 1.1 sigma and excluded the model at 5.1 sigma statistical significance (4.6 sigma including 10% calibration uncertainty), equivalently limiting its normalization to less than 44% of the prediction at 95% CL.
-- Source: Holometer2016first
+- Source: Chou2016first
 - Locator: "Model testing", Eq. (1), Fig. 3
 - Evidence: "we consider a speculative model in which irreducible space-time noise arising from a putative fundamental Nyquist frequency fp = 1/tp grows via diffraction over macroscopic distances" / "which is a sinc response function normalized to 4.64×10^−41 m^2/Hz" / "Using all data up to 25 MHz, the weighted integral curve remains statistically consistent at 1.1σ with zero broadband correlation. The model of Eq. 1 is thus excluded with 5.1σ statistical significance, reduced by the 10% calibration uncertainty to 4.6σ. Alternatively, the result may be viewed as a constraint on the normalization of this model to be less than 44% of the predicted value at 95% confidence level."
 - Verified: FULLTEXT
@@ -259,7 +259,7 @@ equation it comes from. Version checked is noted where it matters.
 
 ### C-05-031
 - Claim: The Holometer authors stressed that the exclusion applies only to the spectral shape of that model, and that the straight-arm layout does not respond to correlated noise in rotational observables.
-- Source: Holometer2016first
+- Source: Chou2016first
 - Locator: "Model testing"; "Conclusions"
 - Evidence: "It should be emphasized that these results apply only to the spectral shape of the particular model used here." / "it would not respond to correlated exotic noise power in rotational observables; these could be studied with a similar instrument reconfigured with bent arms"
 - Verified: FULLTEXT
@@ -275,7 +275,7 @@ equation it comes from. Version checked is noted where it matters.
 
 ### C-05-033
 - Claim: The final first-generation (straight-arm) Holometer analysis used 704 hours of data (July 2015 to February 2016) and found no correlation; at 2 sigma it limited the two amplitudes of a two-parameter shear-noise model to |beta_L| < 0.10 t_P and |beta_2L| < 0.25 t_P, well below the order-unity values predicted, and the authors describe the class of shear-correlation models as "conclusively excluded".
-- Source: Holometer2017interferometric
+- Source: Chou2017interferometric
 - Locator: Sec. 3 (data), Fig. 3, Sec. 5
 - Evidence: "704 hours. These data were taken between July 2015 and February 2016." / "At 2σ significance, the data limit the amplitudes of the spectral correlation terms to |βL| < 0.10 tP and |β2L| < 0.25 tP, well below the predicted scale of quantum geometrical position noise." / "The first-generation Holometer has tested and conclusively excluded a general class of models of quantum geometrical shear noise correlations."
 - Verified: FULLTEXT
@@ -283,7 +283,7 @@ equation it comes from. Version checked is noted where it matters.
 
 ### C-05-034
 - Claim: The same paper states that the straight-arm Holometer had no sensitivity to a newer Lorentz-invariant model in which exotic correlations are purely rotational, so that model was not constrained.
-- Source: Holometer2017interferometric
+- Source: Chou2017interferometric
 - Locator: Sec. 5
 - Evidence: "The first-generation Holometer, by the design of its optical geometry, has no sensitivity to such rotational effects, so the result reported here does not constrain this model."
 - Verified: FULLTEXT
@@ -463,7 +463,7 @@ equation it comes from. Version checked is noted where it matters.
 
 ### C-05-056
 - Claim: None of the theoretical or experimental papers on holographic noise and geontropic fluctuations read for this section invokes the simulation hypothesis; the word "simulation" appears in them only for numerical/optical modelling (e.g. FINESSE) or injected test signals.
-- Source: Hogan2008measurement; Hogan2008indeterminacy; Hogan2009holographic; Hogan2012interferometers; Hogan2013now; Kwon2016interferometric; Holometer2016first; Holometer2017holometer; Holometer2017interferometric; Holometer2017mhz; Richardson2021interferometric; Hogan2017statistical; Verlinde2021observational; Zurek2022vacuum; Li2023interferometer; Bub2023quantum; Vermeulen2021experiment; Vermeulen2025photon; Patra2025broadband; Kwon2025phenomenology; Carney2026response
+- Source: Hogan2008measurement; Hogan2008indeterminacy; Hogan2009holographic; Hogan2012interferometers; Hogan2013now; Kwon2016interferometric; Chou2016first; Holometer2017holometer; Chou2017interferometric; Holometer2017mhz; Richardson2021interferometric; Hogan2017statistical; Verlinde2021observational; Zurek2022vacuum; Li2023interferometer; Bub2023quantum; Vermeulen2021experiment; Vermeulen2025photon; Patra2025broadband; Kwon2025phenomenology; Carney2026response
 - Locator: whole texts (case-insensitive search for "simulat" in pdftotext output)
 - Evidence: Hits only of the form "FINESSE Monte Carlo simulations" (Holometer2017holometer), "Computer simulations using FINESSE" (Vermeulen2021experiment), "simulated realizations based on the standard QFT-based model" (Kwon2025phenomenology); no hit refers to a simulated universe.
 - Verified: FULLTEXT
@@ -472,14 +472,14 @@ equation it comes from. Version checked is noted where it matters.
 ### C-05-057
 - Claim: Neukart et al. (a non-refereed preprint) explicitly link the Holometer to the simulation hypothesis, suggesting that if experiments such as the Holometer showed the "holographic universe" to be true, this "may be interpreted as an indication of us participating in a simulation chain".
 - Source: Neukart2022do
-- Locator: Section on computability constraints (holographic universe paragraph), ref. [85] = Holometer2016first
+- Locator: Section on computability constraints (holographic universe paragraph), ref. [85] = Chou2016first
 - Evidence: "An external programmer could potentially use this fact and encode a more complex, higher-dimensional universe as physical theories operating on its lower-dimensional boundary surface" / "If experiments [85] show that the holographic universe is true, it may be interpreted as an indication of us participating in a simulation chain."
 - Verified: FULLTEXT
 - Notes: The cited experiment reported a null result for one specific noise model; it did not test "the holographic universe" in general. Preprint (arXiv:2212.04921), no journal version found in INSPIRE.
 
 ### C-05-058
 - Claim: The Holometer PRL itself frames the tested spectrum in information-theoretic terms, as noise from "a putative fundamental Nyquist frequency f_p = 1/t_p" growing by diffraction over macroscopic distances.
-- Source: Holometer2016first
+- Source: Chou2016first
 - Locator: "Model testing"
 - Evidence: "a speculative model in which irreducible space-time noise arising from a putative fundamental Nyquist frequency fp = 1/tp grows via diffraction over macroscopic distances to give a white noise shear power spectral density quantitatively equal to tp."
 - Verified: FULLTEXT

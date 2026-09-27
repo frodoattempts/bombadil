@@ -76,7 +76,10 @@ def load_bib():
             if v:
                 by_id.setdefault((f, v.lower()), []).append(key)
         if not (any(field(e["body"], f) for f in ("doi", "eprint", "url", "isbn"))
-                or re.search(r"\\url\{|\bdoi:?\s*10\.", e["body"], re.I)):
+                or re.search(r"\\url\{|\bdoi:?\s*10\.", e["body"], re.I)
+                # pre-DOI works: a complete journal or proceedings citation suffices
+                or (all(field(e["body"], f) for f in ("volume", "pages")) and field(e["body"], "journal"))
+                or all(field(e["body"], f) for f in ("booktitle", "publisher", "pages"))):
             problems.append(f"key {key} ({e['src']}): no doi/eprint/url/isbn")
     for (f, v), keys in by_id.items():
         if len(keys) > 1:
