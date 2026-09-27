@@ -1,9 +1,9 @@
 # Report for 03-lattice-liv: discretized spacetime as a simulation signature
 
 Files:
-- `research/ledgers/03-lattice-liv.md`: 67 claims (C-03-001 to C-03-067)
+- `research/ledgers/03-lattice-liv.md`: 68 claims (C-03-001 to C-03-068; 8 are THIS WORK derivations: C-03-018, C-03-020 to C-03-026)
 - `research/bib/03-lattice-liv.bib`: 38 entries, all from INSPIRE BibTeX with keys rewritten. The Abdo2009limit author field was corrected against Crossref.
-- `paper/sections/03-lattice-liv.tex`: section draft
+- `paper/sections/03-lattice-liv.tex`: section draft. Test-compiled standalone (11pt, 1in margins): about 6 pages of text plus 2 of references, so roughly 4 pages in two-column format
 - PDFs and text: `/tmp/claude-0/papers/` (retrieved 2026-09-27)
 
 ## A. Coverage and main findings

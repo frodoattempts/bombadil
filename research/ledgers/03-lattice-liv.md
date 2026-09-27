@@ -273,7 +273,7 @@ Conventions for this ledger:
 - Claim: On anisotropic lattices (a_s/a_t = 3.5 in the Hadron Spectrum Collaboration's N_f = 2+1 program), the gauge and fermion anisotropy parameters must be tuned (γ*_g = 4.3, γ*_f = 3.4) to restore Lorentz symmetry in low-energy observables. The "speed of light" is measured from the dispersion of boosted hadrons.
 - Source: Lin2009first
 - Locator: Sec. I-II, eq. (4); Sec. III (meson dispersion, Fig. 9)
-- Evidence: "In a previous study, we tuned a three-flavor lattice action to ensure Lorentz symmetry is restored in appropriately chosen low-energy observables." "Tuning the anisotropy for all quark masses (even below the chiral limit) gives the desired γ_{g,f}^*: γ_g^* = 4.3, γ_f^* = 3.4." "The speed of light c is measured from the energy of the boosted hadron"
+- Evidence: "Simulations were performed on anisotropic lattices with the ratio of spatial and temporal scales fixed non-perturbatively to a_s/a_t = 3.5." (Sec. VI) "In a previous study, we tuned a three-flavor lattice action to ensure Lorentz symmetry is restored in appropriately chosen low-energy observables." "Tuning the anisotropy for all quark masses (even below the chiral limit) gives the desired γ_{g,f}^*: γ_g^* = 4.3, γ_f^* = 3.4." "The speed of light c is measured from the energy of the boosted hadron"
 - Verified: FULLTEXT
 - Notes: This is the lattice analogue of the dimension-4 speed-of-light tuning discussed by Collins et al. (C-03-047). The SPECTRUM ensembles are among those Beane et al. extrapolate from (C-03-002).
 
@@ -566,3 +566,13 @@ Conventions for this ledger:
 - Evidence: "A remarkable exception is the work by Beane et al. (2014), who investigated the potentially observable consequences of the SH, by exploring the particular case of a cubic space-time lattice." "we can use E_UHECR = 10^{20} eV = 1.6·10^8 erg as a conservative limit: this yields a length scale λ_UHECR ∼ 1.2·10^{-24} cm."
 - Verified: FULLTEXT
 - Notes: Vazza writes Beane et al.'s bound as "inverse lattice spacing [...] ∼ 10^{-11} GeV^{-1}". The units are garbled: Beane et al. have b^{-1} ≳ 10^{11} GeV. Do not repeat this.
+
+## I. Additional framework entry
+
+### C-03-068
+- Claim: Coleman and Glashow build a perturbative framework of renormalizable (dimension ≤ 4), gauge-invariant Lorentz-violating terms that are rotationally invariant in a preferred frame (46 CPT-even perturbations). These define species-dependent maximal attainable velocities and, among other effects, can undo the GZK cutoff.
+- Source: Coleman1999high
+- Locator: Abstract
+- Evidence: "Tiny non-invariant terms introduced into the standard model Lagrangian are assumed to be renormalizable (dimension ≤ 4), invariant under SU(3) ⊗ SU(2) ⊗ U(1) gauge transformations, and rotationally and translationally invariant in a preferred frame. There are a total of 46 independent CPT-even perturbations of this kind [...] They define the energy-momentum eigenstates and their maximal attainable velocities in the high-energy limit. [...] relevant both to cosmic-ray physics (e.g., by undoing the GZK cutoff)"
+- Verified: ABSTRACT
+- Notes: Beane et al. cite this framework and argue that it does not apply directly (C-03-013).
