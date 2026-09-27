@@ -189,11 +189,13 @@ hypercomputational, or approximate) more than they settle the question.
   "second law of infodynamics", which claims that the information entropy of
   information-bearing systems stays constant or decreases over time. The 2023
   paper links this to symmetry and to "data compression" by a simulator.
-- **Critiques:** these are contested. Public criticism (e.g. Hossenfelder's
-  2025 commentary on the related "gravity as computation" paper, and Vopson's
-  reply) focuses on the entropy definitions, the estimators, and whether
-  "information entropy" is used consistently. Some reformulations exist, for
-  example a "thermocontextual" reformulation (2025).
+- **Critiques:** these are contested. Peer-reviewed critiques include Lairez
+  (2024), Burgin & Mikkilineni (2022) and Crecraft (2025, a "thermocontextual"
+  reformulation). Hossenfelder's 2025 video on the related "gravity as
+  computation" paper is informal; Vopson's replies appeared as editor-screened
+  news items in IPI Letters. Section 08 of the paper reproduces the SARS-CoV-2
+  entropy values and finds the decrease is explained by the known C→U mutation
+  bias.
 
 **Status:** there is one sharp, testable prediction (the IR photons), and it is
 untested. The infodynamics claims rest on specific entropy estimators applied
